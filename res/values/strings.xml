@@ -16,5 +16,6 @@
     <string name="rate_contractor">Rate Contractor</string>
     <string name="account_info">Account Info</string>
     <string name="log_out">Log Out</string>
+    <string name="registration">Registration</string>
 
 </resources>

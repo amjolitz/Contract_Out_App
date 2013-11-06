@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/registration_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,9 +19,9 @@
         android:id="@+id/create_job_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/title"
-        android:layout_alignRight="@+id/title"
-        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/registration_title"
+        android:layout_alignRight="@+id/registration_title"
+        android:layout_below="@+id/registration_title"
         android:layout_marginTop="28dp"
         android:text="@string/create_job" />
 
@@ -49,7 +49,7 @@
         android:id="@+id/info_button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/title"
+        android:layout_alignLeft="@+id/registration_title"
         android:layout_below="@+id/rate_contractor_button"
         android:layout_marginTop="50dp"
         android:text="@string/info" />
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/info_button_b"
-        android:layout_alignRight="@+id/title"
+        android:layout_alignRight="@+id/registration_title"
         android:text="@string/log_out" />
 
 </RelativeLayout>

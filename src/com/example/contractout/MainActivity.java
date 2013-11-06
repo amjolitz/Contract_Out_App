@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
    private void verifyLogIn(final String user, final String pass){
       setContentView(R.layout.activity_log_in);
       final Button infoButton = (Button) findViewById(R.id.info_button_b);
+      final Button logOutButton = (Button) findViewById(R.id.log_out_button);
       
       infoButton.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -64,6 +65,13 @@ public class MainActivity extends Activity {
                   verifyLogIn(user, pass);
                }
             });
+         }
+      }); 
+      
+      logOutButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            createMainScreen();
          }
       }); 
    }

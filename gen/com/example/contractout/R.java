@@ -36,9 +36,9 @@ public final class R {
         public static final int password=0x7f08000d;
         public static final int rate_contractor_button=0x7f080005;
         public static final int register_button=0x7f080009;
+        public static final int registration_title=0x7f080003;
         public static final int remember_user=0x7f08000b;
         public static final int return_button=0x7f080001;
-        public static final int title=0x7f080003;
         public static final int username=0x7f08000e;
     }
     public static final class layout {
@@ -63,6 +63,7 @@ public final class R {
         public static final int password=0x7f050008;
         public static final int rate_contractor=0x7f05000c;
         public static final int register=0x7f050004;
+        public static final int registration=0x7f05000f;
         public static final int remember_username_password=0x7f050007;
         public static final int this_is_the_info_about_this_app=0x7f050009;
         public static final int username=0x7f050003;

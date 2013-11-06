@@ -17,14 +17,14 @@
         android:id="@+id/info_page_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
+        android:layout_below="@+id/registration_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:text="@string/this_is_the_info_about_this_app"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/registration_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
