@@ -24,11 +24,12 @@ public class MainActivity extends Activity {
       final EditText username = (EditText) findViewById(R.id.username);
       final EditText password = (EditText) findViewById(R.id.password);
       
+// Logic for when the info button is pressed on the start screen      
       infoButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
             setContentView(R.layout.activity_info);
-            final Button returnButton = (Button) findViewById(R.id.return_button);
+            final Button returnButton = (Button) findViewById(R.id.return_button_info);
             
             returnButton.setOnClickListener(new View.OnClickListener() {
                @Override
@@ -38,13 +39,37 @@ public class MainActivity extends Activity {
             });
          }
       });  
-      
+// Logic for when the log in button is pressed on the start screen      
       logInButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
             verifyLogIn(username.getText().toString(), password.getText().toString());
          }
       });
+// Logic for when the register button is pressed on start screen      
+      registerButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            setContentView(R.layout.activity_register);
+            final Button returnButton = (Button) findViewById(R.id.return_button_registration);
+            final Button confirmButton = (Button) findViewById(R.id.confirm_button_registration);
+// Logic for when the return button is pressed on the registration screen            
+            returnButton.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                  createMainScreen();
+               }
+            });
+// Logic for when the confirm button is pressed on the registration screen            
+            confirmButton.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                  // TODO Auto-generated method stub
+                  
+               }
+            });
+         }
+      }); 
    }
  
 // temporary method will likely be split into two methods later on   
@@ -57,7 +82,7 @@ public class MainActivity extends Activity {
          @Override
          public void onClick(View v) {
             setContentView(R.layout.activity_info);
-            final Button returnButton = (Button) findViewById(R.id.return_button);
+            final Button returnButton = (Button) findViewById(R.id.return_button_info);
             
             returnButton.setOnClickListener(new View.OnClickListener() {
                @Override

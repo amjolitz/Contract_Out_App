@@ -17,5 +17,15 @@
     <string name="account_info">Account Info</string>
     <string name="log_out">Log Out</string>
     <string name="registration">Registration</string>
+    <string name="e_mail">E-mail</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="street_address">Street Address</string>
+    <string name="additional_info_optional_">Additional Info (optional)</string>
+    <string name="city">City</string>
+    <string name="state_province">State/Province</string>
+    <string name="zip_postal_code">Zip/Postal Code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm">Confirm</string>
 
 </resources>
