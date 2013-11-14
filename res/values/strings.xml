@@ -27,5 +27,7 @@
     <string name="zip_postal_code">Zip/Postal Code</string>
     <string name="phone_number">Phone Number</string>
     <string name="confirm">Confirm</string>
+    <string name="update">Update</string>
+    <string name="change_password">Change Password</string>
 
 </resources>

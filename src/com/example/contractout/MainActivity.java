@@ -77,7 +77,9 @@ public class MainActivity extends Activity {
       setContentView(R.layout.activity_log_in);
       final Button infoButton = (Button) findViewById(R.id.info_button_b);
       final Button logOutButton = (Button) findViewById(R.id.log_out_button);
-      
+      final Button accountInfoButton = (Button) findViewById(R.id.account_info_button);
+
+// Logic for when the Info button is pressed on main screen      
       infoButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -92,13 +94,32 @@ public class MainActivity extends Activity {
             });
          }
       }); 
-      
+
+// Logic for when the Log Out button is pressed on the main screen
       logOutButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
             createMainScreen();
          }
       }); 
+      
+// Logic for when the Account Info button is pressed on the main screen
+      accountInfoButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            setContentView(R.layout.activity_account_info);
+            final Button returnButton = (Button) findViewById(R.id.return_button_account_info);
+            final Button updateButton = (Button) findViewById(R.id.update_account_info_button);
+            final Button changePassButton = (Button) findViewById(R.id.change_password_button);
+            
+            returnButton.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                  verifyLogIn(user, pass);
+               }
+            });
+         }
+      });
    }
 
    @Override
