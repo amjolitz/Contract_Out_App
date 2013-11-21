@@ -127,7 +127,6 @@
             android:layout_alignRight="@+id/registration_title"
             android:layout_below="@+id/registration_title"
             android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
             android:text="@string/e_mail"
             android:textSize="16sp" />
 

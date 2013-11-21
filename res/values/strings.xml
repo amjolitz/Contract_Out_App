@@ -29,15 +29,5 @@
     <string name="confirm">Confirm</string>
     <string name="update">Update</string>
     <string name="change_password">Change Password</string>
-    <string name="new_password">New Password</string>
-    <string name="old_password">Old Password</string>
-    <string name="confirm_new_password">Confirm New  Password</string>
-    <string name="title_activity_info">InfoActivity</string>
-    <string name="title_activity_splash">Splash</string>
-    <string name="welcome_to_contract_out">Welcome to Contract Out</string>
-    <string name="title_activity_log_in">LogInActivity</string>
-    <string name="title_activity_register">RegisterActivity</string>
-    <string name="title_activity_change_password">ChangePasswordActivity</string>
-    <string name="title_activity_account_info">AccountInfoActivity</string>
 
 </resources>
