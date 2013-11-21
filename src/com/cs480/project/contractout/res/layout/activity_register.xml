@@ -16,27 +16,57 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="47dp"
-            android:text="@string/account_info"
+            android:text="@string/registration"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="40sp" />
 
-        <Button
-            android:id="@+id/return_button_account_info"
+        <EditText
+            android:id="@+id/registration_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/phone_number"
-            android:layout_below="@+id/phone_number"
-            android:layout_marginTop="40dp"
-            android:text="@string/back" />
+            android:layout_below="@+id/registration_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress" >
 
-        <Button
-            android:id="@+id/update_account_info_button"
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/regestration_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/return_button_account_info"
-            android:layout_alignRight="@+id/phone_number"
-            android:text="@string/update" />
+            android:layout_alignLeft="@+id/registration_title"
+            android:layout_below="@+id/registration_email"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/regestration_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/registration_email"
+            android:layout_below="@+id/regestration_password"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/billing_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regestration_password"
+            android:layout_alignRight="@+id/registration_email"
+            android:layout_below="@+id/regestration_confirm_password"
+            android:layout_marginTop="30dp"
+            android:text="@string/billing_address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
             android:id="@+id/street_address"
@@ -44,13 +74,10 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/billing_address_title"
             android:layout_below="@+id/billing_address_title"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/street_address"
-            android:inputType="textEmailAddress" >
-
-            <requestFocus />
-        </EditText>
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/additional_street_info"
@@ -59,7 +86,7 @@
             android:layout_alignLeft="@+id/street_address"
             android:layout_alignRight="@+id/street_address"
             android:layout_below="@+id/street_address"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/additional_info_optional_"
             android:inputType="textEmailAddress"
@@ -71,32 +98,32 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/additional_street_info"
             android:layout_below="@+id/additional_street_info"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/city"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regestration_confirm_password"
+            android:layout_below="@+id/city"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/state_province"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/zipcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/state"
+            android:layout_alignLeft="@+id/city"
             android:layout_below="@+id/state"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/zip_postal_code"
             android:inputType="number" />
-
-        <EditText
-            android:id="@+id/state"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/city"
-            android:layout_below="@+id/city"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="@string/state_province"
-            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/phone_number"
@@ -104,42 +131,27 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/zipcode"
             android:layout_below="@+id/zipcode"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/phone_number"
             android:inputType="phone" />
 
-        <TextView
-            android:id="@+id/billing_address_title"
+        <Button
+            android:id="@+id/return_button_registration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/change_password_button"
-            android:layout_below="@+id/change_password_button"
-            android:layout_marginTop="20dp"
-            android:text="@string/billing_address"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <TextView
-            android:id="@+id/email_account_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/registration_title"
-            android:layout_alignRight="@+id/registration_title"
-            android:layout_below="@+id/registration_title"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:text="@string/e_mail"
-            android:textSize="16sp" />
+            android:layout_alignLeft="@+id/phone_number"
+            android:layout_below="@+id/phone_number"
+            android:layout_marginTop="40dp"
+            android:text="@string/back" />
 
         <Button
-            android:id="@+id/change_password_button"
+            android:id="@+id/confirm_button_registration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/email_account_info"
-            android:layout_alignRight="@+id/email_account_info"
-            android:layout_below="@+id/email_account_info"
-            android:layout_marginTop="20dp"
-            android:text="@string/change_password" />
+            android:layout_alignBottom="@+id/return_button_registration"
+            android:layout_alignRight="@+id/phone_number"
+            android:text="@string/confirm" />
 
     </RelativeLayout>
 
