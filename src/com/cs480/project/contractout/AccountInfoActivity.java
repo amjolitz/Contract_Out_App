@@ -23,7 +23,7 @@ public class AccountInfoActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openLogInActivity = new Intent("android.intent.action.LOGIN");
                      startActivity(openLogInActivity);
                   }catch(Exception e){
@@ -41,7 +41,7 @@ public class AccountInfoActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openChangePasswordActivity = new Intent("android.intent.action.CHANGEPASSWORD");
                      startActivity(openChangePasswordActivity);
                   }catch(Exception e){

@@ -22,7 +22,7 @@ public class RegisterActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(2000);
+                     sleep(200);
                      Intent openMainActivity = new Intent("android.intent.action.START");
                      startActivity(openMainActivity);
                   }catch(Exception e){

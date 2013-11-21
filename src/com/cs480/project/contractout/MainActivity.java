@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openInfoActivity = new Intent("android.intent.action.INFO");
                      openInfoActivity.putExtra("flag", 1);
                      startActivity(openInfoActivity);
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openRegisterActivity = new Intent("android.intent.action.REGISTER");
                      startActivity(openRegisterActivity);
                   }catch(Exception e){
@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
          Thread timer = new Thread(){
             public void run(){
                try{
-                  sleep(1000);
+                  sleep(200);
                   Intent openLogInActivity = new Intent("android.intent.action.LOGIN");
                   startActivity(openLogInActivity);
                }catch(Exception e){

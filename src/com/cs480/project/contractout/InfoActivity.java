@@ -23,7 +23,7 @@ public class InfoActivity extends Activity {
                Thread timer = new Thread(){
                   public void run(){
                      try{
-                        sleep(1000);
+                        sleep(200);
                         Intent openMainActivity = new Intent("android.intent.action.START");
                         startActivity(openMainActivity);
                      }catch(Exception e){
@@ -37,7 +37,7 @@ public class InfoActivity extends Activity {
                Thread timer = new Thread(){
                   public void run(){
                      try{
-                        sleep(1000);
+                        sleep(200);
                         Intent openLogInActivity = new Intent("android.intent.action.LOGIN");
                         startActivity(openLogInActivity);
                      }catch(Exception e){

@@ -22,7 +22,7 @@ public class ChangePasswordActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.ACCOUNTINFO");
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){

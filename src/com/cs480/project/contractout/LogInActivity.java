@@ -24,7 +24,7 @@ public class LogInActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openInfoActivity = new Intent("android.intent.action.INFO");
                      openInfoActivity.putExtra("flag", 2);
                      startActivity(openInfoActivity);
@@ -44,7 +44,7 @@ public class LogInActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openMainActivity = new Intent("android.intent.action.START");
                      startActivity(openMainActivity);
                   }catch(Exception e){
@@ -63,7 +63,7 @@ public class LogInActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(1000);
+                     sleep(200);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.ACCOUNTINFO");
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){

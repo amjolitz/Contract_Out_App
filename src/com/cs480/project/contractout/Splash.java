@@ -14,7 +14,7 @@ public class Splash extends Activity {
       Thread timer = new Thread(){
          public void run(){
             try{
-               sleep(5000);
+               sleep(2000);
                Intent openInfoActivity = new Intent("android.intent.action.START");
                startActivity(openInfoActivity);
             }catch(Exception e){
