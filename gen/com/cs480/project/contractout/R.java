@@ -27,7 +27,7 @@ public final class R {
         public static final int RelativeLayout1=0x7f080000;
         public static final int ScrollView1=0x7f080014;
         public static final int account_info_button=0x7f080019;
-        public static final int action_settings=0x7f080027;
+        public static final int action_settings=0x7f080028;
         public static final int additional_street_info=0x7f080007;
         public static final int billing_address_title=0x7f080006;
         public static final int change_password_button=0x7f08000b;
@@ -59,6 +59,7 @@ public final class R {
         public static final int return_button_change_password=0x7f080012;
         public static final int return_button_info=0x7f080015;
         public static final int return_button_registration=0x7f080025;
+        public static final int skipButton=0x7f080027;
         public static final int state=0x7f08000a;
         public static final int street_address=0x7f080005;
         public static final int update_account_info_button=0x7f080004;

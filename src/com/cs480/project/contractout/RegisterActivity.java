@@ -22,7 +22,7 @@ public class RegisterActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(200);
+                     sleep(100);
                      Intent openMainActivity = new Intent("android.intent.action.START");
                      startActivity(openMainActivity);
                   }catch(Exception e){
@@ -42,6 +42,17 @@ public class RegisterActivity extends Activity {
          }
       });
    }
+   
+   
+
+   @Override
+   protected void onPause() {
+      // TODO Auto-generated method stub
+      super.onPause();
+      finish();
+   }
+
+
 
    @Override
    public boolean onCreateOptionsMenu(Menu menu) {

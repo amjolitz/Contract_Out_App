@@ -4,18 +4,16 @@ import com.cs480.project.contractout.R;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
-   
-   EditText username;
-   EditText password;
-   CheckBox rememberEmail;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +28,6 @@ public class MainActivity extends Activity {
       final Button registerButton = (Button) findViewById(R.id.register_button);
       final EditText username = (EditText) findViewById(R.id.username);
       final EditText password = (EditText) findViewById(R.id.password);
-      rememberEmail = (CheckBox) findViewById(R.id.remember_user);
       
 // Logic for when the info button is pressed on the start screen
       infoButton.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +36,7 @@ public class MainActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(200);
+                     sleep(100);
                      Intent openInfoActivity = new Intent("android.intent.action.INFO");
                      openInfoActivity.putExtra("flag", 1);
                      startActivity(openInfoActivity);
@@ -84,7 +81,7 @@ public class MainActivity extends Activity {
          Thread timer = new Thread(){
             public void run(){
                try{
-                  sleep(200);
+                  sleep(100);
                   Intent openLogInActivity = new Intent("android.intent.action.LOGIN");
                   startActivity(openLogInActivity);
                }catch(Exception e){
@@ -113,12 +110,17 @@ public class MainActivity extends Activity {
    protected void onPause() {
       // TODO Auto-generated method stub
       super.onPause();
-      if(rememberEmail.isChecked()){
+// Hide on screen keyboard      
+      InputMethodManager im = (InputMethodManager) this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+      im.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+      
+      ((EditText) findViewById(R.id.username)).setText("");
+      ((EditText) findViewById(R.id.password)).setText("");
+      if(((CheckBox) findViewById(R.id.remember_user)).isChecked()){
 //
 //  Logic for remembering the username and password of the user if box is checked
 //
       }
-      finish();
    }
    
    @Override

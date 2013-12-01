@@ -8,6 +8,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Splash" >
 
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
