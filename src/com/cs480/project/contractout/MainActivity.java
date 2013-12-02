@@ -38,7 +38,6 @@ public class MainActivity extends Activity {
                   try{
                      sleep(100);
                      Intent openInfoActivity = new Intent("android.intent.action.INFO");
-                     openInfoActivity.putExtra("flag", 1);
                      startActivity(openInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();

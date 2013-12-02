@@ -8,6 +8,9 @@
 package com.cs480.project.contractout;
 
 public final class R {
+    public static final class array {
+        public static final int job_type_array=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -24,67 +27,93 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f080000;
-        public static final int ScrollView1=0x7f080014;
-        public static final int account_info_button=0x7f080019;
-        public static final int action_settings=0x7f080028;
-        public static final int additional_street_info=0x7f080007;
-        public static final int billing_address_title=0x7f080006;
-        public static final int change_password_button=0x7f08000b;
-        public static final int change_password_title=0x7f08000d;
-        public static final int city=0x7f080008;
-        public static final int confirm_button_change_password=0x7f080013;
-        public static final int confirm_button_registration=0x7f080026;
-        public static final int confirm_new_password=0x7f080011;
-        public static final int create_job_button=0x7f080017;
-        public static final int email_account_info=0x7f08000c;
-        public static final int email_change_password=0x7f08000e;
-        public static final int info_button=0x7f08001f;
-        public static final int info_button_b=0x7f08001a;
-        public static final int info_page_text=0x7f080016;
-        public static final int log_in_button=0x7f08001d;
-        public static final int log_out_button=0x7f08001b;
-        public static final int new_password=0x7f08000f;
-        public static final int old_password=0x7f080010;
-        public static final int password=0x7f080020;
-        public static final int phone_number=0x7f080003;
-        public static final int rate_contractor_button=0x7f080018;
-        public static final int regestration_confirm_password=0x7f080024;
-        public static final int regestration_password=0x7f080023;
-        public static final int register_button=0x7f08001c;
-        public static final int registration_email=0x7f080022;
-        public static final int registration_title=0x7f080001;
-        public static final int remember_user=0x7f08001e;
-        public static final int return_button_account_info=0x7f080002;
-        public static final int return_button_change_password=0x7f080012;
-        public static final int return_button_info=0x7f080015;
-        public static final int return_button_registration=0x7f080025;
-        public static final int skipButton=0x7f080027;
-        public static final int state=0x7f08000a;
-        public static final int street_address=0x7f080005;
-        public static final int update_account_info_button=0x7f080004;
-        public static final int username=0x7f080021;
-        public static final int zipcode=0x7f080009;
+        public static final int RelativeLayout1=0x7f090000;
+        public static final int ScrollView1=0x7f09002b;
+        public static final int ScrollViewCreateJob=0x7f090014;
+        public static final int TextView01=0x7f090021;
+        public static final int TextView02=0x7f09001e;
+        public static final int account_info_button=0x7f090030;
+        public static final int action_settings=0x7f09003f;
+        public static final int additional_street_info=0x7f090007;
+        public static final int billing_address_title=0x7f090006;
+        public static final int change_password_button=0x7f09000b;
+        public static final int change_password_title=0x7f09000d;
+        public static final int city=0x7f090008;
+        public static final int confirm_button_change_password=0x7f090013;
+        public static final int confirm_button_registration=0x7f09003d;
+        public static final int confirm_new_password=0x7f090011;
+        public static final int createJobConfirmButton=0x7f090027;
+        public static final int createJobReturnButton=0x7f090026;
+        public static final int create_job_button=0x7f09002e;
+        public static final int eairliestDay=0x7f09001c;
+        public static final int eairliestMonth=0x7f09001b;
+        public static final int email_account_info=0x7f09000c;
+        public static final int email_change_password=0x7f09000e;
+        public static final int friendlinessRating=0x7f090016;
+        public static final int info_button=0x7f090036;
+        public static final int info_button_b=0x7f090031;
+        public static final int info_page_text=0x7f09002d;
+        public static final int jobAddress=0x7f090018;
+        public static final int jobDescription=0x7f090017;
+        public static final int jobType=0x7f090015;
+        public static final int latestStartDay=0x7f09001f;
+        public static final int latestStartMonth=0x7f090020;
+        public static final int log_in_button=0x7f090034;
+        public static final int log_out_button=0x7f090032;
+        public static final int maxPrice=0x7f09002a;
+        public static final int new_password=0x7f09000f;
+        public static final int old_password=0x7f090010;
+        public static final int password=0x7f090037;
+        public static final int phone_number=0x7f090003;
+        public static final int qualityRating=0x7f090023;
+        public static final int rate_contractor_button=0x7f09002f;
+        public static final int regestration_confirm_password=0x7f09003b;
+        public static final int regestration_password=0x7f09003a;
+        public static final int register_button=0x7f090033;
+        public static final int registration_email=0x7f090039;
+        public static final int registration_title=0x7f090001;
+        public static final int remember_user=0x7f090035;
+        public static final int return_button_account_info=0x7f090002;
+        public static final int return_button_change_password=0x7f090012;
+        public static final int return_button_info=0x7f09002c;
+        public static final int return_button_registration=0x7f09003c;
+        public static final int skipButton=0x7f09003e;
+        public static final int state=0x7f09000a;
+        public static final int street_address=0x7f090005;
+        public static final int textView1=0x7f09001a;
+        public static final int textView2=0x7f09001d;
+        public static final int textView3=0x7f090029;
+        public static final int textView4=0x7f090028;
+        public static final int textView5=0x7f090022;
+        public static final int textView6=0x7f090024;
+        public static final int timelinessRating=0x7f090025;
+        public static final int update_account_info_button=0x7f090004;
+        public static final int useBillingAddressButton=0x7f090019;
+        public static final int username=0x7f090038;
+        public static final int zipcode=0x7f090009;
     }
     public static final class layout {
         public static final int activity_account_info=0x7f030000;
         public static final int activity_change_password=0x7f030001;
-        public static final int activity_info=0x7f030002;
-        public static final int activity_log_in=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_register=0x7f030005;
-        public static final int activity_splash=0x7f030006;
+        public static final int activity_create_job=0x7f030002;
+        public static final int activity_info=0x7f030003;
+        public static final int activity_log_in=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_register=0x7f030006;
+        public static final int activity_splash=0x7f030007;
     }
     public static final class menu {
-        public static final int account_info=0x7f070000;
-        public static final int change_password=0x7f070001;
-        public static final int info=0x7f070002;
-        public static final int log_in=0x7f070003;
-        public static final int main=0x7f070004;
-        public static final int register=0x7f070005;
-        public static final int splash=0x7f070006;
+        public static final int account_info=0x7f080000;
+        public static final int change_password=0x7f080001;
+        public static final int create_job=0x7f080002;
+        public static final int info=0x7f080003;
+        public static final int log_in=0x7f080004;
+        public static final int main=0x7f080005;
+        public static final int register=0x7f080006;
+        public static final int splash=0x7f080007;
     }
     public static final class string {
+        public static final int _=0x7f05002e;
         public static final int account_info=0x7f05000d;
         public static final int action_settings=0x7f050001;
         public static final int additional_info_optional_=0x7f050014;
@@ -97,29 +126,44 @@ public final class R {
         public static final int confirm_new_password=0x7f05001e;
         public static final int confirm_password=0x7f050011;
         public static final int create_job=0x7f05000b;
+        public static final int dd=0x7f05002f;
         public static final int e_mail=0x7f050010;
+        public static final int earliest_start_date=0x7f05002c;
+        public static final int friendliness=0x7f050033;
         public static final int hello_world=0x7f050002;
         public static final int info=0x7f050006;
+        public static final int job_address=0x7f05002a;
+        public static final int job_description_optional_=0x7f050029;
+        public static final int latest_start_date=0x7f050031;
         public static final int log_in=0x7f050005;
         public static final int log_out=0x7f05000e;
+        public static final int minimum_ratings=0x7f050032;
+        public static final int mm=0x7f05002d;
         public static final int new_password=0x7f05001c;
         public static final int old_password=0x7f05001d;
         public static final int password=0x7f050008;
         public static final int phone_number=0x7f050018;
+        public static final int price_limit=0x7f050030;
+        public static final int quality=0x7f050034;
         public static final int rate_contractor=0x7f05000c;
         public static final int register=0x7f050004;
         public static final int registration=0x7f05000f;
         public static final int remember_username_password=0x7f050007;
+        public static final int select_job_subtype=0x7f050028;
+        public static final int select_job_type=0x7f050027;
         public static final int state_province=0x7f050016;
         public static final int street_address=0x7f050013;
         public static final int this_is_the_info_about_this_app=0x7f050009;
+        public static final int timeliness=0x7f050035;
         public static final int title_activity_account_info=0x7f050025;
         public static final int title_activity_change_password=0x7f050024;
+        public static final int title_activity_create_job=0x7f050026;
         public static final int title_activity_info=0x7f05001f;
         public static final int title_activity_log_in=0x7f050022;
         public static final int title_activity_register=0x7f050023;
         public static final int title_activity_splash=0x7f050020;
         public static final int update=0x7f05001a;
+        public static final int use_billing_address=0x7f05002b;
         public static final int username=0x7f050003;
         public static final int welcome_to_contract_out=0x7f050021;
         public static final int zip_postal_code=0x7f050017;
@@ -146,10 +190,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }

@@ -2,11 +2,9 @@ package com.cs480.project.contractout;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 public class LogInActivity extends Activity {
@@ -20,6 +18,7 @@ public class LogInActivity extends Activity {
       final Button infoButton = (Button) findViewById(R.id.info_button_b);
       final Button logOutButton = (Button) findViewById(R.id.log_out_button);
       final Button accountInfoButton = (Button) findViewById(R.id.account_info_button);
+      final Button createJobButton = (Button) findViewById(R.id.create_job_button);
 
 // Logic for when the Info button is pressed on main screen      
       infoButton.setOnClickListener(new View.OnClickListener() {
@@ -30,7 +29,6 @@ public class LogInActivity extends Activity {
                   try{
                      sleep(100);
                      Intent openInfoActivity = new Intent("android.intent.action.INFO");
-                     openInfoActivity.putExtra("flag", 2);
                      startActivity(openInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();
@@ -50,8 +48,7 @@ public class LogInActivity extends Activity {
                public void run(){
                   try{
                      sleep(100);
-                     Intent openMainActivity = new Intent("android.intent.action.START");
-                     startActivity(openMainActivity);
+                     onPause();
                   }catch(Exception e){
                      e.printStackTrace();
                   }
@@ -70,6 +67,25 @@ public class LogInActivity extends Activity {
                   try{
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.ACCOUNTINFO");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });
+      
+// Logic for when the Create Job button is pressed on the main screen
+      createJobButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.CREATEJOB");
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();

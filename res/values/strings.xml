@@ -18,7 +18,6 @@ The contracts are area- specific, meaning that the search result will display on
 Users can register for a free account through the application. \n\n
 If you are a contractor and require a new account, please refer to the website.</string>
     <string name="back">Return</string>
-
     <string name="create_job">Create Job</string>
     <string name="rate_contractor">Rate Contractor</string>
     <string name="account_info">Account Info</string>
@@ -46,5 +45,30 @@ If you are a contractor and require a new account, please refer to the website.<
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_change_password">ChangePasswordActivity</string>
     <string name="title_activity_account_info">AccountInfoActivity</string>
+    <string name="title_activity_create_job">CreateJobActivity</string>
+    <string name="select_job_type">Select Job Type</string>
+    <string name="select_job_subtype">Select Job Subtype</string>
+    <string name="job_description_optional_">Job Description</string>
+    <string name="job_address">Job Address</string>
+    <string name="use_billing_address">Use Billing Address</string>
+    <string name="earliest_start_date">Earliest Start Date</string>
+    <string name="mm">MM</string>
+    <string name="_">/</string>
+    <string name="dd">DD</string>
+    <string name="price_limit">Price Limit ($)</string>
+    <string name="latest_start_date">Latest Start Date</string>
+    <string name="minimum_ratings">Minimum Ratings</string>
+    <string name="friendliness">Friendliness</string>
+    <string name="quality">Quality</string>
+    <string name="timeliness">Timeliness</string>   
+    <string-array name="job_type_array">
+        <item>Job Type</item>
+        <item>Cleaning</item>
+        <item>Yardwork</item>
+        <item>General Repairs</item>
+        <item>Home Improvements</item>
+        <item>Plumbing</item>
+        <item>Pest Removal</item>
+    </string-array>   
 
 </resources>

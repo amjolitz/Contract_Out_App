@@ -47,7 +47,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/street_address"
-            android:inputType="textEmailAddress" >
+            android:inputType="textPostalAddress" >
 
             <requestFocus />
         </EditText>
@@ -62,7 +62,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/additional_info_optional_"
-            android:inputType="textEmailAddress"
+            android:inputType="textPostalAddress"
             android:textSize="15sp" />
 
         <EditText
@@ -74,7 +74,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/city"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/zipcode"
@@ -96,7 +96,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/state_province"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/phone_number"

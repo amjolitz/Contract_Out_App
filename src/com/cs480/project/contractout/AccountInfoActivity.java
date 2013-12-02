@@ -30,8 +30,7 @@ public class AccountInfoActivity extends Activity {
                public void run(){
                   try{
                      sleep(100);
-                     Intent openLogInActivity = new Intent("android.intent.action.LOGIN");
-                     startActivity(openLogInActivity);
+                     onPause();
                   }catch(Exception e){
                      e.printStackTrace();
                   }
