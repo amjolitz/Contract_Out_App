@@ -1,7 +1,5 @@
-1 Cut Time delay in half for transitions
-2 Add invisible button to splash
-3 Make splash 1.5 seconds
-4 Look into back button support
-5 Figure out how to save and retrieve data from system memory
-6 Hide keyboard on transitions
-7 Fix field mistypeing on one of the screens
+1 Figure out how to save and retrieve data from system memory
+2 Fix field mistypeing on one of the screens
+3 Create Rate Contractor Page
+4 Figure out how to alert the user when they can select a contractor
+5 Create the page that the users will see when selecting a contractor
