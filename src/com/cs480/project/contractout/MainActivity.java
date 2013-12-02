@@ -1,5 +1,11 @@
 package com.cs480.project.contractout;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
 import com.cs480.project.contractout.R;
 
 import android.os.Bundle;
@@ -61,7 +67,7 @@ public class MainActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
-                     sleep(200);
+                     sleep(100);
                      Intent openRegisterActivity = new Intent("android.intent.action.REGISTER");
                      startActivity(openRegisterActivity);
                   }catch(Exception e){
@@ -113,15 +119,47 @@ public class MainActivity extends Activity {
       InputMethodManager im = (InputMethodManager) this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
       im.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
       
-      ((EditText) findViewById(R.id.username)).setText("");
-      ((EditText) findViewById(R.id.password)).setText("");
+      EditText username = (EditText) findViewById(R.id.username);
+      EditText password = (EditText) findViewById(R.id.password);
+      FileOutputStream outputStream;
+      String temp = username.getText().toString() + "\n" + password.getText().toString();
+      
       if(((CheckBox) findViewById(R.id.remember_user)).isChecked()){
-//
-//  Logic for remembering the username and password of the user if box is checked
-//
+         try {
+            outputStream = openFileOutput("userInfo.txt", Context.MODE_PRIVATE);
+            outputStream.write(temp.getBytes());
+            outputStream.close();
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
       }
+      username.setText("");
+      password.setText("");
    }
    
+   @Override
+   protected void onResume() {
+      // TODO Auto-generated method stub
+      super.onResume();
+      
+      //Get the text file
+      File file = new File(this.getFilesDir(), "userInfo.txt");
+
+      //Read text from file
+      try {
+          BufferedReader br = new BufferedReader(new FileReader(file));
+          String line;
+
+          if ((line = br.readLine()) != null) {
+             ((EditText) findViewById(R.id.username)).setText(line);
+          }
+          if ((line = br.readLine()) != null) {
+             ((EditText) findViewById(R.id.password)).setText(line);
+          }
+      }
+      catch (IOException e) {}
+   }
+
    @Override
    public boolean onCreateOptionsMenu(Menu menu) {
       // Inflate the menu; this adds items to the action bar if it is present.
