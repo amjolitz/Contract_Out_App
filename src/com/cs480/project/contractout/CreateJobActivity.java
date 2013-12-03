@@ -3,8 +3,10 @@ package com.cs480.project.contractout;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,6 +33,12 @@ public class CreateJobActivity extends Activity {
       final RatingBar friendliness = (RatingBar) findViewById(R.id.friendlinessRating);
       final RatingBar quality = (RatingBar) findViewById(R.id.qualityRating);
       final RatingBar timeliness = (RatingBar) findViewById(R.id.timelinessRating);
+      
+      description.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
+      description.setSingleLine(true);
+      description.setLines(6); // desired number of lines
+      description.setHorizontallyScrolling(false);
+      description.setImeOptions(EditorInfo.IME_ACTION_DONE);
       
 // Logic for when the return button is pressed on the create job screen
       returnButton.setOnClickListener(new View.OnClickListener() {

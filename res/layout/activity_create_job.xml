@@ -3,7 +3,8 @@
     android:id="@+id/ScrollViewCreateJob"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true" >
+    android:fillViewport="true"
+    android:scrollbars="none" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,12 +30,18 @@
             android:layout_alignRight="@+id/friendlinessRating"
             android:layout_below="@+id/jobType"
             android:layout_marginTop="20dp"
+            android:ellipsize="none"
             android:ems="10"
             android:gravity="start"
             android:hint="@string/job_description_optional_"
+            android:imeOptions="actionDone"
             android:inputType="textAutoComplete"
+            android:lines="4"
             android:minHeight="150dp"
-            android:minWidth="250dp" >
+            android:minWidth="250dp"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="false" >
 
             <requestFocus />
         </EditText>
@@ -80,6 +87,10 @@
             android:ems="10"
             android:hint="@string/mm"
             android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusDown="@+id/eairliestDay"
+            android:nextFocusForward="@+id/eairliestDay"
+            android:nextFocusRight="@+id/eairliestDay"
             android:singleLine="true"
             android:width="60dp" />
 
@@ -93,7 +104,11 @@
             android:ems="10"
             android:hint="@string/dd"
             android:inputType="number"
+            android:maxLength="2"
             android:maxWidth="60dp"
+            android:nextFocusDown="@+id/latestStartMonth"
+            android:nextFocusForward="@+id/latestStartMonth"
+            android:nextFocusRight="@+id/latestStartMonth"
             android:singleLine="true"
             android:width="60dp" />
 
@@ -131,6 +146,10 @@
             android:ems="10"
             android:hint="@string/mm"
             android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusDown="@id/latestStartDay"
+            android:nextFocusForward="@id/latestStartDay"
+            android:nextFocusRight="@id/latestStartDay"
             android:singleLine="true"
             android:width="60dp" />
 
@@ -144,7 +163,11 @@
             android:ems="10"
             android:hint="@string/dd"
             android:inputType="number"
+            android:maxLength="2"
             android:maxWidth="60dp"
+            android:nextFocusDown="@+id/maxPrice"
+            android:nextFocusForward="@+id/maxPrice"
+            android:nextFocusRight="@+id/maxPrice"
             android:singleLine="true"
             android:width="60dp" />
 

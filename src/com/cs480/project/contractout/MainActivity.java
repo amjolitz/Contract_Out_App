@@ -141,23 +141,24 @@ public class MainActivity extends Activity {
    protected void onResume() {
       // TODO Auto-generated method stub
       super.onResume();
-      
-      //Get the text file
-      File file = new File(this.getFilesDir(), "userInfo.txt");
+      if(((CheckBox) findViewById(R.id.remember_user)).isChecked()){
+         //Get the text file
+         File file = new File(this.getFilesDir(), "userInfo.txt");
 
-      //Read text from file
-      try {
-          BufferedReader br = new BufferedReader(new FileReader(file));
-          String line;
+         //Read text from file
+         try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String line;
 
-          if ((line = br.readLine()) != null) {
-             ((EditText) findViewById(R.id.username)).setText(line);
-          }
-          if ((line = br.readLine()) != null) {
-             ((EditText) findViewById(R.id.password)).setText(line);
-          }
+            if ((line = br.readLine()) != null) {
+               ((EditText) findViewById(R.id.username)).setText(line);
+            }
+            if ((line = br.readLine()) != null) {
+               ((EditText) findViewById(R.id.password)).setText(line);
+            }
+         }
+         catch (IOException e) {}
       }
-      catch (IOException e) {}
    }
 
    @Override
