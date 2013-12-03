@@ -1,5 +1,8 @@
-1 Figure out how to save and retrieve data from system memory
-2 Fix field mistypeing on one of the screens
-3 Create Rate Contractor Page
-4 Figure out how to alert the user when they can select a contractor
-5 Create the page that the users will see when selecting a contractor
+1 Figure out how to save and retrieve data from database to populate user data
+2 Create Rate Contractor Page/Job Review Page
+3 Figure out how to alert the user when they can select a contractor
+4 Create the page that the users will see when selecting a contractor
+5 Create a list of what the application requires (Storage, Network communication, System Tools)
+6 Implment requirement requests
+7 Combine Rate Contractor with Job Review Pages and change button accordingly
+8 Add remaining stubs for database interactions
