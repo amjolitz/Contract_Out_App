@@ -10,16 +10,17 @@
     <string name="info">About</string>
     <string name="remember_username_password">Remember Username/Password</string>
     <string name="password">Password</string>
-    <string name="this_is_the_info_about_this_app"> Contract Out allows users to easily browse different contractors for specific jobs and set up appointments.\n\n  
-If you have a job that requires the work of a professional, Contract Out makes it easy to look for these professionals, contact them, and set up an appointment with them to get the job done!\n\n
-Contract Out allows users to easily browse different contractors for specific jobs and set up appointments.\n\nThe search feature allows users to obtain a list of many contractors within a specific area. \n\n 
-In addition to displaying contact information, ratings of the contractors will be displayed. These ratings are based on previous user experiences with contractors. \n\n
-The contracts are area- specific, meaning that the search result will display only the contractors who have selected to work in specific area-codes. \n\n  
-Users can register for a free account through the application. \n\n
-If you are a contractor and require a new account, please refer to the website.</string>
+    <string name="this_is_the_info_about_this_app">\tContract Out allows users to easily browse different contractors for specific jobs and set up appointments.\n\n\t
+     If you have a job that requires the work of a professional, Contract Out makes it easy to look for these professionals, contact them, and set up an appointment with them to get the job done!\n\n\t
+     Contract Out allows users to easily browse different contractors for specific jobs and set up appointments.\n\n\t
+     The search feature allows users to obtain a list of many contractors within a specific area.\n\n\t
+     In addition to displaying contact information, ratings of the contractors will be displayed. These ratings are based on previous user experiences with contractors.\n\n\t
+     The contracts are area- specific, meaning that the search result will display only the contractors who have selected to work in specific area-codes. \n\n\t
+     Users can register for a free account through the application.\n\n\t
+     If you are a contractor please refer to the website.</string>
     <string name="back">Return</string>
     <string name="create_job">Create Job</string>
-    <string name="rate_contractor">Rate Contractor</string>
+    <string name="rate_contractor">Review Contracts</string>
     <string name="account_info">Account Info</string>
     <string name="log_out">Log Out</string>
     <string name="registration">Registration</string>
@@ -41,11 +42,6 @@ If you are a contractor and require a new account, please refer to the website.<
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_splash">Splash</string>
     <string name="welcome_to_contract_out">Welcome to Contract Out</string>
-    <string name="title_activity_log_in">LogInActivity</string>
-    <string name="title_activity_register">RegisterActivity</string>
-    <string name="title_activity_change_password">ChangePasswordActivity</string>
-    <string name="title_activity_account_info">AccountInfoActivity</string>
-    <string name="title_activity_create_job">CreateJobActivity</string>
     <string name="select_job_type">Select Job Type</string>
     <string name="select_job_subtype">Select Job Subtype</string>
     <string name="job_description_optional_">Job Description</string>
@@ -60,7 +56,8 @@ If you are a contractor and require a new account, please refer to the website.<
     <string name="minimum_ratings">Minimum Ratings</string>
     <string name="friendliness">Friendliness</string>
     <string name="quality">Quality</string>
-    <string name="timeliness">Timeliness</string>   
+    <string name="timeliness">Timeliness</string>
+
     <string-array name="job_type_array">
         <item>Job Type</item>
         <item>Cleaning</item>
@@ -69,6 +66,25 @@ If you are a contractor and require a new account, please refer to the website.<
         <item>Home Improvements</item>
         <item>Plumbing</item>
         <item>Pest Removal</item>
-    </string-array>   
+    </string-array>
+    <string-array name="temporary_test_contracts_array">
+        <item>Bill Smith Plumbing</item>
+        <item>Stanly Steamers</item>
+        <item>Gomez and Sons Gardeners</item>
+        <item>Ed Fitzpatricks Window Repair</item>
+    </string-array>
+
+    <string name="title_activity_review_contracts">ReviewContractsActivity</string>
+    <string name="completed_contracts">Completed Contracts</string>
+    <string name="rate_completed_jobs">Rate Completed Jobs</string>
+    <string name="review_pending_jobs">Review Pending Jobs</string>
+    <string name="title_activity_pending_jobs">PendingJobsActivity</string>
+    <string name="pending_jobs">Pending Jobs</string>
+    <string name="no_pending_jobs">No Pending Jobs</string>
+    <string name="title_activity_completed_jobs">CompletedJobsActivity</string>
+    <string name="rate_job">Rate Job</string>
+    <string name="completed_jobs">Completed Jobs</string>
+    <string name="n_a">N/A</string>
+    <string name="next_3_jobs">Next 3 Jobs</string>
 
 </resources>

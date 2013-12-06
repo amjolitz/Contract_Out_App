@@ -19,6 +19,7 @@ public class LogInActivity extends Activity {
       final Button logOutButton = (Button) findViewById(R.id.log_out_button);
       final Button accountInfoButton = (Button) findViewById(R.id.account_info_button);
       final Button createJobButton = (Button) findViewById(R.id.create_job_button);
+      final Button reviewJobButton = (Button) findViewById(R.id.rate_contractor_button);
 
 // Logic for when the Info button is pressed on main screen      
       infoButton.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +87,24 @@ public class LogInActivity extends Activity {
                   try{
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.CREATEJOB");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });
+// Logic for when the Review Job button is pressed on the main screen
+      reviewJobButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.REVIEWCONTRACTS");
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();

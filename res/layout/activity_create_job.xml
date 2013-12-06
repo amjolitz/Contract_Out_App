@@ -68,7 +68,7 @@
             android:text="@string/use_billing_address" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/Job1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/useBillingAddressButton"
@@ -81,8 +81,8 @@
             android:id="@+id/eairliestMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView1"
-            android:layout_below="@+id/textView1"
+            android:layout_alignLeft="@+id/Job1"
+            android:layout_below="@+id/Job1"
             android:layout_marginTop="19dp"
             android:ems="10"
             android:hint="@string/mm"
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/eairliestMonth"
             android:layout_alignBottom="@+id/eairliestMonth"
-            android:layout_alignRight="@+id/textView1"
+            android:layout_alignRight="@+id/Job1"
             android:ems="10"
             android:hint="@string/dd"
             android:inputType="number"
@@ -249,7 +249,7 @@
             android:id="@+id/friendlinessRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView4"
+            android:layout_below="@+id/Job3"
             android:layout_centerHorizontal="true"
             android:maxHeight="40dp"
             android:maxWidth="100dp"
@@ -257,19 +257,19 @@
             android:stepSize=".5" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/Job3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/friendlinessRating"
             android:layout_alignRight="@+id/friendlinessRating"
-            android:layout_below="@+id/textView3"
+            android:layout_below="@+id/Job2"
             android:layout_marginTop="21dp"
             android:gravity="center_horizontal"
             android:text="@string/friendliness"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/Job2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/useBillingAddressButton"
@@ -284,8 +284,8 @@
             android:id="@+id/maxPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView4"
-            android:layout_alignRight="@+id/textView4"
+            android:layout_alignLeft="@+id/Job3"
+            android:layout_alignRight="@+id/Job3"
             android:layout_below="@+id/latestStartMonth"
             android:layout_marginTop="20dp"
             android:ellipsize="start"
