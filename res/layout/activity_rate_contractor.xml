@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".RateContractorActivity" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/contractor_name"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/contractor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/contractor_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/finish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView01"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/finish_date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/contractor_name"
+            android:layout_marginTop="20dp"
+            android:text="@string/finish_date"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/Job3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/finish_date"
+            android:layout_marginTop="29dp"
+            android:gravity="center_horizontal"
+            android:text="@string/friendliness"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/friendlinessRatingRateContractor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Job3"
+            android:layout_centerHorizontal="true"
+            android:maxHeight="40dp"
+            android:maxWidth="100dp"
+            android:numStars="5"
+            android:stepSize=".5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friendlinessRatingRateContractor"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/quality"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RatingBar
+            android:id="@+id/qualityRatingRateContractor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/friendlinessRatingRateContractor"
+            android:layout_below="@+id/textView5"
+            android:maxHeight="40dp"
+            android:maxWidth="100dp"
+            android:numStars="5"
+            android:stepSize=".5" />
+
+        <RatingBar
+            android:id="@+id/timelinessRatingRateContractor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/qualityRatingRateContractor"
+            android:layout_below="@+id/textView6"
+            android:maxHeight="40dp"
+            android:maxWidth="100dp"
+            android:numStars="5"
+            android:stepSize=".5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/qualityRatingRateContractor"
+            android:gravity="center_horizontal"
+            android:text="@string/timeliness"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/rate_contractor_return_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timelinessRatingRateContractor"
+            android:layout_below="@+id/timelinessRatingRateContractor"
+            android:layout_marginTop="20dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/rate_contractor_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rate_contractor_return_Button"
+            android:layout_alignBottom="@+id/rate_contractor_return_Button"
+            android:layout_alignRight="@+id/timelinessRatingRateContractor"
+            android:text="@string/confirm" />
+
+    </RelativeLayout>
+
+</ScrollView>

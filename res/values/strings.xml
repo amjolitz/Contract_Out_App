@@ -86,5 +86,8 @@
     <string name="completed_jobs">Completed Jobs</string>
     <string name="n_a">N/A</string>
     <string name="next_3_jobs">Next 3 Jobs</string>
+    <string name="title_activity_rate_contractor">RateContractorActivity</string>
+    <string name="contractor_name">Contractor Name</string>
+    <string name="finish_date">Finish Date</string>
 
 </resources>

@@ -2,6 +2,7 @@ package com.cs480.project.contractout;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class CompletedJobsActivity extends Activity {
       final TextView job2 = (TextView) findViewById(R.id.Job2);
       final TextView job3 = (TextView) findViewById(R.id.Job3);
       
-// Logic for when the Log Out button is pressed
+// Logic for when the Return button is pressed
       backButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -42,7 +43,66 @@ public class CompletedJobsActivity extends Activity {
             timer.start(); 
          }
       }); 
-      
+// Logic for when the Rate Job1 button is pressed
+      job1RateButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
+                     openAccountInfoActivity.putExtra("Contractor Name", job1.getText());
+                     openAccountInfoActivity.putExtra("End Date", "12/21/2013");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });  
+// Logic for when the Rate Job2 button is pressed
+      job2RateButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
+                     openAccountInfoActivity.putExtra("Contractor Name", job2.getText());
+                     openAccountInfoActivity.putExtra("End Date", "12/22/2013");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });     
+// Logic for when the Rate Job3 button is pressed
+      job3RateButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
+                     openAccountInfoActivity.putExtra("Contractor Name", job3.getText());
+                     openAccountInfoActivity.putExtra("End Date", "12/23/2013");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });     
    }
 
    @Override

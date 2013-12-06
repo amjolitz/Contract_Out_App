@@ -38,7 +38,7 @@ public final class R {
         public static final int TextView01=0x7f090029;
         public static final int TextView02=0x7f090026;
         public static final int account_info_button=0x7f090035;
-        public static final int action_settings=0x7f090049;
+        public static final int action_settings=0x7f090051;
         public static final int additional_street_info=0x7f090007;
         public static final int billing_address_title=0x7f090006;
         public static final int change_password_button=0x7f09000b;
@@ -46,8 +46,9 @@ public final class R {
         public static final int city=0x7f090008;
         public static final int completed_jobs_return_button=0x7f090018;
         public static final int confirm_button_change_password=0x7f090013;
-        public static final int confirm_button_registration=0x7f090044;
+        public static final int confirm_button_registration=0x7f09004c;
         public static final int confirm_new_password=0x7f090011;
+        public static final int contractor_name=0x7f090041;
         public static final int createJobConfirmButton=0x7f09002f;
         public static final int createJobReturnButton=0x7f09002e;
         public static final int create_job_button=0x7f090033;
@@ -55,7 +56,9 @@ public final class R {
         public static final int eairliestMonth=0x7f090023;
         public static final int email_account_info=0x7f09000c;
         public static final int email_change_password=0x7f09000e;
+        public static final int finish_date=0x7f090042;
         public static final int friendlinessRating=0x7f09001f;
+        public static final int friendlinessRatingRateContractor=0x7f090043;
         public static final int info_button=0x7f09003b;
         public static final int info_button_b=0x7f090036;
         public static final int info_page_text=0x7f090032;
@@ -74,30 +77,35 @@ public final class R {
         public static final int pending_jobs_return_button=0x7f09003f;
         public static final int phone_number=0x7f090003;
         public static final int qualityRating=0x7f09002b;
+        public static final int qualityRatingRateContractor=0x7f090044;
         public static final int rate_contractor_button=0x7f090034;
+        public static final int rate_contractor_confirm_button=0x7f090047;
+        public static final int rate_contractor_return_Button=0x7f090046;
         public static final int rate_job_1_button=0x7f09001a;
         public static final int rate_job_2_button=0x7f09001b;
         public static final int rate_job_3_button=0x7f09001c;
-        public static final int regestration_confirm_password=0x7f090042;
-        public static final int regestration_password=0x7f090041;
+        public static final int regestration_confirm_password=0x7f09004a;
+        public static final int regestration_password=0x7f090049;
         public static final int register_button=0x7f090038;
-        public static final int registration_email=0x7f090040;
+        public static final int registration_email=0x7f090048;
         public static final int registration_title=0x7f090001;
         public static final int remember_user=0x7f09003a;
         public static final int return_button_account_info=0x7f090002;
         public static final int return_button_change_password=0x7f090012;
         public static final int return_button_info=0x7f090031;
-        public static final int return_button_registration=0x7f090043;
-        public static final int review_completed_button=0x7f090045;
-        public static final int review_contracts_return_button=0x7f090047;
-        public static final int review_pending_button=0x7f090046;
-        public static final int skipButton=0x7f090048;
+        public static final int return_button_registration=0x7f09004b;
+        public static final int review_completed_button=0x7f09004d;
+        public static final int review_contracts_return_button=0x7f09004f;
+        public static final int review_pending_button=0x7f09004e;
+        public static final int scrollView1=0x7f090040;
+        public static final int skipButton=0x7f090050;
         public static final int state=0x7f09000a;
         public static final int street_address=0x7f090005;
         public static final int textView2=0x7f090014;
         public static final int textView5=0x7f09002a;
         public static final int textView6=0x7f09002c;
         public static final int timelinessRating=0x7f09002d;
+        public static final int timelinessRatingRateContractor=0x7f090045;
         public static final int update_account_info_button=0x7f090004;
         public static final int useBillingAddressButton=0x7f090022;
         public static final int username=0x7f09003d;
@@ -112,9 +120,10 @@ public final class R {
         public static final int activity_log_in=0x7f030005;
         public static final int activity_main=0x7f030006;
         public static final int activity_pending_jobs=0x7f030007;
-        public static final int activity_register=0x7f030008;
-        public static final int activity_review_contracts=0x7f030009;
-        public static final int activity_splash=0x7f03000a;
+        public static final int activity_rate_contractor=0x7f030008;
+        public static final int activity_register=0x7f030009;
+        public static final int activity_review_contracts=0x7f03000a;
+        public static final int activity_splash=0x7f03000b;
     }
     public static final class menu {
         public static final int account_info=0x7f080000;
@@ -125,9 +134,10 @@ public final class R {
         public static final int log_in=0x7f080005;
         public static final int main=0x7f080006;
         public static final int pending_jobs=0x7f080007;
-        public static final int register=0x7f080008;
-        public static final int review_contracts=0x7f080009;
-        public static final int splash=0x7f08000a;
+        public static final int rate_contractor=0x7f080008;
+        public static final int register=0x7f080009;
+        public static final int review_contracts=0x7f08000a;
+        public static final int splash=0x7f08000b;
     }
     public static final class string {
         public static final int _=0x7f050029;
@@ -144,10 +154,12 @@ public final class R {
         public static final int confirm=0x7f050019;
         public static final int confirm_new_password=0x7f05001e;
         public static final int confirm_password=0x7f050011;
+        public static final int contractor_name=0x7f05003e;
         public static final int create_job=0x7f05000b;
         public static final int dd=0x7f05002a;
         public static final int e_mail=0x7f050010;
         public static final int earliest_start_date=0x7f050027;
+        public static final int finish_date=0x7f05003f;
         public static final int friendliness=0x7f05002e;
         public static final int hello_world=0x7f050002;
         public static final int info=0x7f050006;
@@ -184,6 +196,7 @@ public final class R {
         public static final int title_activity_completed_jobs=0x7f050038;
         public static final int title_activity_info=0x7f05001f;
         public static final int title_activity_pending_jobs=0x7f050035;
+        public static final int title_activity_rate_contractor=0x7f05003d;
         public static final int title_activity_review_contracts=0x7f050031;
         public static final int title_activity_splash=0x7f050020;
         public static final int update=0x7f05001a;
