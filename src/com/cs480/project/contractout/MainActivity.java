@@ -10,6 +10,7 @@ import com.cs480.project.contractout.R;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
@@ -97,18 +98,28 @@ public class MainActivity extends Activity {
          timer.start();
       }
       else{
-         EditText temp = (EditText) findViewById(R.id.username);
-         temp.setText("Not Valid Password");
-         temp = (EditText) findViewById(R.id.password);
+         displayErrorDialog();
+         EditText temp = (EditText) findViewById(R.id.password);
          temp.setText("");
       }
    }
 
+   private void displayErrorDialog() {
+      AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+      dialogBuilder.setTitle("Wrong Password");
+      dialogBuilder.setMessage("The username/password combo was incorrect");
+      dialogBuilder.setPositiveButton("OK", null);
+      
+      AlertDialog dialog = dialogBuilder.create();
+      dialog.show();
+   }
+
    private boolean checkPassword(String user, String pass){
-      if(  true  )
+      if(  pass.length() != 0  ){
          return true;
-      else
+      }else{
          return false;
+      }
    }
 
    @Override
@@ -158,6 +169,13 @@ public class MainActivity extends Activity {
             }
          }
          catch (IOException e) {}
+      }else{
+         // Delete userInfo.txt
+         try {
+            File dir = getFilesDir();
+            File file = new File(dir, "userInfo.txt");
+            file.delete();
+          } catch (Exception e) {}
       }
    }
 

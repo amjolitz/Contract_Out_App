@@ -10,7 +10,6 @@ package com.cs480.project.contractout;
 public final class R {
     public static final class array {
         public static final int job_type_array=0x7f060000;
-        public static final int temporary_test_contracts_array=0x7f060001;
     }
     public static final class attr {
     }
@@ -38,7 +37,7 @@ public final class R {
         public static final int TextView01=0x7f090029;
         public static final int TextView02=0x7f090026;
         public static final int account_info_button=0x7f090035;
-        public static final int action_settings=0x7f090051;
+        public static final int action_settings=0x7f090057;
         public static final int additional_street_info=0x7f090007;
         public static final int billing_address_title=0x7f090006;
         public static final int change_password_button=0x7f09000b;
@@ -46,7 +45,7 @@ public final class R {
         public static final int city=0x7f090008;
         public static final int completed_jobs_return_button=0x7f090018;
         public static final int confirm_button_change_password=0x7f090013;
-        public static final int confirm_button_registration=0x7f09004c;
+        public static final int confirm_button_registration=0x7f090052;
         public static final int confirm_new_password=0x7f090011;
         public static final int contractor_name=0x7f090041;
         public static final int createJobConfirmButton=0x7f09002f;
@@ -87,18 +86,24 @@ public final class R {
         public static final int regestration_confirm_password=0x7f09004a;
         public static final int regestration_password=0x7f090049;
         public static final int register_button=0x7f090038;
+        public static final int registration_additional_street_info=0x7f09004c;
+        public static final int registration_city=0x7f09004d;
         public static final int registration_email=0x7f090048;
+        public static final int registration_phone_number=0x7f090050;
+        public static final int registration_state=0x7f09004e;
+        public static final int registration_street_address=0x7f09004b;
         public static final int registration_title=0x7f090001;
+        public static final int registration_zipcode=0x7f09004f;
         public static final int remember_user=0x7f09003a;
         public static final int return_button_account_info=0x7f090002;
         public static final int return_button_change_password=0x7f090012;
         public static final int return_button_info=0x7f090031;
-        public static final int return_button_registration=0x7f09004b;
-        public static final int review_completed_button=0x7f09004d;
-        public static final int review_contracts_return_button=0x7f09004f;
-        public static final int review_pending_button=0x7f09004e;
+        public static final int return_button_registration=0x7f090051;
+        public static final int review_completed_button=0x7f090053;
+        public static final int review_contracts_return_button=0x7f090055;
+        public static final int review_pending_button=0x7f090054;
         public static final int scrollView1=0x7f090040;
-        public static final int skipButton=0x7f090050;
+        public static final int skipButton=0x7f090056;
         public static final int state=0x7f09000a;
         public static final int street_address=0x7f090005;
         public static final int textView2=0x7f090014;

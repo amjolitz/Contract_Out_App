@@ -61,7 +61,8 @@ public class CreateJobActivity extends Activity {
       confirmButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            // Create Job
+            postJob(jobType, description, address, eairlyStartMonth, eairlyStartDay,
+                    latestStartMonth, latestStartDay, maxPrice, friendliness, quality, timeliness);
          }
       });
 // Logic for when the Use Billing Address button is pressed on the create job screen
@@ -73,6 +74,26 @@ public class CreateJobActivity extends Activity {
       });
    } 
    
+   protected void postJob(Spinner jobType, EditText description, EditText address, 
+                          EditText eairlyStartMonth, EditText eairlyStartDay, EditText latestStartMonth, 
+                          EditText latestStartDay, EditText maxPrice, RatingBar friendliness, 
+                          RatingBar quality, RatingBar timeliness) {
+      String type = jobType.getItemAtPosition(jobType.getLastVisiblePosition()).toString();
+      String desc = description.getText().toString();
+      String add = address.getText().toString();
+      int startMonth = Integer.valueOf(eairlyStartMonth.getText().toString());
+      int startDay = Integer.valueOf(eairlyStartDay.getText().toString());
+      int lateStartMonth = Integer.valueOf(latestStartMonth.getText().toString());
+      int lateStartDay = Integer.valueOf(latestStartMonth.getText().toString());
+      Double price = Double.valueOf(maxPrice.getText().toString());
+      double friend = friendliness.getRating();
+      double qual = quality.getRating();
+      double time = timeliness.getRating();
+      
+      description.setText(type + add + startMonth + startDay + lateStartMonth + lateStartDay + "\n" +
+                          price + friend + qual + time);
+   }
+
    @Override
    protected void onPause() {
       // TODO Auto-generated method stub

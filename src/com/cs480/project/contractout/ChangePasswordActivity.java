@@ -2,6 +2,7 @@ package com.cs480.project.contractout;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -41,14 +42,47 @@ public class ChangePasswordActivity extends Activity {
       confirmButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            verifyPasswordChange(); 
+            verifyPasswordChange(oldPass, newPass, confirmNewPass); 
          }
       });
    }
    
-   protected void verifyPasswordChange() {
-      // TODO Auto-generated method stub
+   protected void verifyPasswordChange(EditText oldPass, EditText newPass, EditText confirmNewPass) {
+      if(!newPass.getText().toString().equals(confirmNewPass.getText().toString()) ||
+         newPass.getText().toString().length() == 0){
+         displayErrorDialog();
+         oldPass.setText("");
+         newPass.setText("");
+         confirmNewPass.setText("");
+         return;
+      }
+      updatePassword(newPass);
+      Thread timer = new Thread(){
+         public void run(){
+            try{
+               sleep(100);
+               onPause();
+            }catch(Exception e){
+               e.printStackTrace();
+            }
+         }
+      };
+      timer.start();  
+   }
+
+   private void updatePassword(EditText newPass) {
+      String newPassword = newPass.getText().toString();
       
+   }
+
+   private void displayErrorDialog() {
+      AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+      dialogBuilder.setTitle("Invalid Information");
+      dialogBuilder.setMessage("Make sure that your old password is correct and your new one is the same in both fields.");
+      dialogBuilder.setPositiveButton("OK", null);
+      
+      AlertDialog dialog = dialogBuilder.create();
+      dialog.show();       
    }
 
    @Override

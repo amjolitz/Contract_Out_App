@@ -67,12 +67,6 @@
         <item>Plumbing</item>
         <item>Pest Removal</item>
     </string-array>
-    <string-array name="temporary_test_contracts_array">
-        <item>Bill Smith Plumbing</item>
-        <item>Stanly Steamers</item>
-        <item>Gomez and Sons Gardeners</item>
-        <item>Ed Fitzpatricks Window Repair</item>
-    </string-array>
 
     <string name="title_activity_review_contracts">ReviewContractsActivity</string>
     <string name="completed_contracts">Completed Contracts</string>

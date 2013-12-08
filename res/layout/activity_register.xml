@@ -69,7 +69,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/street_address"
+            android:id="@+id/registration_street_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/billing_address_title"
@@ -80,12 +80,12 @@
             android:inputType="textEmailAddress|textPostalAddress" />
 
         <EditText
-            android:id="@+id/additional_street_info"
+            android:id="@+id/registration_additional_street_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/street_address"
-            android:layout_alignRight="@+id/street_address"
-            android:layout_below="@+id/street_address"
+            android:layout_alignLeft="@+id/registration_street_address"
+            android:layout_alignRight="@+id/registration_street_address"
+            android:layout_below="@+id/registration_street_address"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/additional_info_optional_"
@@ -93,44 +93,44 @@
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/city"
+            android:id="@+id/registration_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/additional_street_info"
-            android:layout_below="@+id/additional_street_info"
+            android:layout_alignLeft="@+id/registration_additional_street_info"
+            android:layout_below="@+id/registration_additional_street_info"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/city"
             android:inputType="text|textEmailAddress" />
 
         <EditText
-            android:id="@+id/state"
+            android:id="@+id/registration_state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/regestration_confirm_password"
-            android:layout_below="@+id/city"
+            android:layout_below="@+id/registration_city"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/state_province"
             android:inputType="text|textEmailAddress" />
 
         <EditText
-            android:id="@+id/zipcode"
+            android:id="@+id/registration_zipcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/city"
-            android:layout_below="@+id/state"
+            android:layout_alignLeft="@+id/registration_city"
+            android:layout_below="@+id/registration_state"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/zip_postal_code"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/phone_number"
+            android:id="@+id/registration_phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/zipcode"
-            android:layout_below="@+id/zipcode"
+            android:layout_alignLeft="@+id/registration_zipcode"
+            android:layout_below="@+id/registration_zipcode"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="@string/phone_number"
@@ -140,8 +140,8 @@
             android:id="@+id/return_button_registration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/phone_number"
-            android:layout_below="@+id/phone_number"
+            android:layout_alignLeft="@+id/registration_phone_number"
+            android:layout_below="@+id/registration_phone_number"
             android:layout_marginTop="40dp"
             android:text="@string/back" />
 
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/return_button_registration"
-            android:layout_alignRight="@+id/phone_number"
+            android:layout_alignRight="@+id/registration_phone_number"
             android:text="@string/confirm" />
 
     </RelativeLayout>

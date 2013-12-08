@@ -1,8 +1,27 @@
 1 Figure out how to save and retrieve data from database to populate user data
-2 Create Rate Contractor Page/Job Review Page
 3 Figure out how to alert the user when they can select a contractor
 4 Create the page that the users will see when selecting a contractor
 5 Create a list of what the application requires (Storage, Network communication, System Tools)
 6 Implment requirement requests
-7 Combine Rate Contractor with Job Review Pages and change button accordingly
-8 Add remaining stubs for database interactions
+
+Database Interactions
+1.) Main Screen
+	-When Log In is pressed the strings under username and password must be linked to a user in the database
+2.) Register Account Screen
+	-When Confirm is pressed the string under email must be compared to the database's list of usernames and reject the addition if it is already present.
+	-If the username is not rejected the information from the remaining filds must be compiled and used to create a new entry on the user table of the database.
+3.) Account Info Screen
+	-When the update button is pressed the values must be collected and used to update that user's information in the database.  (most fields reject empty strings)
+4.) Change Password Screen
+	-The entered old password must be validated against the user's password in the database
+	-If the validation is a success then the user's password must be updated in the database.
+5.) Pending Jobs Page
+	-The displayed field must be populated with every job connected to the user that has not reached its completion date (jobs that have no contractor and ones which arn't done yet)
+6.) Rate Completed Jobs Page
+	-Must collect a list of all completed jobs connected to the user that DO NOT HAVE A RATING.  
+		Required information: Key for that job, Contractors name, and completion date
+	-This list is then used to populate the page in 3 job increments
+7.) Rate Contractor Page
+	-When the confirm button is pressed the ratings must be linked to the contractor specified and added to their list in the database
+	
+*.) We will also likely need a notification page for when the user selects their contractor but i don't know how that will work yet.
