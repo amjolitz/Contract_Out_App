@@ -52,6 +52,7 @@ public class InspectContractorActivity extends Activity {
             Thread timer = new Thread(){
                public void run(){
                   try{
+                     setResult(RESULT_OK, null);
                      sleep(100);
                      onPause();
                   }catch(Exception e){

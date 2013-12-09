@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class ContractOffersActivity extends Activity {
    boolean destroyFlag;
+   final int REQUEST_EXIT = 11111;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +57,7 @@ public class ContractOffersActivity extends Activity {
                      openAccountInfoActivity.putExtra("Price", "100");
                      openAccountInfoActivity.putExtra("key", "placeholder");
 // End Placholder Code
-                     startActivity(openAccountInfoActivity);
+                     startActivityForResult(openAccountInfoActivity, REQUEST_EXIT);
                   }catch(Exception e){
                      e.printStackTrace();
                   }
@@ -79,7 +80,7 @@ public class ContractOffersActivity extends Activity {
                      openAccountInfoActivity.putExtra("Price", "200");
                      openAccountInfoActivity.putExtra("key", "placeholder");
 // End Placholder Code
-                     startActivity(openAccountInfoActivity);
+                     startActivityForResult(openAccountInfoActivity, REQUEST_EXIT);
                   }catch(Exception e){
                      e.printStackTrace();
                   }
@@ -102,7 +103,7 @@ public class ContractOffersActivity extends Activity {
                      openAccountInfoActivity.putExtra("Price", "300");
                      openAccountInfoActivity.putExtra("key", "placeholder");
 // End Placholder Code
-                     startActivity(openAccountInfoActivity);
+                     startActivityForResult(openAccountInfoActivity, REQUEST_EXIT);
                   }catch(Exception e){
                      e.printStackTrace();
                   }
@@ -120,6 +121,17 @@ public class ContractOffersActivity extends Activity {
       super.onPause();
       if(destroyFlag)
          finish();
+   }
+   
+   @Override
+   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+       if (requestCode == REQUEST_EXIT) {
+            if (resultCode == RESULT_OK) {
+               this.finish();
+
+            }
+        }
    }
 
    @Override
