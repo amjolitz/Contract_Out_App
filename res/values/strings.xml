@@ -83,5 +83,12 @@
     <string name="title_activity_rate_contractor">RateContractorActivity</string>
     <string name="contractor_name">Contractor Name</string>
     <string name="finish_date">Finish Date</string>
+    <string name="accept_contract_offers">Accept Contract Offers</string>
+    <string name="title_activity_contract_offers">ContractOffersActivity</string>
+    <string name="avaliable_contractors">Avaliable Contractors</string>
+    <string name="inspect">Inspect</string>
+    <string name="title_activity_inspect_contractor">InspectContractorActivity</string>
+    <string name="select_for_contract">Select for Contract</string>
+    <string name="price_">Price ($)</string>
 
 </resources>

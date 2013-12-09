@@ -19,8 +19,9 @@
         android:id="@+id/review_completed_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/review_pending_button"
+        android:layout_alignRight="@+id/review_pending_button"
         android:layout_below="@+id/review_pending_button"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp"
         android:text="@string/rate_completed_jobs" />
 
@@ -28,7 +29,8 @@
         android:id="@+id/review_pending_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/review_completed_button"
+        android:layout_alignLeft="@+id/Job1"
+        android:layout_alignRight="@+id/Job1"
         android:layout_below="@+id/Job1"
         android:layout_marginTop="39dp"
         android:text="@string/review_pending_jobs" />
@@ -37,9 +39,19 @@
         android:id="@+id/review_contracts_return_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/review_completed_button"
+        android:layout_below="@+id/accept_contract_offers_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="42dp"
         android:text="@string/back" />
+
+    <Button
+        android:id="@+id/accept_contract_offers_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/review_completed_button"
+        android:layout_alignRight="@+id/review_completed_button"
+        android:layout_below="@+id/review_completed_button"
+        android:layout_marginTop="40dp"
+        android:text="@string/accept_contract_offers" />
 
 </RelativeLayout>

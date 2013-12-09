@@ -1,8 +1,6 @@
 1 Figure out how to save and retrieve data from database to populate user data
-3 Figure out how to alert the user when they can select a contractor
-4 Create the page that the users will see when selecting a contractor
-5 Create a list of what the application requires (Storage, Network communication, System Tools)
-6 Implment requirement requests
+5 Create a list of what the application requires (Storage, Network communication, System Tools) (Maybe Done)
+6 Implment requirement requests (Maybe Done)
 
 Database Interactions
 1.) Main Screen
@@ -23,5 +21,8 @@ Database Interactions
 	-This list is then used to populate the page in 3 job increments
 7.) Rate Contractor Page
 	-When the confirm button is pressed the ratings must be linked to the contractor specified and added to their list in the database
-	
-*.) We will also likely need a notification page for when the user selects their contractor but i don't know how that will work yet.
+8.) Contract Offers Page
+	-Must be able to populate with offers that fit the jobs requirements and have received confirmation from contractor.  This will only display their name but
+	 it will require the price they will do the job for as well to pass on to the next screen.
+9.) Inspcet Contractor Page
+	-Should the user confirm the job this page must link the observed contractor with the refrenced job.

@@ -1,8 +1,14 @@
 package com.cs480.project.contractout;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.text.InputType;
 import android.view.Menu;
 import android.view.View;
@@ -14,6 +20,8 @@ import android.widget.RatingBar;
 import android.widget.Spinner;
 
 public class CreateJobActivity extends Activity {
+   
+   NotificationManager nm;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +47,8 @@ public class CreateJobActivity extends Activity {
       description.setLines(6); // desired number of lines
       description.setHorizontallyScrolling(false);
       description.setImeOptions(EditorInfo.IME_ACTION_DONE);
+      
+      nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
       
 // Logic for when the return button is pressed on the create job screen
       returnButton.setOnClickListener(new View.OnClickListener() {
@@ -78,27 +88,62 @@ public class CreateJobActivity extends Activity {
                           EditText eairlyStartMonth, EditText eairlyStartDay, EditText latestStartMonth, 
                           EditText latestStartDay, EditText maxPrice, RatingBar friendliness, 
                           RatingBar quality, RatingBar timeliness) {
-      String type = jobType.getItemAtPosition(jobType.getLastVisiblePosition()).toString();
-      String desc = description.getText().toString();
-      String add = address.getText().toString();
-      int startMonth = Integer.valueOf(eairlyStartMonth.getText().toString());
-      int startDay = Integer.valueOf(eairlyStartDay.getText().toString());
-      int lateStartMonth = Integer.valueOf(latestStartMonth.getText().toString());
-      int lateStartDay = Integer.valueOf(latestStartMonth.getText().toString());
-      Double price = Double.valueOf(maxPrice.getText().toString());
-      double friend = friendliness.getRating();
-      double qual = quality.getRating();
-      double time = timeliness.getRating();
+      String type, desc, add;
+      int startMonth, startDay, lateStartMonth, lateStartDay;
+      double price, friend, qual, time;
+      try{
+         type = jobType.getItemAtPosition(jobType.getLastVisiblePosition()).toString();
+         desc = description.getText().toString();
+         add = address.getText().toString();
+         startMonth = Integer.valueOf(eairlyStartMonth.getText().toString());
+         startDay = Integer.valueOf(eairlyStartDay.getText().toString());
+         lateStartMonth = Integer.valueOf(latestStartMonth.getText().toString());
+         lateStartDay = Integer.valueOf(latestStartMonth.getText().toString());
+         price = Double.valueOf(maxPrice.getText().toString());
+         friend = friendliness.getRating();
+         qual = quality.getRating();
+         time = timeliness.getRating();
+      }catch(Exception e){
+         AlertDialog.Builder errorBuilder = new AlertDialog.Builder(this);
+         errorBuilder.setTitle("Job not posted");
+         errorBuilder.setMessage("Please check that all required fields are filled");
+         errorBuilder.setPositiveButton("OK", null);
+
+         AlertDialog errorDialog = errorBuilder.create();
+         errorDialog.show();
+         return;
+      }
+      
+      final int uniqueId =  (int) (startMonth + startDay + lateStartMonth + lateStartDay + price);
+      Handler handler = new Handler();
+      handler.postDelayed(
+          new Runnable() {
+              public void run() {
+                notifyUser(uniqueId);
+              }
+          }, 10000);
       
       description.setText(type + add + startMonth + startDay + lateStartMonth + lateStartDay + "\n" +
                           price + friend + qual + time);
    }
+   
+   private void notifyUser(int uniqueId)
+   {
+      Intent intent = new Intent(this, ContractOffersActivity.class);
+      intent.putExtra("Job ID", uniqueId);
+      PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+      String body = "This is a notification of pending contract offers";
+      String title = "Contract Out Notification";
+      Notification n = new Notification(R.drawable.ic_launcher, body, System.currentTimeMillis());
+      n.setLatestEventInfo(this, title, body, pi);
+      n.defaults = Notification.DEFAULT_ALL;
+      nm.notify(uniqueId, n);
+   }
 
    @Override
    protected void onPause() {
-      // TODO Auto-generated method stub
       super.onPause();
-// Hide on screen keyboard      
+      // Hide on screen keyboard      
       InputMethodManager im = (InputMethodManager) this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
       im.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
       finish();

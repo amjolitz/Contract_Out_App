@@ -18,8 +18,9 @@ public class ReviewContractsActivity extends Activity {
       final Button backButton = (Button) findViewById(R.id.review_contracts_return_button);
       final Button pendingButton = (Button) findViewById(R.id.review_pending_button);
       final Button completedButton = (Button) findViewById(R.id.review_completed_button);
+      final Button acceptContractOffersButton = (Button) findViewById(R.id.accept_contract_offers_button);
       
-// Logic for when the Log Out button is pressed
+
       backButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -37,7 +38,7 @@ public class ReviewContractsActivity extends Activity {
             timer.start(); 
          }
       }); 
-// Logic for when the Account Info button is pressed on the main screen
+
       pendingButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -56,7 +57,7 @@ public class ReviewContractsActivity extends Activity {
          }
       });
       
-// Logic for when the Create Job button is pressed on the main screen
+
       completedButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -65,6 +66,24 @@ public class ReviewContractsActivity extends Activity {
                   try{
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.COMPLETEDJOBS");
+                     startActivity(openAccountInfoActivity);
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      });
+
+      acceptContractOffersButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     Intent openAccountInfoActivity = new Intent("android.intent.action.CONTRACTOFFERS");
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();

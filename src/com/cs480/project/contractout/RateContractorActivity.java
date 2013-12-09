@@ -26,7 +26,7 @@ public class RateContractorActivity extends Activity {
       contractorName.setText(extras.getString("Contractor Name"));
       finishDate.setText(extras.getString("End Date"));
       
-   // Logic for when the Return button is pressed
+// Logic for when the Return button is pressed
       backButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -43,7 +43,33 @@ public class RateContractorActivity extends Activity {
             timer.start(); 
          }
       }); 
+// Logic for when the Confirm button is pressed
+      confirmButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            uploadRating(friendliness.getRating(), quality.getRating(), timeliness.getRating());
+            Thread timer = new Thread(){
+               public void run(){
+                  try{
+                     sleep(100);
+                     onPause();
+                  }catch(Exception e){
+                     e.printStackTrace();
+                  }
+               }
+            };
+            timer.start(); 
+         }
+      }); 
           
+   }
+
+   protected void uploadRating(float friendliness, float quality, float timeliness) {
+      Bundle extras = getIntent().getExtras();
+      String key = extras.getString("key");
+      String name = extras.getString("Contractor Name");
+      String date = extras.getString("End Date");
+      
    }
 
    @Override

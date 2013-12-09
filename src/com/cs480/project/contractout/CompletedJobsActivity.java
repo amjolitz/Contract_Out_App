@@ -53,7 +53,10 @@ public class CompletedJobsActivity extends Activity {
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
                      openAccountInfoActivity.putExtra("Contractor Name", job1.getText());
+// Placeholder Code will require Revision
                      openAccountInfoActivity.putExtra("End Date", "12/21/2013");
+                     openAccountInfoActivity.putExtra("key", "placeholder");
+// End Placholder Code
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();
@@ -73,7 +76,10 @@ public class CompletedJobsActivity extends Activity {
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
                      openAccountInfoActivity.putExtra("Contractor Name", job2.getText());
+// Placeholder Code will require Revision
                      openAccountInfoActivity.putExtra("End Date", "12/22/2013");
+                     openAccountInfoActivity.putExtra("key", "placeholder");
+// End Placholder Code
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();
@@ -93,7 +99,10 @@ public class CompletedJobsActivity extends Activity {
                      sleep(100);
                      Intent openAccountInfoActivity = new Intent("android.intent.action.RATECONTRACTOR");
                      openAccountInfoActivity.putExtra("Contractor Name", job3.getText());
+// Placeholder Code will require Revision
                      openAccountInfoActivity.putExtra("End Date", "12/23/2013");
+                     openAccountInfoActivity.putExtra("key", "placeholder");
+// End Placholder Code
                      startActivity(openAccountInfoActivity);
                   }catch(Exception e){
                      e.printStackTrace();
