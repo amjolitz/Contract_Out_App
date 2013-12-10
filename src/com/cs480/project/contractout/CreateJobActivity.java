@@ -22,6 +22,7 @@ import android.widget.Spinner;
 public class CreateJobActivity extends Activity {
    
    NotificationManager nm;
+   Boolean destroyFlag;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,8 @@ public class CreateJobActivity extends Activity {
       final RatingBar quality = (RatingBar) findViewById(R.id.qualityRating);
       final RatingBar timeliness = (RatingBar) findViewById(R.id.timelinessRating);
       
+      destroyFlag = false;
+      
       description.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
       description.setSingleLine(true);
       description.setLines(6); // desired number of lines
@@ -54,6 +57,7 @@ public class CreateJobActivity extends Activity {
       returnButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
+            destroyFlag = true;
             Thread timer = new Thread(){
                public void run(){
                   try{
@@ -71,6 +75,7 @@ public class CreateJobActivity extends Activity {
       confirmButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
+            destroyFlag = true;
             postJob(jobType, description, address, eairlyStartMonth, eairlyStartDay,
                     latestStartMonth, latestStartDay, maxPrice, friendliness, quality, timeliness);
          }
@@ -146,7 +151,8 @@ public class CreateJobActivity extends Activity {
       // Hide on screen keyboard      
       InputMethodManager im = (InputMethodManager) this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
       im.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-      finish();
+      if(destroyFlag)
+         finish();
    }
 
 
