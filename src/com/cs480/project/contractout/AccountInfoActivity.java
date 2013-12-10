@@ -1,5 +1,11 @@
 package com.cs480.project.contractout;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,9 +16,11 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class AccountInfoActivity extends Activity {
    Boolean destroyFlag;
+   private String[] userInfo = new String[9];
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +30,32 @@ public class AccountInfoActivity extends Activity {
       final Button returnButton = (Button) findViewById(R.id.return_button_account_info);
       final Button updateButton = (Button) findViewById(R.id.update_account_info_button);
       final Button changePassButton = (Button) findViewById(R.id.change_password_button);
+      final TextView username = (TextView) findViewById(R.id.email_account_info);
       final EditText address = (EditText) findViewById(R.id.street_address);
       final EditText address2 = (EditText) findViewById(R.id.additional_street_info);
       final EditText city = (EditText) findViewById(R.id.city);
       final EditText state = (EditText) findViewById(R.id.state);
       final EditText zip = (EditText) findViewById(R.id.zipcode);
       final EditText phone = (EditText) findViewById(R.id.phone_number); 
+      
+//Get the text file
+      File file = new File(this.getFilesDir(), "userAccountInfo.txt");
+
+//Read text from file
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         userInfo[0] = br.readLine();  // dispose of user id
+         username.setText(userInfo[1] = br.readLine());
+         userInfo[2] = br.readLine();  // dispose of user password
+         userInfo[3] = br.readLine(); // dispose of full name
+         address.setText(br.readLine());
+         city.setText(br.readLine());
+         state.setText(br.readLine());
+         zip.setText(br.readLine());
+         phone.setText(br.readLine());
+      }
+      catch (IOException e) {}
+      
 //Logic for when the Return button is pressed on the Account Info page            
       returnButton.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -87,12 +115,24 @@ public class AccountInfoActivity extends Activity {
          displayError();
          return;
       }
-// Insert Logic for Updating user information at the database level
-//
-//
-//
-//
-// ------------------------------------------------------------------      
+      
+      userInfo[4] = addressS;
+      userInfo[5] = cityS;
+      userInfo[6] = stateS;
+      userInfo[7] = zipS;
+      userInfo[8] = phoneS;
+      
+      try{
+         FileOutputStream outputStream = openFileOutput("userAccountInfo.txt", Context.MODE_PRIVATE);
+         for(int i=0; i<9; i++)
+            outputStream.write((userInfo[i]+"\n").getBytes());
+         outputStream.close();
+      }catch(IOException e){
+         e.printStackTrace();
+      }
+      DatabaseInteractor.updateData("User;user_id=<" + userInfo[0] + ">;billing_address=<" + userInfo[4] + ">" + ">;billing_city=<" + userInfo[5] + ">" + 
+                                    ">;billing_state=<" + userInfo[6] + ">" + ">;billing_zip=<" + userInfo[7] + ">" + ">;user_phone=<" + userInfo[8] + ">");
+      
       Thread timer = new Thread(){
          public void run(){
             try{

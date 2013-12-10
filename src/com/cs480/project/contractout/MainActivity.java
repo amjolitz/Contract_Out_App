@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.cs480.project.contractout.R;
 
@@ -83,7 +85,27 @@ public class MainActivity extends Activity {
  
    // temporary method will likely be split into two methods later on   
    private void verifyLogIn(EditText user, EditText pass){
-      if(checkPassword(user.getText().toString(), pass.getText().toString())){
+      String tempString = "user_name=<" + user.getText().toString() +">;password=<" + pass.getText().toString() + ">";
+      String userInfo = DatabaseInteractor.logIn(tempString);
+      
+      if(!userInfo.equals("False")){
+         try {
+            String[] stringArray = new String[9];
+            Pattern p = Pattern.compile("\\<(.*?)\\>");
+            Matcher m = p.matcher(userInfo);
+            int i = 0;
+            while(m.find())
+            {
+                stringArray[i] = m.group(1);
+                i++;
+            }        
+            FileOutputStream outputStream = openFileOutput("userAccountInfo.txt", Context.MODE_PRIVATE);
+            for(i=0; i<9; i++)
+               outputStream.write((stringArray[i]+"\n").getBytes());
+            outputStream.close();
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
          Thread timer = new Thread(){
             public void run(){
                try{
