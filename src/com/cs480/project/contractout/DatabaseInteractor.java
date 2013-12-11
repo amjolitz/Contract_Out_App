@@ -8,11 +8,13 @@ public class DatabaseInteractor extends Activity{
    // Globals
    static SQLiteDatabase db;
 	
-   public static String logIn(String args){
-      if(args.equals("user_name=<danialr@gmail.com>;password=<adzq>"))
-         return "<123456>, <danialr@gmail.com>, <adzq>, <Danial Racker>, <1234 Fake St>, <Springfield>, <Illinois>, <12334>, <9515551234>";
-      else
-         return "False";
+   /*
+    * Checks username and password against the database to ensure that there is a matching 
+    * entry.
+    */
+   public static String logIn(String username, String password) {
+	  String whereClause = "username='" + username + "' and password='" + password + "'";
+	  curs = query ("Users", null, whereClause, [], null, null, null, null);
    }
    
    public static String[][] getData(String args){
@@ -37,7 +39,7 @@ public class DatabaseInteractor extends Activity{
    }
 
    public static boolean initializer(String filepath) {
-      String fileName = filepath + "user_data.db";    
+      String fileName = filepath + "user_data.db";
       db = SQLiteDatabase.openOrCreateDatabase(fileName, null);
       return true;
    }
