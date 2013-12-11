@@ -136,14 +136,6 @@ public class MainActivity extends Activity {
       dialog.show();
    }
 
-   private boolean checkPassword(String user, String pass){
-      if(  pass.length() != 0  ){
-         return true;
-      }else{
-         return false;
-      }
-   }
-
    @Override
    protected void onPause() {
       // TODO Auto-generated method stub
@@ -166,6 +158,14 @@ public class MainActivity extends Activity {
             e.printStackTrace();
           }
       }
+      else{
+         // Delete userInfo.txt
+         try {
+            File dir = getFilesDir();
+            File file = new File(dir, "userInfo.txt");
+            file.delete();
+          } catch (Exception e) {}
+      }
       username.setText("");
       password.setText("");
    }
@@ -174,31 +174,23 @@ public class MainActivity extends Activity {
    protected void onResume() {
       // TODO Auto-generated method stub
       super.onResume();
-      if(((CheckBox) findViewById(R.id.remember_user)).isChecked()){
-         //Get the text file
-         File file = new File(this.getFilesDir(), "userInfo.txt");
+      //Get the text file
+      File file = new File(this.getFilesDir(), "userInfo.txt");
 
-         //Read text from file
-         try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String line;
+      //Read text from file
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         String line;
 
-            if ((line = br.readLine()) != null) {
-               ((EditText) findViewById(R.id.username)).setText(line);
-            }
-            if ((line = br.readLine()) != null) {
-               ((EditText) findViewById(R.id.password)).setText(line);
-            }
+         if ((line = br.readLine()) != null) {
+            ((EditText) findViewById(R.id.username)).setText(line);
          }
-         catch (IOException e) {}
-      }else{
-         // Delete userInfo.txt
-         try {
-            File dir = getFilesDir();
-            File file = new File(dir, "userInfo.txt");
-            file.delete();
-          } catch (Exception e) {}
+         if ((line = br.readLine()) != null) {
+            ((EditText) findViewById(R.id.password)).setText(line);
+         }
+         ((CheckBox) findViewById(R.id.remember_user)).setChecked(true);
       }
+      catch (IOException e) {}
    }
 
    @Override

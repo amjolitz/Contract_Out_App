@@ -1,5 +1,10 @@
 package com.cs480.project.contractout;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -15,6 +20,33 @@ public class PendingJobsActivity extends Activity {
       setContentView(R.layout.activity_pending_jobs);
       final Button backButton = (Button) findViewById(R.id.pending_jobs_return_button);
       final EditText list = (EditText) findViewById(R.id.Pending_Job_List);
+      String userId;
+      
+//Get the text file
+      File file = new File(this.getFilesDir(), "userAccountInfo.txt");
+
+//Read text from file
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         userId = br.readLine();
+      }catch (IOException e) {
+         e.printStackTrace();
+         return;
+      }
+      
+      String[][] jobList = DatabaseInteractor.getData("Jobs;creator=<" + userId + ">;end_date=");
+   
+//  Prints list of incomplete jobs (ones which have not reached its end date)
+//  Format: JobID  JobStartDate   SelectedContractor
+      list.append("ID\t\tStart Date\t\tContractor\n");
+      for(int i=1; i<jobList.length; i++){
+         String temp = jobList[i][4];
+         if (temp.length() == 8)
+            temp += " ";
+         if (temp.length() == 9)
+            temp += " ";
+         list.append(jobList[i][0] + "\t\t"+ temp + "\t\t" + jobList[i][10] + "\n");
+      }
       
 // Logic for when the Log Out button is pressed
       backButton.setOnClickListener(new View.OnClickListener() {

@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 public class AccountInfoActivity extends Activity {
    Boolean destroyFlag;
-   private String[] userInfo = new String[9];
+   private String[] userInfo = new String[10];
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -121,6 +121,7 @@ public class AccountInfoActivity extends Activity {
       userInfo[6] = stateS;
       userInfo[7] = zipS;
       userInfo[8] = phoneS;
+      userInfo[9] = address2S;
       
       try{
          FileOutputStream outputStream = openFileOutput("userAccountInfo.txt", Context.MODE_PRIVATE);
@@ -130,8 +131,8 @@ public class AccountInfoActivity extends Activity {
       }catch(IOException e){
          e.printStackTrace();
       }
-      DatabaseInteractor.updateData("User;user_id=<" + userInfo[0] + ">;billing_address=<" + userInfo[4] + ">" + ">;billing_city=<" + userInfo[5] + ">" + 
-                                    ">;billing_state=<" + userInfo[6] + ">" + ">;billing_zip=<" + userInfo[7] + ">" + ">;user_phone=<" + userInfo[8] + ">");
+      DatabaseInteractor.updateData("User;user_id=<" + userInfo[0] + ">;billing_address=<" + userInfo[4] + ">;billing_city=<" + userInfo[5] + 
+                                    ">;billing_state=<" + userInfo[6] + ">;billing_zip=<" + userInfo[7] + ">;user_phone=<" + userInfo[8] + ">");
       
       Thread timer = new Thread(){
          public void run(){

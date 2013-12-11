@@ -67,9 +67,10 @@ public class RateContractorActivity extends Activity {
    protected void uploadRating(float friendliness, float quality, float timeliness) {
       Bundle extras = getIntent().getExtras();
       String key = extras.getString("key");
-      String name = extras.getString("Contractor Name");
-      String date = extras.getString("End Date");
+      String key2 = extras.getString("jobKey");
       
+      DatabaseInteractor.updateData("Contractor_Ratings;contractor=<" + key + ">;job=<" + key2 + ">;rating_friendliness=<" + 
+                                     friendliness + ">;rating_quality=<" + quality + ">;rating_timeliness=<" + timeliness + ">");      
    }
 
    @Override

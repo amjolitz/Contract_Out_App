@@ -14,7 +14,7 @@ public class Splash extends Activity {
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      boolean success = DatabaseInteractor.initializer();
+      boolean success = DatabaseInteractor.initializer(getFilesDir().getAbsolutePath());
       setContentView(R.layout.activity_splash);
       final Button skipButton = (Button) findViewById(R.id.skipButton);
 // Logic for when the screen is touched at the splash screen

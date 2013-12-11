@@ -89,9 +89,10 @@ public class RegisterActivity extends Activity {
       return false;
    }   
    
-   protected void createNewAccount(String string, String string2, String string3, String string4, String string5, 
-                                   String string6, String string7, String string8) {
-      // TODO Auto-generated method stub
+   protected void createNewAccount(String username, String password, String address, String address2, String city, 
+                                   String state, String zip, String phone) {
+      DatabaseInteractor.insertData("User;username=<" + username + ">;password=<" + password + ">;billing_address=<" + address + ">;billing_city=<" + 
+                                    city + ">;billing_state=<" + state + ">;billing_zip=<" + zip + ">;user_phone=<" + phone + ">");
       
    }
 

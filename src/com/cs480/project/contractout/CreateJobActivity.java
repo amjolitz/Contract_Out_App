@@ -1,5 +1,11 @@
 package com.cs480.project.contractout;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Calendar;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -23,6 +29,7 @@ public class CreateJobActivity extends Activity {
    
    NotificationManager nm;
    Boolean destroyFlag;
+   String[] userInfo = new String[9];
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +40,14 @@ public class CreateJobActivity extends Activity {
       final Spinner jobType = (Spinner) findViewById(R.id.jobType);
       final EditText description = (EditText) findViewById(R.id.jobDescription);
       final EditText address = (EditText) findViewById(R.id.jobAddress);
+      final EditText city = (EditText) findViewById(R.id.jobCity);
+      final EditText zip = (EditText) findViewById(R.id.jobZip);
       final Button fillAddressButton = (Button) findViewById(R.id.useBillingAddressButton);
       final EditText eairlyStartMonth = (EditText) findViewById(R.id.eairliestMonth);
       final EditText eairlyStartDay = (EditText) findViewById(R.id.eairliestDay);
       final EditText latestStartMonth = (EditText) findViewById(R.id.latestStartMonth);
       final EditText latestStartDay = (EditText) findViewById(R.id.latestStartDay);
-      final EditText maxPrice = (EditText) findViewById(R.id.maxPrice);
+      final Spinner maxPrice = (Spinner) findViewById(R.id.maxPriceSpinner);
       final RatingBar friendliness = (RatingBar) findViewById(R.id.friendlinessRating);
       final RatingBar quality = (RatingBar) findViewById(R.id.qualityRating);
       final RatingBar timeliness = (RatingBar) findViewById(R.id.timelinessRating);
@@ -52,6 +61,25 @@ public class CreateJobActivity extends Activity {
       description.setImeOptions(EditorInfo.IME_ACTION_DONE);
       
       nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+      
+//Get the text file
+      File file = new File(this.getFilesDir(), "userAccountInfo.txt");
+
+//Read text from file
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         userInfo[0] = br.readLine();  // user id
+         userInfo[1] = br.readLine();  // username
+         userInfo[2] = br.readLine();  // user password
+         userInfo[3] = br.readLine(); // user full name
+         userInfo[4] = br.readLine(); // user address
+         userInfo[5] = br.readLine(); // user city
+         userInfo[6] = br.readLine(); // user state
+         userInfo[7] = br.readLine(); // user zip
+         userInfo[8] = br.readLine(); // user phone
+
+      }
+      catch (IOException e) {}
       
 // Logic for when the return button is pressed on the create job screen
       returnButton.setOnClickListener(new View.OnClickListener() {
@@ -77,37 +105,40 @@ public class CreateJobActivity extends Activity {
          public void onClick(View v) {
             destroyFlag = true;
             postJob(jobType, description, address, eairlyStartMonth, eairlyStartDay,
-                    latestStartMonth, latestStartDay, maxPrice, friendliness, quality, timeliness);
+                    latestStartMonth, latestStartDay, city, zip, maxPrice, friendliness, quality, timeliness);
          }
       });
 // Logic for when the Use Billing Address button is pressed on the create job screen
       fillAddressButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            address.setText("This is your billing address");
+            address.setText(userInfo[4]);
+            city.setText(userInfo[5]);
+            zip.setText(userInfo[7]);
          }
       });
    } 
    
    protected void postJob(Spinner jobType, EditText description, EditText address, 
                           EditText eairlyStartMonth, EditText eairlyStartDay, EditText latestStartMonth, 
-                          EditText latestStartDay, EditText maxPrice, RatingBar friendliness, 
-                          RatingBar quality, RatingBar timeliness) {
-      String type, desc, add;
-      int startMonth, startDay, lateStartMonth, lateStartDay;
-      double price, friend, qual, time;
+                          EditText latestStartDay, EditText cityField, EditText zipField, 
+                          Spinner maxPrice, RatingBar friendliness, RatingBar quality, RatingBar timeliness) {
+      String type, desc, add, city, zip, startMonth, startDay, lateStartMonth, lateStartDay, price, friend, qual, time;
+      
       try{
          type = jobType.getItemAtPosition(jobType.getLastVisiblePosition()).toString();
          desc = description.getText().toString();
          add = address.getText().toString();
-         startMonth = Integer.valueOf(eairlyStartMonth.getText().toString());
-         startDay = Integer.valueOf(eairlyStartDay.getText().toString());
-         lateStartMonth = Integer.valueOf(latestStartMonth.getText().toString());
-         lateStartDay = Integer.valueOf(latestStartMonth.getText().toString());
-         price = Double.valueOf(maxPrice.getText().toString());
-         friend = friendliness.getRating();
-         qual = quality.getRating();
-         time = timeliness.getRating();
+         city = cityField.getText().toString();
+         zip = zipField.getText().toString();
+         startMonth = eairlyStartMonth.getText().toString();
+         startDay = eairlyStartDay.getText().toString();
+         lateStartMonth = latestStartMonth.getText().toString();
+         lateStartDay = latestStartMonth.getText().toString();
+         price = jobType.getItemAtPosition(jobType.getLastVisiblePosition()).toString();
+         friend = Float.toString(friendliness.getRating());
+         qual = Float.toString(quality.getRating());
+         time = Float.toString(timeliness.getRating());
       }catch(Exception e){
          AlertDialog.Builder errorBuilder = new AlertDialog.Builder(this);
          errorBuilder.setTitle("Job not posted");
@@ -119,7 +150,8 @@ public class CreateJobActivity extends Activity {
          return;
       }
       
-      final int uniqueId =  (int) (startMonth + startDay + lateStartMonth + lateStartDay + price);
+      final int uniqueId = postJob(type, desc, add, city, zip, startMonth, startDay, lateStartMonth, lateStartDay, price, friend, qual, time);
+      
       Handler handler = new Handler();
       handler.postDelayed(
           new Runnable() {
@@ -128,10 +160,42 @@ public class CreateJobActivity extends Activity {
               }
           }, 10000);
       
-      description.setText(type + add + startMonth + startDay + lateStartMonth + lateStartDay + "\n" +
-                          price + friend + qual + time);
+      onPause();
    }
    
+   private int postJob(String type, String desc, String add, String city, String zip, String startMonth, String startDay, 
+                       String lateStartMonth, String lateStartDay, String price, String friend, String qual, String time) {
+//Get the text file
+      File file = new File(this.getFilesDir(), "userAccountInfo.txt");
+      String userId;
+
+//Read text from file
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         userId = br.readLine();  // dispose of user id
+      }
+      catch (IOException e) {
+         e.printStackTrace();
+         return 0;
+      }
+      
+      String jobType = DatabaseInteractor.getData("Job_Types;job_type_name=<" + type + ">")[0][0];
+      String priceRange = DatabaseInteractor.getData("Price_Ranges;price_range_text=<" + price + ">")[0][0];   
+      
+      DatabaseInteractor.insertData("Jobs;job_address=<" + add + ">;job_city=<" + city + ">;job_zip=<" + zip + 
+                                    ">;job_start_date=<" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+                                    ">;job_description=<" + desc + ">;job_zip=<" + zip + ">;creator=<" + userId + 
+                                    ">;job_type=<" + jobType + ">;price_range=<" + priceRange + ">");
+      
+      String temp = DatabaseInteractor.getData("Jobs;job_address=<" + add + ">;job_city=<" + city + ">;job_zip=<" + zip + 
+            ">;job_start_date=<" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+            ">;job_description=<" + desc + ">;job_zip=<" + zip + ">;creator=<" + userId + 
+            ">;job_type=<" + jobType + ">;price_range=<" + priceRange + ">")[0][0];
+
+      int tempInt = Integer.parseInt(temp);
+      return tempInt;
+   }
+
    private void notifyUser(int uniqueId)
    {
       Intent intent = new Intent(this, ContractOffersActivity.class);

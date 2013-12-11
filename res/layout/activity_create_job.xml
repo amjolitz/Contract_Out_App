@@ -1,6 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ScrollViewCreateJob"
+    android:id="@string/job_address"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -8,17 +8,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="1130dp" >
+        android:layout_height="1320dp" >
 
         <Spinner
             android:id="@+id/jobType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentTop="false"
             android:layout_alignRight="@+id/friendlinessRating"
+            android:layout_alignTop="@+id/TextView03"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="40dp"
             android:entries="@array/job_type_array"
             tools:listitem="@android:layout/preference_category" />
 
@@ -57,15 +58,6 @@
             android:ems="10"
             android:hint="@string/job_address"
             android:inputType="textPostalAddress" />
-
-        <Button
-            android:id="@+id/useBillingAddressButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/jobAddress"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="@string/use_billing_address" />
 
         <TextView
             android:id="@+id/Job1"
@@ -272,28 +264,75 @@
             android:id="@+id/Job2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/useBillingAddressButton"
-            android:layout_below="@+id/maxPrice"
-            android:layout_marginTop="30dp"
+            android:layout_below="@+id/maxPriceSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:text="@string/minimum_ratings"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="21sp" />
 
-        <EditText
-            android:id="@+id/maxPrice"
+        <Spinner
+            android:id="@+id/maxPriceSpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Job3"
-            android:layout_alignRight="@+id/Job3"
-            android:layout_below="@+id/latestStartMonth"
+            android:layout_alignLeft="@+id/jobAddress"
+            android:layout_alignRight="@+id/jobAddress"
+            android:layout_below="@+id/maxPriceTitle"
             android:layout_marginTop="20dp"
-            android:ellipsize="start"
+            android:entries="@array/price_range_array" />
+
+        <TextView
+            android:id="@+id/maxPriceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/latestStartMonth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/max_price"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/job_type"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/jobCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jobAddress"
+            android:layout_alignRight="@+id/jobAddress"
+            android:layout_below="@+id/jobAddress"
+            android:layout_marginTop="20dp"
             android:ems="10"
-            android:gravity="center_vertical|center_horizontal"
-            android:hint="@string/price_limit"
-            android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:hint="@string/job_city" />
+
+        <EditText
+            android:id="@+id/jobZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jobCity"
+            android:layout_alignRight="@+id/jobCity"
+            android:layout_below="@+id/jobCity"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/job_zip"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/useBillingAddressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobZip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/use_billing_address" />
 
     </RelativeLayout>
 

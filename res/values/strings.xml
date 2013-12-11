@@ -59,13 +59,24 @@
     <string name="timeliness">Timeliness</string>
 
     <string-array name="job_type_array">
-        <item>Job Type</item>
         <item>Cleaning</item>
         <item>Yardwork</item>
         <item>General Repairs</item>
         <item>Home Improvements</item>
         <item>Plumbing</item>
         <item>Pest Removal</item>
+    </string-array>
+    
+    <string-array name="price_range_array">
+        <item>$0-$50</item>
+        <item>$50-$100</item>
+        <item>$100-$250</item>
+        <item>$250-$500</item>
+        <item>$500-$750</item>
+        <item>$750-$1000</item>
+        <item>$1000-$1500</item>
+        <item>$1500-$3000</item>
+        <item>>$3000+</item>
     </string-array>
 
     <string name="title_activity_review_contracts">ReviewContractsActivity</string>
@@ -85,10 +96,14 @@
     <string name="finish_date">Finish Date</string>
     <string name="accept_contract_offers">Accept Contract Offers</string>
     <string name="title_activity_contract_offers">ContractOffersActivity</string>
-    <string name="avaliable_contractors">Avaliable Contractors</string>
+    <string name="avaliable_contractors">Available Contractors</string>
     <string name="inspect">Inspect</string>
     <string name="title_activity_inspect_contractor">InspectContractorActivity</string>
     <string name="select_for_contract">Select for Contract</string>
+    <string name="max_price">Price Range</string>
+    <string name="job_type">Job Type</string>
+    <string name="job_city">Job City</string>
+    <string name="job_zip">Job Zip</string>
     <string name="price_">Price ($)</string>
 
 </resources>
