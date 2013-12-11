@@ -1,0 +1,7 @@
+job_type_id	job_type_name
+10	Cleaning
+20	Yardwork
+30	General Repairs
+40	Home Improvements
+50	Plumbing
+60	Pest Removal

@@ -19,23 +19,16 @@ public class DatabaseInteractor extends Activity {
     * entry.
     */
    public static String logIn(String username, String password) {
-	  String fileName = "TSV_Users.txt";
-	  String[][] data = readFile(fileName);
+	  String[][] users = readFile("TSV_Users.txt");
+	  String[][] contractors = readFile("TSV_Contractors.txt");
+	  String[][] jobs = readFile("TSV_Jobs.txt");
+	  String[][] Zips = readFile("TSV_Zips.txt");
+	  
 	  // Dump file into array (see Alex?)
 	  // Search array for matching username and password
 	  // return "False" or string in Alex's format with <>'s
    }
    
-   public static String[][] getData(String args) {
-//      String whereClause = "username='" + username + "' and password='" + password + "'";
-//      Cursor curs = db.query ("Users", null, whereClause, null, null, null, null, null);
-//      return "False";
-      if(username.equals("danialr@gmail.com") && password.equals("adzq"))
-         return "<123456>, <danialr@gmail.com>, <adzq>, <Danial Racker>, <1234 Fake St>, <Springfield>, <Illinois>, <12334>, <9515551234>";
-      else
-         return "False";
-   }
-
    public static String[][] getData(String args){
       String[][] temp = new String[3][];
       if(args.equals("Jobs;creator=<123456>;end_date=")){
