@@ -183,7 +183,7 @@ public class CreateJobActivity extends Activity {
       String jobType = DatabaseInteractor.getData("Job_Types;job_type_name=" + type + "")[0][0];
       String priceRange = DatabaseInteractor.getData("Price_Ranges;price_range_text=" + price + "")[0][0];   
       
-      DatabaseInteractor.insertData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
+      int jobId = DatabaseInteractor.insertData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
                                     ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
                                     ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
                                     ";job_type=" + jobType + ";price_range=" + priceRange + "");
@@ -192,6 +192,7 @@ public class CreateJobActivity extends Activity {
             ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
             ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
             ";job_type=" + jobType + ";price_range=" + priceRange + "")[0][0];
+
       priceId = priceRange;
 
       int tempInt = Integer.parseInt(temp);
