@@ -1,19 +1,17 @@
 package com.cs480.project.contractout;
 
-import java.io.IOException;
-
 import android.app.Activity;
 import android.content.res.*;
 import android.content.*;
 //import android.database.Cursor;
 //import android.database.sqlite.*;
-import android.os.ParcelFileDescriptor.AutoCloseInputStream;
 
 public class DatabaseInteractor extends Activity {
    
    // Globals
    static String PATH;
-   static AssetManager assetMan;
+   AssetManager assetMan;
+   
 //   AssetFileDescriptor file;
 //   SQLiteDatabase db;
 	
@@ -21,7 +19,7 @@ public class DatabaseInteractor extends Activity {
     * Checks username and password against the database to ensure that there is a matching 
     * entry.
     */
-   public static String logIn(String username, String password) throws IOException {
+   public static String logIn(String username, String password) {
 	  String[][] users = readFile("TSV_Users.txt");
 	  String[][] contractors = readFile("TSV_Contractors.txt");
 	  String[][] jobs = readFile("TSV_Jobs.txt");
@@ -30,7 +28,6 @@ public class DatabaseInteractor extends Activity {
 	  // Dump file into array (see Alex?)
 	  // Search array for matching username and password
 	  // return "False" or string in Alex's format with <>'s
-	  return "False";
    }
    
    public static String[][] getData(String args){
@@ -54,9 +51,10 @@ public class DatabaseInteractor extends Activity {
       return 0;
    }
 
-   public static boolean initializer(String filepath, Context con) {
+   public static boolean initializer(String filepath) {
       PATH = filepath;
-      assetMan = con.getAssets();
+//      Context context = new Context();
+//      assetMan = context.getAssets();
 //      String fileName = "user_data.db";
 //      file = assetMan.openFd(fileName); 
 //      db = SQLiteDatabase.openOrCreateDatabase(file, null);
@@ -71,17 +69,14 @@ public class DatabaseInteractor extends Activity {
     * Searches the asset manager for fileName, opens it, reads its contents, and converts 
     * them into a 2-d array of Strings.
     */
-   // @throws IOException
-   private static String[][] readFile(String fileName) throws IOException {
-	  AssetFileDescriptor file = assetMan.openFd(fileName); 
-	  AutoCloseInputStream input = new AssetFileDescriptor.AutoCloseInputStream(file);
+   private String[][] readFile(String fileName) {
+//	  AssetFileDescriptor file = assetMan.openFd(fileName); 
+//	  AutoCloseInputStream input = new AssetFileDescriptor.AutoCloseInputStream(file);
+	  InputStream input = getResources().openRawResource(R.raw.TSV_Users); 
 	  byte[] buffer = new byte[10000000];
 	  input.read(buffer);
-	  String fileData = new String(buffer, "UTF-8");
-	  String[] data_1d = fileData.split("\r\n");
-	  String[][] data = new String[data_1d.length][15];
-	  for (int i=0; i<data_1d.length; i++)
-	     data[i] = data_1d[i].split("\t");
+	  String fileData = new String(bytes, "UTF-8");
+	  String[][] data = fileData.split("\r\n").split("\t");
 	  return data;
    }
 }
