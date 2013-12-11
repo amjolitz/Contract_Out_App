@@ -1,0 +1,1012 @@
+job_id	job_address	job_city	job_zip	job_start_date	job_end_date	job_description	price_range	job_type	creator	selected_contractor
+1	123 Sesame St	Los Angeles	9001	12/1/2013	12/1/2013	My kitchen sink won't drain.	20	10	387	305
+2	2827 Summit Street	Shelton	12345	1/2/2014	2/6/2015	description	40	20	354	630
+3	107 Logan Lane	Peekskill	98856	1/3/2014	2/9/2015	description	60	30	663	714
+4	2753 Commerce Boulevard	Irvine	14609	1/4/2014	2/12/2015	description	80	40	728	531
+5	741 Cedarstone Drive	Southfield	31707	1/5/2014	2/15/2015	description	100	50	913	758
+6	347 Goldleaf Lane	Norwalk	99205	1/6/2014	2/18/2015	description	120	60	356	208
+7	4041 Woodside Circle	Fort Lauderdale	77340	1/7/2014	2/21/2015	description	140	70	256	843
+8	1734 Grove Street	Mannford	96813	1/8/2014	2/24/2015	description	160	80	872	719
+9	93 Stoneybrook Road	Indianapolis	13021	1/9/2014	2/27/2015	description	180	90	691	631
+10	694 Wood Duck Drive	Richmond	45701	1/10/2014	3/2/2015	description	200	100	212	106
+11	4523 Farm Meadow Drive	Atlanta	75201	1/11/2014	3/5/2015	description	220	110	444	523
+12	3223 Crestview Manor	Los Angeles	60633	1/12/2014	3/8/2015	description	240	120	127	345
+13	592 Eagle Drive	Burgess	3782	1/13/2014	3/11/2015	description	260	130	716	906
+14	842 Mount Street	South Boston	44286	1/14/2014	3/14/2015	description	280	140	16	656
+15	2066 Tuna Street	Houston	17101	1/15/2014	3/17/2015	description	300	150	310	828
+16	3819 Fleming Way	Jermyn	94612	1/16/2014	3/20/2015	description	320	160	866	237
+17	3236 Lucky Duck Drive	New London	49508	1/17/2014	3/23/2015	description	340	170	621	699
+18	790 Riverside Drive	Cheyenne	2142	1/18/2014	3/26/2015	description	360	180	772	896
+19	3276 Philadelphia Avenue	Suitland	6103	1/19/2014	3/29/2015	description	380	190	44	75
+20	2965 Oakway Lane	Denver	1012	1/20/2014	4/1/2015	description	400	200	636	761
+21	3304 Weekley Street	Albany	29115	1/21/2014	4/4/2015	description	420	210	172	900
+22	3395 Ingram Street	Beaver Creek	66061	1/22/2014	4/7/2015	description	440	220	750	934
+23	4490 Dawson Drive	Fullerton	15206	1/23/2014	4/10/2015	description	460	230	455	444
+24	96 Middleville Road	Agoura	24382	1/24/2014	4/13/2015	description	480	240	585	591
+25	12 Perine Street	Philadelphia	32401	1/25/2014	4/16/2015	description	500	250	306	781
+26	321 Viking Drive	Burbank	19034	1/26/2014	4/19/2015	description	520	260	847	542
+27	1221 Southside Lane	Harrisburg	45890	1/27/2014	4/22/2015	description	540	270	512	355
+28	4934 Del Dew Drive	Oklahoma City	98501	1/28/2014	4/25/2015	description	560	280	624	205
+29	2814 Rosewood Court	Englewood	13323	1/29/2014	4/28/2015	description	580	290	91	794
+30	3842 Stuart Street	Danville	60601	1/30/2014	5/1/2015	description	600	300	272	180
+31	4510 Maple Avenue	Hollywood	75067	1/31/2014	5/4/2015	description	620	310	184	399
+32	1083 Neville Street	Portland	66215	2/1/2014	5/7/2015	description	640	320	521	1000
+33	3619 Norma Lane	Maryland Heights	32205	2/2/2014	5/10/2015	description	660	330	239	527
+34	4444 Garrett Street	Kansas City	17011	2/3/2014	5/13/2015	description	680	340	874	870
+35	2506 Parrill Court	Pensacola	84047	2/4/2014	5/16/2015	description	700	350	379	607
+36	1306 Mercer Street	Damariscotta	98122	2/5/2014	5/19/2015	description	720	360	237	70
+37	3471 Thunder Road	Wilmington	93721	2/6/2014	5/22/2015	description	740	370	431	244
+38	4819 Bottom Lane	Dallas	53562	2/7/2014	5/25/2015	description	760	380	951	232
+39	3898 Masonic Drive	Boise	52001	2/8/2014	5/28/2015	description	780	390	755	583
+40	3963 Jones Avenue	Wheeling	36703	2/9/2014	5/31/2015	description	800	400	266	439
+41	1898 Francis Mine	Houston	30328	2/10/2014	6/3/2015	description	820	410	668	14
+42	3977 Oakridge Farm Lane	Wheaton	89014	2/11/2014	6/6/2015	description	840	420	562	701
+43	3519 Cottrill Lane	Altamonte Springs	34994	2/12/2014	6/9/2015	description	860	430	271	599
+44	4889 McDowell Street	Chapel Hill	30318	2/13/2014	6/12/2015	description	880	440	591	136
+45	4203 Angie Drive	Augusta	95204	2/14/2014	6/15/2015	description	900	450	533	973
+46	950 Fairfield Road	Tulsa	40391	2/15/2014	6/18/2015	description	920	460	665	776
+47	78 Cherry Ridge Drive	Parkersburg	94108	2/16/2014	6/21/2015	description	940	470	161	731
+48	4883 Gateway Road	Belfast	63101	2/17/2014	6/24/2015	description	960	480	451	395
+49	3770 Whiteman Street	Strasburg	5403	2/18/2014	6/27/2015	description	980	490	880	762
+50	4359 Rosemont Avenue	Johnson City	18706	2/19/2014	6/30/2015	description	1000	500	751	569
+51	1223 Union Street	Flint	25701	2/20/2014	7/3/2015	description	1020	510	827	50
+52	1174 Deer Haven Drive	Chicago	75051	2/21/2014	7/6/2015	description	1040	520	418	185
+53	305 Pheasant Ridge Road	Shelton	92065	2/22/2014	7/9/2015	description	1060	530	839	551
+54	4872 Cooks Mine Road	Peekskill	97041	2/23/2014	7/12/2015	description	1080	540	861	872
+55	639 Michigan Avenue	Irvine	7041	2/24/2014	7/15/2015	description	1100	550	647	710
+56	2136 Hillside Drive	Southfield	35215	2/25/2014	7/18/2015	description	1120	560	129	473
+57	4619 Settlers Lane	Norwalk	23224	2/26/2014	7/21/2015	description	1140	570	635	863
+58	4738 Blair Court	Fort Lauderdale	11101	2/27/2014	7/24/2015	description	1160	580	835	291
+59	4497 Vesta Drive	Mannford	53151	2/28/2014	7/27/2015	description	1180	590	167	576
+60	2206 Boone Crockett Lane	Indianapolis	15146	3/1/2014	7/30/2015	description	1200	600	503	48
+61	4205 Old Dear Lane	Richmond	2154	3/2/2014	8/2/2015	description	1220	610	445	597
+62	4261 Oakwood Circle	Atlanta	96130	3/3/2014	8/5/2015	description	1240	620	173	418
+63	478 Bombardier Way	Los Angeles	92801	3/4/2014	8/8/2015	description	1260	630	235	674
+64	3323 Bedford Street	Burgess	45402	3/5/2014	8/11/2015	description	1280	640	143	504
+65	2817 Foley Street	South Boston	27526	3/6/2014	8/14/2015	description	1300	650	25	290
+66	3332 Hornor Avenue	Houston	11354	3/7/2014	8/17/2015	description	1320	660	893	12
+67	329 Crestview Manor	Jermyn	60607	3/8/2014	8/20/2015	description	1340	670	41	615
+68	4618 Coulter Lane	New London	15132	3/9/2014	8/23/2015	description	1360	680	809	479
+69	1129 Stroop Hill Road	Cheyenne	37074	3/10/2014	8/26/2015	description	1380	690	780	550
+70	951 Locust Court	Suitland	80015	3/11/2014	8/29/2015	description	1400	700	936	409
+71	4928 Poe Road	Denver	32746	3/12/2014	9/1/2015	description	1420	710	453	269
+72	452 Pearlman Avenue	Albany	11743	3/13/2014	9/4/2015	description	1440	720	578	678
+73	4102 Werninger Street	Beaver Creek	33132	3/14/2014	9/7/2015	description	1460	730	645	241
+74	377 Conference Center Way	Fullerton	48607	3/15/2014	9/10/2015	description	1480	740	698	521
+75	3151 Lochmere Lane	Agoura	96782	3/16/2014	9/13/2015	description	1500	750	980	911
+76	1767 Thorn Street	Philadelphia	93535	3/17/2014	9/16/2015	description	1520	760	928	115
+77	1439 Bluff Street	Burbank	21742	3/18/2014	9/19/2015	description	1540	770	88	893
+78	2070 Logan Lane	Harrisburg	98168	3/19/2014	9/22/2015	description	1560	780	715	200
+79	2803 Oak Drive	Oklahoma City	7094	3/20/2014	9/25/2015	description	1580	790	189	685
+80	3690 New Street	Englewood	56560	3/21/2014	9/28/2015	description	1600	800	51	256
+81	1762 Denver Avenue	Danville	72901	3/22/2014	10/1/2015	description	1620	810	696	856
+82	4300 Quiet Valley Lane	Hollywood	25962	3/23/2014	10/4/2015	description	1640	820	520	10
+83	511 Wakefield Street	Portland	10007	3/24/2014	10/7/2015	description	1660	830	577	723
+84	4897 Locust Court	Maryland Heights	89109	3/25/2014	10/10/2015	description	1680	840	515	706
+85	565 Aaron Smith Drive	Kansas City	54401	3/26/2014	10/13/2015	description	1700	850	795	752
+86	1175 Cody Ridge Road	Pensacola	68784	3/27/2014	10/16/2015	description	1720	860	998	613
+87	1900 McKinley Avenue	Damariscotta	10940	3/28/2014	10/19/2015	description	1740	870	671	548
+88	4536 Water Street	Wilmington	73077	3/29/2014	10/22/2015	description	1760	880	348	168
+89	3969 Sycamore Fork Road	Dallas	64110	3/30/2014	10/25/2015	description	1780	890	478	270
+90	4324 Chipmunk Lane	Boise	43085	3/31/2014	10/28/2015	description	1800	900	370	378
+91	2598 Court Street	Wheeling	55931	4/1/2014	10/31/2015	description	1820	910	509	357
+92	4904 Poe Lane	Houston	80111	4/2/2014	11/3/2015	description	1840	920	425	983
+93	3769 Star Trek Drive	Wheaton	68310	4/3/2014	11/6/2015	description	1860	930	643	605
+94	4246 Bloomfield Way	Altamonte Springs	44846	4/4/2014	11/9/2015	description	1880	940	38	759
+95	1709 Ray Court	Chapel Hill	7643	4/5/2014	11/12/2015	description	1900	950	278	410
+96	2597 Stoney Lane	Augusta	32446	4/6/2014	11/15/2015	description	1920	960	365	224
+97	3296 Poplar Chase Lane	Tulsa	11743	4/7/2014	11/18/2015	description	1940	970	659	306
+98	3573 Tavern Place	Parkersburg	32901	4/8/2014	11/21/2015	description	1960	980	349	858
+99	701 Monroe Street	Belfast	49855	4/9/2014	11/24/2015	description	1980	990	300	936
+100	414 Steele Street	Strasburg	85348	4/10/2014	11/27/2015	description	2000	1000	579	806
+101	3897 McDonald Avenue	Johnson City	46055	4/11/2014	11/30/2015	description	2020	1010	819	19
+102	1168 Rockford Mountain Lane	Flint	48335	4/12/2014	12/3/2015	description	2040	1020	680	972
+103	3429 Still Pastures Drive	Chicago	48734	4/13/2014	12/6/2015	description	2060	1030	68	954
+104	644 Bridge Street	Shelton	48028	4/14/2014	12/9/2015	description	2080	1040	252	824
+105	1256 Hall Valley Drive	Peekskill	23219	4/15/2014	12/12/2015	description	2100	1050	639	942
+106	2164 Upton Avenue	Irvine	15219	4/16/2014	12/15/2015	description	2120	1060	746	446
+107	4999 White Oak Drive	Southfield	30606	4/17/2014	12/18/2015	description	2140	1070	215	956
+108	2033 Corbin Branch Road	Norwalk	84604	4/18/2014	12/21/2015	description	2160	1080	707	681
+109	2814 Tuna Street	Fort Lauderdale	90017	4/19/2014	12/24/2015	description	2180	1090	524	216
+110	2207 Liberty Street	Mannford	78205	4/20/2014	12/27/2015	description	2200	1100	192	886
+111	4387 Edington Drive	Indianapolis	45044	4/21/2014	12/30/2015	description	2220	1110	248	651
+112	2481 Collins Avenue	Richmond	72211	4/22/2014	1/2/2016	description	2240	1120	596	97
+113	2827 Summit Street	Atlanta	91731	4/23/2014	1/5/2016	description	2260	1130	582	700
+114	107 Logan Lane	Los Angeles	20005	4/24/2014	1/8/2016	description	2280	1140	968	217
+115	2753 Commerce Boulevard	Burgess	43950	4/25/2014	1/11/2016	description	2300	1150	37	869
+116	741 Cedarstone Drive	South Boston	90046	4/26/2014	1/14/2016	description	2320	1160	175	792
+117	347 Goldleaf Lane	Houston	20031	4/27/2014	1/17/2016	description	2340	1170	24	243
+118	4041 Woodside Circle	Jermyn	55057	4/28/2014	1/20/2016	description	2360	1180	759	999
+119	1734 Grove Street	New London	97205	4/29/2014	1/23/2016	description	2380	1190	841	123
+120	93 Stoneybrook Road	Cheyenne	83330	4/30/2014	1/26/2016	description	2400	1200	885	37
+121	694 Wood Duck Drive	Suitland	47591	5/1/2014	1/29/2016	description	2420	1210	786	376
+122	4523 Farm Meadow Drive	Denver	71201	5/2/2014	2/1/2016	description	2440	1220	956	4
+123	3223 Crestview Manor	Albany	49503	5/3/2014	2/4/2016	description	2460	1230	336	506
+124	592 Eagle Drive	Beaver Creek	46383	5/4/2014	2/7/2016	description	2480	1240	181	407
+125	842 Mount Street	Fullerton	54801	5/5/2014	2/10/2016	description	2500	1250	205	810
+126	2066 Tuna Street	Agoura	95134	5/6/2014	2/13/2016	description	2520	1260	468	154
+127	3819 Fleming Way	Philadelphia	14736	5/7/2014	2/16/2016	description	2540	1270	187	793
+128	3236 Lucky Duck Drive	Burbank	59230	5/8/2014	2/19/2016	description	2560	1280	448	686
+129	790 Riverside Drive	Harrisburg	27444	5/9/2014	2/22/2016	description	2580	1290	802	246
+130	3276 Philadelphia Avenue	Oklahoma City	95926	5/10/2014	2/25/2016	description	2600	1300	933	648
+131	2965 Oakway Lane	Englewood	53151	5/11/2014	2/28/2016	description	2620	1310	818	254
+132	3304 Weekley Street	Danville	63130	5/12/2014	3/2/2016	description	2640	1320	275	392
+133	3395 Ingram Street	Hollywood	37204	5/13/2014	3/5/2016	description	2660	1330	909	933
+134	4490 Dawson Drive	Portland	92805	5/14/2014	3/8/2016	description	2680	1340	121	791
+135	96 Middleville Road	Maryland Heights	53403	5/15/2014	3/11/2016	description	2700	1350	122	826
+136	12 Perine Street	Kansas City	14482	5/16/2014	3/14/2016	description	2720	1360	206	435
+137	321 Viking Drive	Pensacola	97223	5/17/2014	3/17/2016	description	2740	1370	471	534
+138	1221 Southside Lane	Damariscotta	8102	5/18/2014	3/20/2016	description	2760	1380	864	575
+139	4934 Del Dew Drive	Wilmington	32801	5/19/2014	3/23/2016	description	2780	1390	440	377
+140	2814 Rosewood Court	Dallas	98107	5/20/2014	3/26/2016	description	2800	1400	381	297
+141	3842 Stuart Street	Boise	29379	5/21/2014	3/29/2016	description	2820	1410	790	951
+142	4510 Maple Avenue	Wheeling	19107	5/22/2014	4/1/2016	description	2840	1420	720	935
+143	1083 Neville Street	Houston	88339	5/23/2014	4/4/2016	description	2860	1430	538	888
+144	3619 Norma Lane	Wheaton	15017	5/24/2014	4/7/2016	description	2880	1440	312	316
+145	4444 Garrett Street	Altamonte Springs	1890	5/25/2014	4/10/2016	description	2900	1450	984	996
+146	2506 Parrill Court	Chapel Hill	11357	5/26/2014	4/13/2016	description	2920	1460	337	137
+147	1306 Mercer Street	Augusta	64093	5/27/2014	4/16/2016	description	2940	1470	799	102
+148	3471 Thunder Road	Tulsa	60628	5/28/2014	4/19/2016	description	2960	1480	917	814
+149	4819 Bottom Lane	Parkersburg	98584	5/29/2014	4/22/2016	description	2980	1490	688	153
+150	3898 Masonic Drive	Belfast	10566	5/30/2014	4/25/2016	description	3000	1500	390	300
+151	3963 Jones Avenue	Strasburg	92614	5/31/2014	4/28/2016	description	3020	1510	580	426
+152	1898 Francis Mine	Johnson City	48075	6/1/2014	5/1/2016	description	3040	1520	253	218
+153	3977 Oakridge Farm Lane	Flint	6851	6/2/2014	5/4/2016	description	3060	1530	511	234
+154	3519 Cottrill Lane	Chicago	33308	6/3/2014	5/7/2016	description	3080	1540	908	89
+155	4889 McDowell Street	Shelton	74044	6/4/2014	5/10/2016	description	3100	1550	58	219
+156	4203 Angie Drive	Peekskill	46214	6/5/2014	5/13/2016	description	3120	1560	114	736
+157	950 Fairfield Road	Irvine	23233	6/6/2014	5/16/2016	description	3140	1570	724	121
+158	78 Cherry Ridge Drive	Southfield	30303	6/7/2014	5/19/2016	description	3160	1580	141	524
+159	4883 Gateway Road	Norwalk	90017	6/8/2014	5/22/2016	description	3180	1590	236	32
+160	3770 Whiteman Street	Fort Lauderdale	29576	6/9/2014	5/25/2016	description	3200	1600	290	964
+161	4359 Rosemont Avenue	Mannford	2127	6/10/2014	5/28/2016	description	3220	1610	322	8
+162	1223 Union Street	Indianapolis	77032	6/11/2014	5/31/2016	description	3240	1620	823	823
+163	1174 Deer Haven Drive	Richmond	18433	6/12/2014	6/3/2016	description	3260	1630	583	821
+164	305 Pheasant Ridge Road	Atlanta	6320	6/13/2014	6/6/2016	description	3280	1640	466	469
+165	4872 Cooks Mine Road	Los Angeles	82003	6/14/2014	6/9/2016	description	3300	1650	407	654
+166	639 Michigan Avenue	Burgess	20746	6/15/2014	6/12/2016	description	3320	1660	483	58
+167	2136 Hillside Drive	South Boston	80205	6/16/2014	6/15/2016	description	3340	1670	931	518
+168	4619 Settlers Lane	Houston	12207	6/17/2014	6/18/2016	description	3360	1680	233	675
+169	4738 Blair Court	Jermyn	97004	6/18/2014	6/21/2016	description	3380	1690	930	187
+170	4497 Vesta Drive	New London	93632	6/19/2014	6/24/2016	description	3400	1700	637	184
+171	2206 Boone Crockett Lane	Cheyenne	91301	6/20/2014	6/27/2016	description	3420	1710	69	276
+172	4205 Old Dear Lane	Suitland	19107	6/21/2014	6/30/2016	description	3440	1720	714	662
+173	4261 Oakwood Circle	Denver	91505	6/22/2014	7/3/2016	description	3460	1730	648	231
+174	478 Bombardier Way	Albany	17101	6/23/2014	7/6/2016	description	3480	1740	326	986
+175	3323 Bedford Street	Beaver Creek	73105	6/24/2014	7/9/2016	description	3500	1750	774	584
+176	2817 Foley Street	Fullerton	80112	6/25/2014	7/12/2016	description	3520	1760	382	85
+177	3332 Hornor Avenue	Agoura	94526	6/26/2014	7/15/2016	description	3540	1770	771	82
+178	329 Crestview Manor	Philadelphia	33023	6/27/2014	7/18/2016	description	3560	1780	921	887
+179	4618 Coulter Lane	Burbank	4101	6/28/2014	7/21/2016	description	3580	1790	589	971
+180	1129 Stroop Hill Road	Harrisburg	63141	6/29/2014	7/24/2016	description	3600	1800	447	672
+181	951 Locust Court	Oklahoma City	66101	6/30/2014	7/27/2016	description	3620	1810	11	836
+182	4928 Poe Road	Englewood	32501	7/1/2014	7/30/2016	description	3640	1820	545	147
+183	452 Pearlman Avenue	Danville	4543	7/2/2014	8/2/2016	description	3660	1830	492	912
+184	4102 Werninger Street	Hollywood	28412	7/3/2014	8/5/2016	description	3680	1840	102	813
+185	377 Conference Center Way	Portland	75212	7/4/2014	8/8/2016	description	3700	1850	803	233
+186	3151 Lochmere Lane	Maryland Heights	83702	7/5/2014	8/11/2016	description	3720	1860	587	104
+187	1767 Thorn Street	Kansas City	26003	7/6/2014	8/14/2016	description	3740	1870	128	754
+188	1439 Bluff Street	Pensacola	77026	7/7/2014	8/17/2016	description	3760	1880	566	944
+189	2070 Logan Lane	Damariscotta	60187	7/8/2014	8/20/2016	description	3780	1890	805	642
+190	2803 Oak Drive	Wilmington	32714	7/9/2014	8/23/2016	description	3800	1900	211	367
+191	3690 New Street	Dallas	27514	7/10/2014	8/26/2016	description	3820	1910	971	15
+192	1762 Denver Avenue	Boise	30901	7/11/2014	8/29/2016	description	3840	1920	85	904
+193	4300 Quiet Valley Lane	Wheeling	74120	7/12/2014	9/1/2016	description	3860	1930	366	303
+194	511 Wakefield Street	Houston	26101	7/13/2014	9/4/2016	description	3880	1940	844	712
+195	4897 Locust Court	Wheaton	4915	7/14/2014	9/7/2016	description	3900	1950	357	99
+196	565 Aaron Smith Drive	Altamonte Springs	64090	7/15/2014	9/10/2016	description	3920	1960	695	404
+197	1175 Cody Ridge Road	Chapel Hill	37601	7/16/2014	9/13/2016	description	3940	1970	857	494
+198	1900 McKinley Avenue	Augusta	48502	7/17/2014	9/16/2016	description	3960	1980	228	1
+199	4536 Water Street	Tulsa	75090	7/18/2014	9/19/2016	description	3980	1990	328	84
+200	3969 Sycamore Fork Road	Parkersburg	30071	7/19/2014	9/22/2016	description	4000	2000	611	682
+201	4324 Chipmunk Lane	Belfast	21740	7/20/2014	9/25/2016	description	4020	2010	953	695
+202	2598 Court Street	Strasburg	48723	7/21/2014	9/28/2016	description	4040	2020	420	507
+203	4904 Poe Lane	Johnson City	72212	7/22/2014	10/1/2016	description	4060	2030	572	950
+204	3769 Star Trek Drive	Flint	27406	7/23/2014	10/4/2016	description	4080	2040	838	421
+205	4246 Bloomfield Way	Chicago	60527	7/24/2014	10/7/2016	description	4100	2050	686	179
+206	1709 Ray Court	Shelton	8854	7/25/2014	10/10/2016	description	4120	2060	52	606
+207	2597 Stoney Lane	Peekskill	89506	7/26/2014	10/13/2016	description	4140	2070	877	526
+208	3296 Poplar Chase Lane	Irvine	90013	7/27/2014	10/16/2016	description	4160	2080	369	116
+209	3573 Tavern Place	Southfield	12345	7/28/2014	10/19/2016	description	4180	2090	101	984
+210	701 Monroe Street	Norwalk	98856	7/29/2014	10/22/2016	description	4200	2100	334	120
+211	414 Steele Street	Fort Lauderdale	14609	7/30/2014	10/25/2016	description	4220	2110	94	206
+212	3897 McDonald Avenue	Mannford	31707	7/31/2014	10/28/2016	description	4240	2120	676	202
+213	1168 Rockford Mountain Lane	Indianapolis	99205	8/1/2014	10/31/2016	description	4260	2130	629	629
+214	3429 Still Pastures Drive	Richmond	77340	8/2/2014	11/3/2016	description	4280	2140	86	161
+215	644 Bridge Street	Atlanta	96813	8/3/2014	11/6/2016	description	4300	2150	57	287
+216	1256 Hall Valley Drive	Los Angeles	13021	8/4/2014	11/9/2016	description	4320	2160	730	474
+217	2164 Upton Avenue	Burgess	45701	8/5/2014	11/12/2016	description	4340	2170	501	352
+218	4999 White Oak Drive	South Boston	75201	8/6/2014	11/15/2016	description	4360	2180	801	209
+219	2033 Corbin Branch Road	Houston	60633	8/7/2014	11/18/2016	description	4380	2190	261	718
+220	2814 Tuna Street	Jermyn	3782	8/8/2014	11/21/2016	description	4400	2200	943	879
+221	2207 Liberty Street	New London	44286	8/9/2014	11/24/2016	description	4420	2210	979	621
+222	4387 Edington Drive	Cheyenne	17101	8/10/2014	11/27/2016	description	4440	2220	569	645
+223	2481 Collins Avenue	Suitland	94612	8/11/2014	11/30/2016	description	4460	2230	532	616
+224	2827 Summit Street	Denver	49508	8/12/2014	12/3/2016	description	4480	2240	670	778
+225	107 Logan Lane	Albany	2142	8/13/2014	12/6/2016	description	4500	2250	280	638
+226	2753 Commerce Boulevard	Beaver Creek	6103	8/14/2014	12/9/2016	description	4520	2260	34	835
+227	741 Cedarstone Drive	Fullerton	1012	8/15/2014	12/12/2016	description	4540	2270	341	505
+228	347 Goldleaf Lane	Agoura	29115	8/16/2014	12/15/2016	description	4560	2280	608	468
+229	4041 Woodside Circle	Philadelphia	66061	8/17/2014	12/18/2016	description	4580	2290	358	925
+230	1734 Grove Street	Burbank	15206	8/18/2014	12/21/2016	description	4600	2300	894	774
+231	93 Stoneybrook Road	Harrisburg	24382	8/19/2014	12/24/2016	description	4620	2310	868	282
+232	694 Wood Duck Drive	Oklahoma City	32401	8/20/2014	12/27/2016	description	4640	2320	846	453
+233	4523 Farm Meadow Drive	Englewood	19034	8/21/2014	12/30/2016	description	4660	2330	347	677
+234	3223 Crestview Manor	Danville	45890	8/22/2014	1/2/2017	description	4680	2340	812	477
+235	592 Eagle Drive	Hollywood	98501	8/23/2014	1/5/2017	description	4700	2350	18	997
+236	842 Mount Street	Portland	13323	8/24/2014	1/8/2017	description	4720	2360	162	430
+237	2066 Tuna Street	Maryland Heights	60601	8/25/2014	1/11/2017	description	4740	2370	927	834
+238	3819 Fleming Way	Kansas City	75067	8/26/2014	1/14/2017	description	4760	2380	203	617
+239	3236 Lucky Duck Drive	Pensacola	66215	8/27/2014	1/17/2017	description	4780	2390	612	227
+240	790 Riverside Drive	Damariscotta	32205	8/28/2014	1/20/2017	description	4800	2400	263	862
+241	3276 Philadelphia Avenue	Wilmington	17011	8/29/2014	1/23/2017	description	4820	2410	436	545
+242	2965 Oakway Lane	Dallas	84047	8/30/2014	1/26/2017	description	4840	2420	185	35
+243	3304 Weekley Street	Boise	98122	8/31/2014	1/29/2017	description	4860	2430	988	957
+244	3395 Ingram Street	Wheeling	93721	9/1/2014	2/1/2017	description	4880	2440	459	568
+245	4490 Dawson Drive	Houston	53562	9/2/2014	2/4/2017	description	4900	2450	221	559
+246	96 Middleville Road	Wheaton	52001	9/3/2014	2/7/2017	description	4920	2460	465	948
+247	12 Perine Street	Altamonte Springs	36703	9/4/2014	2/10/2017	description	4940	2470	450	687
+248	321 Viking Drive	Chapel Hill	30328	9/5/2014	2/13/2017	description	4960	2480	500	746
+249	1221 Southside Lane	Augusta	89014	9/6/2014	2/16/2017	description	4980	2490	472	150
+250	4934 Del Dew Drive	Tulsa	34994	9/7/2014	2/19/2017	description	5000	2500	49	908
+251	2814 Rosewood Court	Parkersburg	30318	9/8/2014	2/22/2017	description	5020	2510	226	503
+252	3842 Stuart Street	Belfast	95204	9/9/2014	2/25/2017	description	5040	2520	302	40
+253	4510 Maple Avenue	Strasburg	40391	9/10/2014	2/28/2017	description	5060	2530	314	729
+254	1083 Neville Street	Johnson City	94108	9/11/2014	3/3/2017	description	5080	2540	788	140
+255	3619 Norma Lane	Flint	63101	9/12/2014	3/6/2017	description	5100	2550	548	328
+256	4444 Garrett Street	Chicago	5403	9/13/2014	3/9/2017	description	5120	2560	605	764
+257	2506 Parrill Court	Shelton	18706	9/14/2014	3/12/2017	description	5140	2570	729	72
+258	1306 Mercer Street	Peekskill	25701	9/15/2014	3/15/2017	description	5160	2580	820	628
+259	3471 Thunder Road	Irvine	75051	9/16/2014	3/18/2017	description	5180	2590	287	440
+260	4819 Bottom Lane	Southfield	92065	9/17/2014	3/21/2017	description	5200	2600	196	982
+261	3898 Masonic Drive	Norwalk	97041	9/18/2014	3/24/2017	description	5220	2610	550	614
+262	3963 Jones Avenue	Fort Lauderdale	7041	9/19/2014	3/27/2017	description	5240	2620	733	411
+263	1898 Francis Mine	Mannford	35215	9/20/2014	3/30/2017	description	5260	2630	641	483
+264	3977 Oakridge Farm Lane	Indianapolis	23224	9/21/2014	4/2/2017	description	5280	2640	544	318
+265	3519 Cottrill Lane	Richmond	11101	9/22/2014	4/5/2017	description	5300	2650	171	891
+266	4889 McDowell Street	Atlanta	53151	9/23/2014	4/8/2017	description	5320	2660	837	902
+267	4203 Angie Drive	Los Angeles	15146	9/24/2014	4/11/2017	description	5340	2670	898	230
+268	950 Fairfield Road	Burgess	2154	9/25/2014	4/14/2017	description	5360	2680	859	480
+269	78 Cherry Ridge Drive	South Boston	96130	9/26/2014	4/17/2017	description	5380	2690	694	461
+270	4883 Gateway Road	Houston	92801	9/27/2014	4/20/2017	description	5400	2700	56	259
+271	3770 Whiteman Street	Jermyn	45402	9/28/2014	4/23/2017	description	5420	2710	224	77
+272	4359 Rosemont Avenue	New London	27526	9/29/2014	4/26/2017	description	5440	2720	110	732
+273	1223 Union Street	Cheyenne	11354	9/30/2014	4/29/2017	description	5460	2730	117	967
+274	1174 Deer Haven Drive	Suitland	60607	10/1/2014	5/2/2017	description	5480	2740	609	167
+275	305 Pheasant Ridge Road	Denver	15132	10/2/2014	5/5/2017	description	5500	2750	510	709
+276	4872 Cooks Mine Road	Albany	37074	10/3/2014	5/8/2017	description	5520	2760	8	26
+277	639 Michigan Avenue	Beaver Creek	80015	10/4/2014	5/11/2017	description	5540	2770	48	52
+278	2136 Hillside Drive	Fullerton	32746	10/5/2014	5/14/2017	description	5560	2780	178	436
+279	4619 Settlers Lane	Agoura	11743	10/6/2014	5/17/2017	description	5580	2790	952	485
+280	4738 Blair Court	Philadelphia	33132	10/7/2014	5/20/2017	description	5600	2800	316	913
+281	4497 Vesta Drive	Burbank	48607	10/8/2014	5/23/2017	description	5620	2810	144	953
+282	2206 Boone Crockett Lane	Harrisburg	96782	10/9/2014	5/26/2017	description	5640	2820	67	152
+283	4205 Old Dear Lane	Oklahoma City	93535	10/10/2014	5/29/2017	description	5660	2830	910	666
+284	4261 Oakwood Circle	Englewood	21742	10/11/2014	6/1/2017	description	5680	2840	664	44
+285	478 Bombardier Way	Danville	98168	10/12/2014	6/4/2017	description	5700	2850	327	56
+286	3323 Bedford Street	Hollywood	7094	10/13/2014	6/7/2017	description	5720	2860	705	653
+287	2817 Foley Street	Portland	56560	10/14/2014	6/10/2017	description	5740	2870	199	25
+288	3332 Hornor Avenue	Maryland Heights	72901	10/15/2014	6/13/2017	description	5760	2880	882	827
+289	329 Crestview Manor	Kansas City	25962	10/16/2014	6/16/2017	description	5780	2890	912	508
+290	4618 Coulter Lane	Pensacola	10007	10/17/2014	6/19/2017	description	5800	2900	607	229
+291	1129 Stroop Hill Road	Damariscotta	89109	10/18/2014	6/22/2017	description	5820	2910	93	359
+292	951 Locust Court	Wilmington	54401	10/19/2014	6/25/2017	description	5840	2920	769	462
+293	4928 Poe Road	Dallas	68784	10/20/2014	6/28/2017	description	5860	2930	319	201
+294	452 Pearlman Avenue	Boise	10940	10/21/2014	7/1/2017	description	5880	2940	229	846
+295	4102 Werninger Street	Wheeling	73077	10/22/2014	7/4/2017	description	5900	2950	595	482
+296	377 Conference Center Way	Houston	64110	10/23/2014	7/7/2017	description	5920	2960	701	175
+297	3151 Lochmere Lane	Wheaton	43085	10/24/2014	7/10/2017	description	5940	2970	92	431
+298	1767 Thorn Street	Altamonte Springs	55931	10/25/2014	7/13/2017	description	5960	2980	1000	30
+299	1439 Bluff Street	Chapel Hill	80111	10/26/2014	7/16/2017	description	5980	2990	95	647
+300	2070 Logan Lane	Augusta	68310	10/27/2014	7/19/2017	description	6000	3000	213	358
+301	2803 Oak Drive	Tulsa	44846	10/28/2014	7/22/2017	description	6020	3010	134	245
+302	3690 New Street	Parkersburg	7643	10/29/2014	7/25/2017	description	6040	3020	549	413
+303	1762 Denver Avenue	Belfast	32446	10/30/2014	7/28/2017	description	6060	3030	675	422
+304	4300 Quiet Valley Lane	Strasburg	11743	10/31/2014	7/31/2017	description	6080	3040	402	88
+305	511 Wakefield Street	Johnson City	32901	11/1/2014	8/3/2017	description	6100	3050	274	172
+306	4897 Locust Court	Flint	49855	11/2/2014	8/6/2017	description	6120	3060	99	129
+307	565 Aaron Smith Drive	Chicago	85348	11/3/2014	8/9/2017	description	6140	3070	653	194
+308	1175 Cody Ridge Road	Shelton	46055	11/4/2014	8/12/2017	description	6160	3080	902	977
+309	1900 McKinley Avenue	Peekskill	48335	11/5/2014	8/15/2017	description	6180	3090	777	265
+310	4536 Water Street	Irvine	48734	11/6/2014	8/18/2017	description	6200	3100	526	295
+311	3969 Sycamore Fork Road	Southfield	48028	11/7/2014	8/21/2017	description	6220	3110	657	301
+312	4324 Chipmunk Lane	Norwalk	23219	11/8/2014	8/24/2017	description	6240	3120	200	938
+313	2598 Court Street	Fort Lauderdale	15219	11/9/2014	8/27/2017	description	6260	3130	863	789
+314	4904 Poe Lane	Mannford	30606	11/10/2014	8/30/2017	description	6280	3140	568	565
+315	3769 Star Trek Drive	Indianapolis	84604	11/11/2014	9/2/2017	description	6300	3150	299	429
+316	4246 Bloomfield Way	Richmond	90017	11/12/2014	9/5/2017	description	6320	3160	983	571
+317	1709 Ray Court	Atlanta	78205	11/13/2014	9/8/2017	description	6340	3170	965	640
+318	2597 Stoney Lane	Los Angeles	45044	11/14/2014	9/11/2017	description	6360	3180	292	36
+319	3296 Poplar Chase Lane	Burgess	72211	11/15/2014	9/14/2017	description	6380	3190	508	799
+320	3573 Tavern Place	South Boston	91731	11/16/2014	9/17/2017	description	6400	3200	989	351
+321	701 Monroe Street	Houston	20005	11/17/2014	9/20/2017	description	6420	3210	295	353
+322	414 Steele Street	Jermyn	43950	11/18/2014	9/23/2017	description	6440	3220	973	705
+323	3897 McDonald Avenue	New London	90046	11/19/2014	9/26/2017	description	6460	3230	12	848
+324	1168 Rockford Mountain Lane	Cheyenne	20031	11/20/2014	9/29/2017	description	6480	3240	421	298
+325	3429 Still Pastures Drive	Suitland	55057	11/21/2014	10/2/2017	description	6500	3250	397	189
+326	644 Bridge Street	Denver	97205	11/22/2014	10/5/2017	description	6520	3260	158	691
+327	1256 Hall Valley Drive	Albany	83330	11/23/2014	10/8/2017	description	6540	3270	796	362
+328	2164 Upton Avenue	Beaver Creek	47591	11/24/2014	10/11/2017	description	6560	3280	527	215
+329	4999 White Oak Drive	Fullerton	71201	11/25/2014	10/14/2017	description	6580	3290	80	275
+330	2033 Corbin Branch Road	Agoura	49503	11/26/2014	10/17/2017	description	6600	3300	862	333
+331	2814 Tuna Street	Philadelphia	46383	11/27/2014	10/20/2017	description	6620	3310	13	696
+332	2207 Liberty Street	Burbank	54801	11/28/2014	10/23/2017	description	6640	3320	145	142
+333	4387 Edington Drive	Harrisburg	95134	11/29/2014	10/26/2017	description	6660	3330	63	849
+334	2481 Collins Avenue	Oklahoma City	14736	11/30/2014	10/29/2017	description	6680	3340	153	623
+335	2827 Summit Street	Englewood	59230	12/1/2014	11/1/2017	description	6700	3350	377	113
+336	107 Logan Lane	Danville	27444	12/2/2014	11/4/2017	description	6720	3360	180	134
+337	2753 Commerce Boulevard	Hollywood	95926	12/3/2014	11/7/2017	description	6740	3370	487	937
+338	741 Cedarstone Drive	Portland	53151	12/4/2014	11/10/2017	description	6760	3380	125	881
+339	347 Goldleaf Lane	Maryland Heights	63130	12/5/2014	11/13/2017	description	6780	3390	135	771
+340	4041 Woodside Circle	Kansas City	37204	12/6/2014	11/16/2017	description	6800	3400	104	236
+341	1734 Grove Street	Pensacola	92805	12/7/2014	11/19/2017	description	6820	3410	338	49
+342	93 Stoneybrook Road	Damariscotta	53403	12/8/2014	11/22/2017	description	6840	3420	28	286
+343	694 Wood Duck Drive	Wilmington	14482	12/9/2014	11/25/2017	description	6860	3430	674	949
+344	4523 Farm Meadow Drive	Dallas	97223	12/10/2014	11/28/2017	description	6880	3440	400	23
+345	3223 Crestview Manor	Boise	8102	12/11/2014	12/1/2017	description	6900	3450	195	363
+346	592 Eagle Drive	Wheeling	32801	12/12/2014	12/4/2017	description	6920	3460	413	193
+347	842 Mount Street	Houston	98107	12/13/2014	12/7/2017	description	6940	3470	62	329
+348	2066 Tuna Street	Wheaton	29379	12/14/2014	12/10/2017	description	6960	3480	216	332
+349	3819 Fleming Way	Altamonte Springs	19107	12/15/2014	12/13/2017	description	6980	3490	103	804
+350	3236 Lucky Duck Drive	Chapel Hill	88339	12/16/2014	12/16/2017	description	7000	3500	151	564
+351	790 Riverside Drive	Augusta	15017	12/17/2014	12/19/2017	description	7020	3510	332	796
+352	3276 Philadelphia Avenue	Tulsa	1890	12/18/2014	12/22/2017	description	7040	3520	856	608
+353	2965 Oakway Lane	Parkersburg	11357	12/19/2014	12/25/2017	description	7060	3530	20	68
+354	3304 Weekley Street	Belfast	64093	12/20/2014	12/28/2017	description	7080	3540	219	721
+355	3395 Ingram Street	Strasburg	60628	12/21/2014	12/31/2017	description	7100	3550	454	141
+356	4490 Dawson Drive	Johnson City	98584	12/22/2014	1/3/2018	description	7120	3560	782	905
+357	96 Middleville Road	Flint	10566	12/23/2014	1/6/2018	description	7140	3570	426	24
+358	12 Perine Street	Chicago	92614	12/24/2014	1/9/2018	description	7160	3580	507	787
+359	321 Viking Drive	Shelton	48075	12/25/2014	1/12/2018	description	7180	3590	372	919
+360	1221 Southside Lane	Peekskill	6851	12/26/2014	1/15/2018	description	7200	3600	142	570
+361	4934 Del Dew Drive	Irvine	33308	12/27/2014	1/18/2018	description	7220	3610	867	321
+362	2814 Rosewood Court	Southfield	74044	12/28/2014	1/21/2018	description	7240	3620	830	419
+363	3842 Stuart Street	Norwalk	46214	12/29/2014	1/24/2018	description	7260	3630	523	598
+364	4510 Maple Avenue	Fort Lauderdale	23233	12/30/2014	1/27/2018	description	7280	3640	535	978
+365	1083 Neville Street	Mannford	30303	12/31/2014	1/30/2018	description	7300	3650	437	197
+366	3619 Norma Lane	Indianapolis	90017	1/1/2015	2/2/2018	description	7320	3660	537	910
+367	4444 Garrett Street	Richmond	29576	1/2/2015	2/5/2018	description	7340	3670	985	427
+368	2506 Parrill Court	Atlanta	2127	1/3/2015	2/8/2018	description	7360	3680	45	743
+369	1306 Mercer Street	Los Angeles	77032	1/4/2015	2/11/2018	description	7380	3690	717	660
+370	3471 Thunder Road	Burgess	18433	1/5/2015	2/14/2018	description	7400	3700	489	812
+371	4819 Bottom Lane	South Boston	6320	1/6/2015	2/17/2018	description	7420	3710	776	899
+372	3898 Masonic Drive	Houston	82003	1/7/2015	2/20/2018	description	7440	3720	294	135
+373	3963 Jones Avenue	Jermyn	20746	1/8/2015	2/23/2018	description	7460	3730	826	324
+374	1898 Francis Mine	New London	80205	1/9/2015	2/26/2018	description	7480	3740	283	382
+375	3977 Oakridge Farm Lane	Cheyenne	12207	1/10/2015	3/1/2018	description	7500	3750	7	370
+376	3519 Cottrill Lane	Suitland	97004	1/11/2015	3/4/2018	description	7520	3760	884	659
+377	4889 McDowell Street	Denver	93632	1/12/2015	3/7/2018	description	7540	3770	75	941
+378	4203 Angie Drive	Albany	91301	1/13/2015	3/10/2018	description	7560	3780	106	250
+379	950 Fairfield Road	Beaver Creek	19107	1/14/2015	3/13/2018	description	7580	3790	14	800
+380	78 Cherry Ridge Drive	Fullerton	91505	1/15/2015	3/16/2018	description	7600	3800	70	861
+381	4883 Gateway Road	Agoura	17101	1/16/2015	3/19/2018	description	7620	3810	423	314
+382	3770 Whiteman Street	Philadelphia	73105	1/17/2015	3/22/2018	description	7640	3820	999	930
+383	4359 Rosemont Avenue	Burbank	80112	1/18/2015	3/25/2018	description	7660	3830	307	105
+384	1223 Union Street	Harrisburg	94526	1/19/2015	3/28/2018	description	7680	3840	713	337
+385	1174 Deer Haven Drive	Oklahoma City	33023	1/20/2015	3/31/2018	description	7700	3850	617	114
+386	305 Pheasant Ridge Road	Englewood	4101	1/21/2015	4/3/2018	description	7720	3860	163	497
+387	4872 Cooks Mine Road	Danville	63141	1/22/2015	4/6/2018	description	7740	3870	386	703
+388	639 Michigan Avenue	Hollywood	66101	1/23/2015	4/9/2018	description	7760	3880	9	249
+389	2136 Hillside Drive	Portland	32501	1/24/2015	4/12/2018	description	7780	3890	604	722
+390	4619 Settlers Lane	Maryland Heights	4543	1/25/2015	4/15/2018	description	7800	3900	638	946
+391	4738 Blair Court	Kansas City	28412	1/26/2015	4/18/2018	description	7820	3910	186	740
+392	4497 Vesta Drive	Pensacola	75212	1/27/2015	4/21/2018	description	7840	3920	681	61
+393	2206 Boone Crockett Lane	Damariscotta	83702	1/28/2015	4/24/2018	description	7860	3930	40	711
+394	4205 Old Dear Lane	Wilmington	26003	1/29/2015	4/27/2018	description	7880	3940	687	966
+395	4261 Oakwood Circle	Dallas	77026	1/30/2015	4/30/2018	description	7900	3950	476	889
+396	478 Bombardier Way	Boise	60187	1/31/2015	5/3/2018	description	7920	3960	551	581
+397	3323 Bedford Street	Wheeling	32714	2/1/2015	5/6/2018	description	7940	3970	631	837
+398	2817 Foley Street	Houston	27514	2/2/2015	5/9/2018	description	7960	3980	112	257
+399	3332 Hornor Avenue	Wheaton	30901	2/3/2015	5/12/2018	description	7980	3990	831	149
+400	329 Crestview Manor	Altamonte Springs	74120	2/4/2015	5/15/2018	description	8000	4000	573	456
+401	4618 Coulter Lane	Chapel Hill	26101	2/5/2015	5/18/2018	description	8020	4010	700	191
+402	1129 Stroop Hill Road	Augusta	4915	2/6/2015	5/21/2018	description	8040	4020	929	780
+403	951 Locust Court	Tulsa	64090	2/7/2015	5/24/2018	description	8060	4030	303	928
+404	4928 Poe Road	Parkersburg	37601	2/8/2015	5/27/2018	description	8080	4040	202	51
+405	452 Pearlman Avenue	Belfast	48502	2/9/2015	5/30/2018	description	8100	4050	656	374
+406	4102 Werninger Street	Strasburg	75090	2/10/2015	6/2/2018	description	8120	4060	955	255
+407	377 Conference Center Way	Johnson City	30071	2/11/2015	6/5/2018	description	8140	4070	561	601
+408	3151 Lochmere Lane	Flint	21740	2/12/2015	6/8/2018	description	8160	4080	634	109
+409	1767 Thorn Street	Chicago	48723	2/13/2015	6/11/2018	description	8180	4090	268	63
+410	1439 Bluff Street	Shelton	72212	2/14/2015	6/14/2018	description	8200	4100	958	940
+411	2070 Logan Lane	Peekskill	27406	2/15/2015	6/17/2018	description	8220	4110	581	975
+412	2803 Oak Drive	Irvine	60527	2/16/2015	6/20/2018	description	8240	4120	541	652
+413	3690 New Street	Southfield	8854	2/17/2015	6/23/2018	description	8260	4130	359	373
+414	1762 Denver Avenue	Norwalk	89506	2/18/2015	6/26/2018	description	8280	4140	606	169
+415	4300 Quiet Valley Lane	Fort Lauderdale	90013	2/19/2015	6/29/2018	description	8300	4150	970	790
+416	511 Wakefield Street	Mannford	12345	2/20/2015	7/2/2018	description	8320	4160	918	819
+417	4897 Locust Court	Indianapolis	98856	2/21/2015	7/5/2018	description	8340	4170	484	970
+418	565 Aaron Smith Drive	Richmond	14609	2/22/2015	7/8/2018	description	8360	4180	59	307
+419	1175 Cody Ridge Road	Atlanta	31707	2/23/2015	7/11/2018	description	8380	4190	325	65
+420	1900 McKinley Avenue	Los Angeles	99205	2/24/2015	7/14/2018	description	8400	4200	262	877
+421	4536 Water Street	Burgess	77340	2/25/2015	7/17/2018	description	8420	4210	626	488
+422	3969 Sycamore Fork Road	South Boston	96813	2/26/2015	7/20/2018	description	8440	4220	395	415
+423	4324 Chipmunk Lane	Houston	13021	2/27/2015	7/23/2018	description	8460	4230	756	755
+424	2598 Court Street	Jermyn	45701	2/28/2015	7/26/2018	description	8480	4240	536	38
+425	4904 Poe Lane	New London	75201	3/1/2015	7/29/2018	description	8500	4250	323	979
+426	3769 Star Trek Drive	Cheyenne	60633	3/2/2015	8/1/2018	description	8520	4260	113	825
+427	4246 Bloomfield Way	Suitland	3782	3/3/2015	8/4/2018	description	8540	4270	460	604
+428	1709 Ray Court	Denver	44286	3/4/2015	8/7/2018	description	8560	4280	781	481
+429	2597 Stoney Lane	Albany	17101	3/5/2015	8/10/2018	description	8580	4290	392	93
+430	3296 Poplar Chase Lane	Beaver Creek	94612	3/6/2015	8/13/2018	description	8600	4300	329	43
+431	3573 Tavern Place	Fullerton	49508	3/7/2015	8/16/2018	description	8620	4310	633	221
+432	701 Monroe Street	Agoura	2142	3/8/2015	8/19/2018	description	8640	4320	404	633
+433	414 Steele Street	Philadelphia	6103	3/9/2015	8/22/2018	description	8660	4330	270	212
+434	3897 McDonald Avenue	Burbank	1012	3/10/2015	8/25/2018	description	8680	4340	367	915
+435	1168 Rockford Mountain Lane	Harrisburg	29115	3/11/2015	8/28/2018	description	8700	4350	457	343
+436	3429 Still Pastures Drive	Oklahoma City	66061	3/12/2015	8/31/2018	description	8720	4360	208	45
+437	644 Bridge Street	Englewood	15206	3/13/2015	9/3/2018	description	8740	4370	667	770
+438	1256 Hall Valley Drive	Danville	24382	3/14/2015	9/6/2018	description	8760	4380	993	274
+439	2164 Upton Avenue	Hollywood	32401	3/15/2015	9/9/2018	description	8780	4390	190	491
+440	4999 White Oak Drive	Portland	19034	3/16/2015	9/12/2018	description	8800	4400	793	510
+441	2033 Corbin Branch Road	Maryland Heights	45890	3/17/2015	9/15/2018	description	8820	4410	249	386
+442	2814 Tuna Street	Kansas City	98501	3/18/2015	9/18/2018	description	8840	4420	241	196
+443	2207 Liberty Street	Pensacola	13323	3/19/2015	9/21/2018	description	8860	4430	414	747
+444	4387 Edington Drive	Damariscotta	60601	3/20/2015	9/24/2018	description	8880	4440	50	487
+445	2481 Collins Avenue	Wilmington	75067	3/21/2015	9/27/2018	description	8900	4450	170	538
+446	2827 Summit Street	Dallas	66215	3/22/2015	9/30/2018	description	8920	4460	833	885
+447	107 Logan Lane	Boise	32205	3/23/2015	10/3/2018	description	8940	4470	567	368
+448	2753 Commerce Boulevard	Wheeling	17011	3/24/2015	10/6/2018	description	8960	4480	725	126
+449	741 Cedarstone Drive	Houston	84047	3/25/2015	10/9/2018	description	8980	4490	897	369
+450	347 Goldleaf Lane	Wheaton	98122	3/26/2015	10/12/2018	description	9000	4500	764	54
+451	4041 Woodside Circle	Altamonte Springs	93721	3/27/2015	10/15/2018	description	9020	4510	721	242
+452	1734 Grove Street	Chapel Hill	53562	3/28/2015	10/18/2018	description	9040	4520	518	449
+453	93 Stoneybrook Road	Augusta	52001	3/29/2015	10/21/2018	description	9060	4530	995	669
+454	694 Wood Duck Drive	Tulsa	36703	3/30/2015	10/24/2018	description	9080	4540	428	811
+455	4523 Farm Meadow Drive	Parkersburg	30328	3/31/2015	10/27/2018	description	9100	4550	308	315
+456	3223 Crestview Manor	Belfast	89014	4/1/2015	10/30/2018	description	9120	4560	313	643
+457	592 Eagle Drive	Strasburg	34994	4/2/2015	11/2/2018	description	9140	4570	305	186
+458	842 Mount Street	Johnson City	30318	4/3/2015	11/5/2018	description	9160	4580	427	188
+459	2066 Tuna Street	Flint	95204	4/4/2015	11/8/2018	description	9180	4590	119	190
+460	3819 Fleming Way	Chicago	40391	4/5/2015	11/11/2018	description	9200	4600	853	62
+461	3236 Lucky Duck Drive	Shelton	94108	4/6/2015	11/14/2018	description	9220	4610	960	805
+462	790 Riverside Drive	Peekskill	63101	4/7/2015	11/17/2018	description	9240	4620	768	720
+463	3276 Philadelphia Avenue	Irvine	5403	4/8/2015	11/20/2018	description	9260	4630	719	344
+464	2965 Oakway Lane	Southfield	18706	4/9/2015	11/23/2018	description	9280	4640	571	969
+465	3304 Weekley Street	Norwalk	25701	4/10/2015	11/26/2018	description	9300	4650	118	661
+466	3395 Ingram Street	Fort Lauderdale	75051	4/11/2015	11/29/2018	description	9320	4660	375	289
+467	4490 Dawson Drive	Mannford	92065	4/12/2015	12/2/2018	description	9340	4670	139	530
+468	96 Middleville Road	Indianapolis	97041	4/13/2015	12/5/2018	description	9360	4680	177	425
+469	12 Perine Street	Richmond	7041	4/14/2015	12/8/2018	description	9380	4690	355	500
+470	321 Viking Drive	Atlanta	35215	4/15/2015	12/11/2018	description	9400	4700	593	317
+471	1221 Southside Lane	Los Angeles	23224	4/16/2015	12/14/2018	description	9420	4710	301	74
+472	4934 Del Dew Drive	Burgess	11101	4/17/2015	12/17/2018	description	9440	4720	932	798
+473	2814 Rosewood Court	South Boston	53151	4/18/2015	12/20/2018	description	9460	4730	828	292
+474	3842 Stuart Street	Houston	15146	4/19/2015	12/23/2018	description	9480	4740	194	965
+475	4510 Maple Avenue	Jermyn	2154	4/20/2015	12/26/2018	description	9500	4750	709	145
+476	1083 Neville Street	New London	96130	4/21/2015	12/29/2018	description	9520	4760	592	365
+477	3619 Norma Lane	Cheyenne	92801	4/22/2015	1/1/2019	description	9540	4770	878	760
+478	4444 Garrett Street	Suitland	45402	4/23/2015	1/4/2019	description	9560	4780	741	349
+479	2506 Parrill Court	Denver	27526	4/24/2015	1/7/2019	description	9580	4790	146	280
+480	1306 Mercer Street	Albany	11354	4/25/2015	1/10/2019	description	9600	4800	198	464
+481	3471 Thunder Road	Beaver Creek	60607	4/26/2015	1/13/2019	description	9620	4810	488	555
+482	4819 Bottom Lane	Fullerton	15132	4/27/2015	1/16/2019	description	9640	4820	242	387
+483	3898 Masonic Drive	Agoura	37074	4/28/2015	1/19/2019	description	9660	4830	116	327
+484	3963 Jones Avenue	Philadelphia	80015	4/29/2015	1/22/2019	description	9680	4840	458	266
+485	1898 Francis Mine	Burbank	32746	4/30/2015	1/25/2019	description	9700	4850	493	94
+486	3977 Oakridge Farm Lane	Harrisburg	11743	5/1/2015	1/28/2019	description	9720	4860	570	679
+487	3519 Cottrill Lane	Oklahoma City	33132	5/2/2015	1/31/2019	description	9740	4870	498	447
+488	4889 McDowell Street	Englewood	48607	5/3/2015	2/3/2019	description	9760	4880	230	490
+489	4203 Angie Drive	Danville	96782	5/4/2015	2/6/2019	description	9780	4890	297	730
+490	950 Fairfield Road	Hollywood	93535	5/5/2015	2/9/2019	description	9800	4900	138	29
+491	78 Cherry Ridge Drive	Portland	21742	5/6/2015	2/12/2019	description	9820	4910	547	985
+492	4883 Gateway Road	Maryland Heights	98168	5/7/2015	2/15/2019	description	9840	4920	632	864
+493	3770 Whiteman Street	Kansas City	7094	5/8/2015	2/18/2019	description	9860	4930	994	138
+494	4359 Rosemont Avenue	Pensacola	56560	5/9/2015	2/21/2019	description	9880	4940	564	174
+495	1223 Union Street	Damariscotta	72901	5/10/2015	2/24/2019	description	9900	4950	345	809
+496	1174 Deer Haven Drive	Wilmington	25962	5/11/2015	2/27/2019	description	9920	4960	157	452
+497	305 Pheasant Ridge Road	Dallas	10007	5/12/2015	3/2/2019	description	9940	4970	836	777
+498	4872 Cooks Mine Road	Boise	89109	5/13/2015	3/5/2019	description	9960	4980	875	517
+499	639 Michigan Avenue	Wheeling	54401	5/14/2015	3/8/2019	description	9980	4990	907	400
+500	2136 Hillside Drive	Houston	68784	5/15/2015	3/11/2019	description	10000	5000	43	802
+501	4619 Settlers Lane	Wheaton	10940	5/16/2015	3/14/2019	description	10020	5010	339	533
+502	4738 Blair Court	Altamonte Springs	73077	5/17/2015	3/17/2019	description	10040	5020	394	927
+503	4497 Vesta Drive	Chapel Hill	64110	5/18/2015	3/20/2019	description	10060	5030	865	921
+504	2206 Boone Crockett Lane	Augusta	43085	5/19/2015	3/23/2019	description	10080	5040	669	749
+505	4205 Old Dear Lane	Tulsa	55931	5/20/2015	3/26/2019	description	10100	5050	792	663
+506	4261 Oakwood Circle	Parkersburg	80111	5/21/2015	3/29/2019	description	10120	5060	794	372
+507	478 Bombardier Way	Belfast	68310	5/22/2015	4/1/2019	description	10140	5070	47	753
+508	3323 Bedford Street	Strasburg	44846	5/23/2015	4/4/2019	description	10160	5080	860	670
+509	2817 Foley Street	Johnson City	7643	5/24/2015	4/7/2019	description	10180	5090	808	87
+510	3332 Hornor Avenue	Flint	32446	5/25/2015	4/10/2019	description	10200	5100	245	388
+511	329 Crestview Manor	Chicago	11743	5/26/2015	4/13/2019	description	10220	5110	315	371
+512	4618 Coulter Lane	Shelton	32901	5/27/2015	4/16/2019	description	10240	5120	33	854
+513	1129 Stroop Hill Road	Peekskill	49855	5/28/2015	4/19/2019	description	10260	5130	76	641
+514	951 Locust Court	Irvine	85348	5/29/2015	4/22/2019	description	10280	5140	353	553
+515	4928 Poe Road	Southfield	46055	5/30/2015	4/25/2019	description	10300	5150	64	536
+516	452 Pearlman Avenue	Norwalk	48335	5/31/2015	4/28/2019	description	10320	5160	575	962
+517	4102 Werninger Street	Fort Lauderdale	48734	6/1/2015	5/1/2019	description	10340	5170	959	239
+518	377 Conference Center Way	Mannford	48028	6/2/2015	5/4/2019	description	10360	5180	855	312
+519	3151 Lochmere Lane	Indianapolis	23219	6/3/2015	5/7/2019	description	10380	5190	277	767
+520	1767 Thorn Street	Richmond	15219	6/4/2015	5/10/2019	description	10400	5200	197	751
+521	1439 Bluff Street	Atlanta	30606	6/5/2015	5/13/2019	description	10420	5210	920	263
+522	2070 Logan Lane	Los Angeles	84604	6/6/2015	5/16/2019	description	10440	5220	176	726
+523	2803 Oak Drive	Burgess	90017	6/7/2015	5/19/2019	description	10460	5230	223	522
+524	3690 New Street	South Boston	78205	6/8/2015	5/22/2019	description	10480	5240	678	406
+525	1762 Denver Avenue	Houston	45044	6/9/2015	5/25/2019	description	10500	5250	439	342
+526	4300 Quiet Valley Lane	Jermyn	72211	6/10/2015	5/28/2019	description	10520	5260	944	183
+527	511 Wakefield Street	New London	91731	6/11/2015	5/31/2019	description	10540	5270	600	540
+528	4897 Locust Court	Cheyenne	20005	6/12/2015	6/3/2019	description	10560	5280	273	195
+529	565 Aaron Smith Drive	Suitland	43950	6/13/2015	6/6/2019	description	10580	5290	811	251
+530	1175 Cody Ridge Road	Denver	90046	6/14/2015	6/9/2019	description	10600	5300	133	916
+531	1900 McKinley Avenue	Albany	20031	6/15/2015	6/12/2019	description	10620	5310	760	260
+532	4536 Water Street	Beaver Creek	55057	6/16/2015	6/15/2019	description	10640	5320	935	567
+533	3969 Sycamore Fork Road	Fullerton	97205	6/17/2015	6/18/2019	description	10660	5330	22	336
+534	4324 Chipmunk Lane	Agoura	83330	6/18/2015	6/21/2019	description	10680	5340	480	658
+535	2598 Court Street	Philadelphia	47591	6/19/2015	6/24/2019	description	10700	5350	887	697
+536	4904 Poe Lane	Burbank	71201	6/20/2015	6/27/2019	description	10720	5360	945	171
+537	3769 Star Trek Drive	Harrisburg	49503	6/21/2015	6/30/2019	description	10740	5370	821	634
+538	4246 Bloomfield Way	Oklahoma City	46383	6/22/2015	7/3/2019	description	10760	5380	227	566
+539	1709 Ray Court	Englewood	54801	6/23/2015	7/6/2019	description	10780	5390	966	207
+540	2597 Stoney Lane	Danville	95134	6/24/2015	7/9/2019	description	10800	5400	881	285
+541	3296 Poplar Chase Lane	Hollywood	14736	6/25/2015	7/12/2019	description	10820	5410	627	296
+542	3573 Tavern Place	Portland	59230	6/26/2015	7/15/2019	description	10840	5420	410	495
+543	701 Monroe Street	Maryland Heights	27444	6/27/2015	7/18/2019	description	10860	5430	906	247
+544	414 Steele Street	Kansas City	95926	6/28/2015	7/21/2019	description	10880	5440	477	454
+545	3897 McDonald Avenue	Pensacola	53151	6/29/2015	7/24/2019	description	10900	5450	61	393
+546	1168 Rockford Mountain Lane	Damariscotta	63130	6/30/2015	7/27/2019	description	10920	5460	517	637
+547	3429 Still Pastures Drive	Wilmington	37204	7/1/2015	7/30/2019	description	10940	5470	658	667
+548	644 Bridge Street	Dallas	92805	7/2/2015	8/2/2019	description	10960	5480	834	525
+549	1256 Hall Valley Drive	Boise	53403	7/3/2015	8/5/2019	description	10980	5490	66	66
+550	2164 Upton Avenue	Wheeling	14482	7/4/2015	8/8/2019	description	11000	5500	304	384
+551	4999 White Oak Drive	Houston	97223	7/5/2015	8/11/2019	description	11020	5510	424	451
+552	2033 Corbin Branch Road	Wheaton	8102	7/6/2015	8/14/2019	description	11040	5520	475	273
+553	2814 Tuna Street	Altamonte Springs	32801	7/7/2015	8/17/2019	description	11060	5530	182	561
+554	2207 Liberty Street	Chapel Hill	98107	7/8/2015	8/20/2019	description	11080	5540	559	128
+555	4387 Edington Drive	Augusta	29379	7/9/2015	8/23/2019	description	11100	5550	267	326
+556	2481 Collins Avenue	Tulsa	19107	7/10/2015	8/26/2019	description	11120	5560	378	820
+557	2827 Summit Street	Parkersburg	88339	7/11/2015	8/29/2019	description	11140	5570	17	704
+558	107 Logan Lane	Belfast	15017	7/12/2015	9/1/2019	description	11160	5580	433	457
+559	2753 Commerce Boulevard	Strasburg	1890	7/13/2015	9/4/2019	description	11180	5590	758	991
+560	741 Cedarstone Drive	Johnson City	11357	7/14/2015	9/7/2019	description	11200	5600	542	441
+561	347 Goldleaf Lane	Flint	64093	7/15/2015	9/10/2019	description	11220	5610	843	578
+562	4041 Woodside Circle	Chicago	60628	7/16/2015	9/13/2019	description	11240	5620	320	998
+563	1734 Grove Street	Shelton	98584	7/17/2015	9/16/2019	description	11260	5630	39	816
+564	93 Stoneybrook Road	Peekskill	10566	7/18/2015	9/19/2019	description	11280	5640	734	163
+565	694 Wood Duck Drive	Irvine	92614	7/19/2015	9/22/2019	description	11300	5650	4	543
+566	4523 Farm Meadow Drive	Southfield	48075	7/20/2015	9/25/2019	description	11320	5660	762	496
+567	3223 Crestview Manor	Norwalk	6851	7/21/2015	9/28/2019	description	11340	5670	753	763
+568	592 Eagle Drive	Fort Lauderdale	33308	7/22/2015	10/1/2019	description	11360	5680	81	98
+569	842 Mount Street	Mannford	74044	7/23/2015	10/4/2019	description	11380	5690	630	385
+570	2066 Tuna Street	Indianapolis	46214	7/24/2015	10/7/2019	description	11400	5700	422	788
+571	3819 Fleming Way	Richmond	23233	7/25/2015	10/10/2019	description	11420	5710	416	22
+572	3236 Lucky Duck Drive	Atlanta	30303	7/26/2015	10/13/2019	description	11440	5720	690	319
+573	790 Riverside Drive	Los Angeles	90017	7/27/2015	10/16/2019	description	11460	5730	584	277
+574	3276 Philadelphia Avenue	Burgess	29576	7/28/2015	10/19/2019	description	11480	5740	519	402
+575	2965 Oakway Lane	South Boston	2127	7/29/2015	10/22/2019	description	11500	5750	73	156
+576	3304 Weekley Street	Houston	77032	7/30/2015	10/25/2019	description	11520	5760	156	594
+577	3395 Ingram Street	Jermyn	18433	7/31/2015	10/28/2019	description	11540	5770	368	748
+578	4490 Dawson Drive	New London	6320	8/1/2015	10/31/2019	description	11560	5780	990	539
+579	96 Middleville Road	Cheyenne	82003	8/2/2015	11/3/2019	description	11580	5790	201	650
+580	12 Perine Street	Suitland	20746	8/3/2015	11/6/2019	description	11600	5800	745	293
+581	321 Viking Drive	Denver	80205	8/4/2015	11/9/2019	description	11620	5810	502	582
+582	1221 Southside Lane	Albany	12207	8/5/2015	11/12/2019	description	11640	5820	651	603
+583	4934 Del Dew Drive	Beaver Creek	97004	8/6/2015	11/15/2019	description	11660	5830	813	618
+584	2814 Rosewood Court	Fullerton	93632	8/7/2015	11/18/2019	description	11680	5840	977	334
+585	3842 Stuart Street	Agoura	91301	8/8/2015	11/21/2019	description	11700	5850	15	394
+586	4510 Maple Avenue	Philadelphia	19107	8/9/2015	11/24/2019	description	11720	5860	923	644
+587	1083 Neville Street	Burbank	91505	8/10/2015	11/27/2019	description	11740	5870	247	665
+588	3619 Norma Lane	Harrisburg	17101	8/11/2015	11/30/2019	description	11760	5880	259	214
+589	4444 Garrett Street	Oklahoma City	73105	8/12/2015	12/3/2019	description	11780	5890	939	6
+590	2506 Parrill Court	Englewood	80112	8/13/2015	12/6/2019	description	11800	5900	942	779
+591	1306 Mercer Street	Danville	94526	8/14/2015	12/9/2019	description	11820	5910	807	520
+592	3471 Thunder Road	Hollywood	33023	8/15/2015	12/12/2019	description	11840	5920	754	920
+593	4819 Bottom Lane	Portland	4101	8/16/2015	12/15/2019	description	11860	5930	982	676
+594	3898 Masonic Drive	Maryland Heights	63141	8/17/2015	12/18/2019	description	11880	5940	869	829
+595	3963 Jones Avenue	Kansas City	66101	8/18/2015	12/21/2019	description	11900	5950	784	264
+596	1898 Francis Mine	Pensacola	32501	8/19/2015	12/24/2019	description	11920	5960	987	278
+597	3977 Oakridge Farm Lane	Damariscotta	4543	8/20/2015	12/27/2019	description	11940	5970	904	739
+598	3519 Cottrill Lane	Wilmington	28412	8/21/2015	12/30/2019	description	11960	5980	710	873
+599	4889 McDowell Street	Dallas	75212	8/22/2015	1/2/2020	description	11980	5990	401	549
+600	4203 Angie Drive	Boise	83702	8/23/2015	1/5/2020	description	12000	6000	234	455
+601	950 Fairfield Road	Wheeling	26003	8/24/2015	1/8/2020	description	12020	6010	383	117
+602	78 Cherry Ridge Drive	Houston	77026	8/25/2015	1/11/2020	description	12040	6020	364	11
+603	4883 Gateway Road	Wheaton	60187	8/26/2015	1/14/2020	description	12060	6030	778	499
+604	3770 Whiteman Street	Altamonte Springs	32714	8/27/2015	1/17/2020	description	12080	6040	504	438
+605	4359 Rosemont Avenue	Chapel Hill	27514	8/28/2015	1/20/2020	description	12100	6050	926	845
+606	1223 Union Street	Augusta	30901	8/29/2015	1/23/2020	description	12120	6060	474	547
+607	1174 Deer Haven Drive	Tulsa	74120	8/30/2015	1/26/2020	description	12140	6070	441	396
+608	305 Pheasant Ridge Road	Parkersburg	26101	8/31/2015	1/29/2020	description	12160	6080	986	807
+609	4872 Cooks Mine Road	Belfast	4915	9/1/2015	2/1/2020	description	12180	6090	650	577
+610	639 Michigan Avenue	Strasburg	64090	9/2/2015	2/4/2020	description	12200	6100	522	493
+611	2136 Hillside Drive	Johnson City	37601	9/3/2015	2/7/2020	description	12220	6110	362	866
+612	4619 Settlers Lane	Flint	48502	9/4/2015	2/10/2020	description	12240	6120	603	554
+613	4738 Blair Court	Chicago	75090	9/5/2015	2/13/2020	description	12260	6130	540	323
+614	4497 Vesta Drive	Shelton	30071	9/6/2015	2/16/2020	description	12280	6140	901	90
+615	2206 Boone Crockett Lane	Peekskill	21740	9/7/2015	2/19/2020	description	12300	6150	218	437
+616	4205 Old Dear Lane	Irvine	48723	9/8/2015	2/22/2020	description	12320	6160	810	519
+617	4261 Oakwood Circle	Southfield	72212	9/9/2015	2/25/2020	description	12340	6170	351	694
+618	478 Bombardier Way	Norwalk	27406	9/10/2015	2/28/2020	description	12360	6180	96	443
+619	3323 Bedford Street	Fort Lauderdale	60527	9/11/2015	3/2/2020	description	12380	6190	616	389
+620	2817 Foley Street	Mannford	8854	9/12/2015	3/5/2020	description	12400	6200	168	898
+621	3332 Hornor Avenue	Indianapolis	89506	9/13/2015	3/8/2020	description	12420	6210	396	110
+622	329 Crestview Manor	Richmond	90013	9/14/2015	3/11/2020	description	12440	6220	1	124
+623	4618 Coulter Lane	Atlanta	12345	9/15/2015	3/14/2020	description	12460	6230	497	403
+624	1129 Stroop Hill Road	Los Angeles	98856	9/16/2015	3/17/2020	description	12480	6240	938	375
+625	951 Locust Court	Burgess	14609	9/17/2015	3/20/2020	description	12500	6250	922	182
+626	4928 Poe Road	South Boston	31707	9/18/2015	3/23/2020	description	12520	6260	740	639
+627	452 Pearlman Avenue	Houston	99205	9/19/2015	3/26/2020	description	12540	6270	380	560
+628	4102 Werninger Street	Jermyn	77340	9/20/2015	3/29/2020	description	12560	6280	494	968
+629	377 Conference Center Way	New London	96813	9/21/2015	4/1/2020	description	12580	6290	763	53
+630	3151 Lochmere Lane	Cheyenne	13021	9/22/2015	4/4/2020	description	12600	6300	148	993
+631	1767 Thorn Street	Suitland	45701	9/23/2015	4/7/2020	description	12620	6310	19	460
+632	1439 Bluff Street	Denver	75201	9/24/2015	4/10/2020	description	12640	6320	914	133
+633	2070 Logan Lane	Albany	60633	9/25/2015	4/13/2020	description	12660	6330	557	876
+634	2803 Oak Drive	Beaver Creek	3782	9/26/2015	4/16/2020	description	12680	6340	744	96
+635	3690 New Street	Fullerton	44286	9/27/2015	4/19/2020	description	12700	6350	599	590
+636	1762 Denver Avenue	Agoura	17101	9/28/2015	4/22/2020	description	12720	6360	619	917
+637	4300 Quiet Valley Lane	Philadelphia	94612	9/29/2015	4/25/2020	description	12740	6370	506	433
+638	511 Wakefield Street	Burbank	49508	9/30/2015	4/28/2020	description	12760	6380	848	932
+639	4897 Locust Court	Harrisburg	2142	10/1/2015	5/1/2020	description	12780	6390	513	390
+640	565 Aaron Smith Drive	Oklahoma City	6103	10/2/2015	5/4/2020	description	12800	6400	829	914
+641	1175 Cody Ridge Road	Englewood	1012	10/3/2015	5/7/2020	description	12820	6410	65	86
+642	1900 McKinley Avenue	Danville	29115	10/4/2015	5/10/2020	description	12840	6420	403	892
+643	4536 Water Street	Hollywood	66061	10/5/2015	5/13/2020	description	12860	6430	919	39
+644	3969 Sycamore Fork Road	Portland	15206	10/6/2015	5/16/2020	description	12880	6440	53	715
+645	4324 Chipmunk Lane	Maryland Heights	24382	10/7/2015	5/19/2020	description	12900	6450	620	463
+646	2598 Court Street	Kansas City	32401	10/8/2015	5/22/2020	description	12920	6460	321	417
+647	4904 Poe Lane	Pensacola	19034	10/9/2015	5/25/2020	description	12940	6470	662	288
+648	3769 Star Trek Drive	Damariscotta	45890	10/10/2015	5/28/2020	description	12960	6480	23	897
+649	4246 Bloomfield Way	Wilmington	98501	10/11/2015	5/31/2020	description	12980	6490	530	773
+650	1709 Ray Court	Dallas	13323	10/12/2015	6/3/2020	description	13000	6500	824	903
+651	2597 Stoney Lane	Boise	60601	10/13/2015	6/6/2020	description	13020	6510	238	2
+652	3296 Poplar Chase Lane	Wheeling	75067	10/14/2015	6/9/2020	description	13040	6520	712	765
+653	3573 Tavern Place	Houston	66215	10/15/2015	6/12/2020	description	13060	6530	333	228
+654	701 Monroe Street	Wheaton	32205	10/16/2015	6/15/2020	description	13080	6540	298	797
+655	414 Steele Street	Altamonte Springs	17011	10/17/2015	6/18/2020	description	13100	6550	393	859
+656	3897 McDonald Avenue	Chapel Hill	84047	10/18/2015	6/21/2020	description	13120	6560	344	775
+657	1168 Rockford Mountain Lane	Augusta	98122	10/19/2015	6/24/2020	description	13140	6570	732	354
+658	3429 Still Pastures Drive	Tulsa	93721	10/20/2015	6/27/2020	description	13160	6580	188	17
+659	644 Bridge Street	Parkersburg	53562	10/21/2015	6/30/2020	description	13180	6590	646	341
+660	1256 Hall Valley Drive	Belfast	52001	10/22/2015	7/3/2020	description	13200	6600	789	100
+661	2164 Upton Avenue	Strasburg	36703	10/23/2015	7/6/2020	description	13220	6610	800	610
+662	4999 White Oak Drive	Johnson City	30328	10/24/2015	7/9/2020	description	13240	6620	443	69
+663	2033 Corbin Branch Road	Flint	89014	10/25/2015	7/12/2020	description	13260	6630	244	16
+664	2814 Tuna Street	Chicago	34994	10/26/2015	7/15/2020	description	13280	6640	785	528
+665	2207 Liberty Street	Shelton	30318	10/27/2015	7/18/2020	description	13300	6650	29	467
+666	4387 Edington Drive	Peekskill	95204	10/28/2015	7/21/2020	description	13320	6660	905	532
+667	2481 Collins Avenue	Irvine	40391	10/29/2015	7/24/2020	description	13340	6670	689	311
+668	2827 Summit Street	Southfield	94108	10/30/2015	7/27/2020	description	13360	6680	6	331
+669	107 Logan Lane	Norwalk	63101	10/31/2015	7/30/2020	description	13380	6690	449	71
+670	2753 Commerce Boulevard	Fort Lauderdale	5403	11/1/2015	8/2/2020	description	13400	6700	399	595
+671	741 Cedarstone Drive	Mannford	18706	11/2/2015	8/5/2020	description	13420	6710	997	509
+672	347 Goldleaf Lane	Indianapolis	25701	11/3/2015	8/8/2020	description	13440	6720	159	81
+673	4041 Woodside Circle	Richmond	75051	11/4/2015	8/11/2020	description	13460	6730	896	958
+674	1734 Grove Street	Atlanta	92065	11/5/2015	8/14/2020	description	13480	6740	137	309
+675	93 Stoneybrook Road	Los Angeles	97041	11/6/2015	8/17/2020	description	13500	6750	737	76
+676	694 Wood Duck Drive	Burgess	7041	11/7/2015	8/20/2020	description	13520	6760	892	855
+677	4523 Farm Meadow Drive	South Boston	35215	11/8/2015	8/23/2020	description	13540	6770	614	28
+678	3223 Crestview Manor	Houston	23224	11/9/2015	8/26/2020	description	13560	6780	324	160
+679	592 Eagle Drive	Jermyn	11101	11/10/2015	8/29/2020	description	13580	6790	291	125
+680	842 Mount Street	New London	53151	11/11/2015	9/1/2020	description	13600	6800	613	258
+681	2066 Tuna Street	Cheyenne	15146	11/12/2015	9/4/2020	description	13620	6810	71	702
+682	3819 Fleming Way	Suitland	2154	11/13/2015	9/7/2020	description	13640	6820	652	472
+683	3236 Lucky Duck Drive	Denver	96130	11/14/2015	9/10/2020	description	13660	6830	54	294
+684	790 Riverside Drive	Albany	92801	11/15/2015	9/13/2020	description	13680	6840	525	366
+685	3276 Philadelphia Avenue	Beaver Creek	45402	11/16/2015	9/16/2020	description	13700	6850	963	340
+686	2965 Oakway Lane	Fullerton	27526	11/17/2015	9/19/2020	description	13720	6860	849	101
+687	3304 Weekley Street	Agoura	11354	11/18/2015	9/22/2020	description	13740	6870	438	299
+688	3395 Ingram Street	Philadelphia	60607	11/19/2015	9/25/2020	description	13760	6880	222	339
+689	4490 Dawson Drive	Burbank	15132	11/20/2015	9/28/2020	description	13780	6890	972	268
+690	96 Middleville Road	Harrisburg	37074	11/21/2015	10/1/2020	description	13800	6900	697	33
+691	12 Perine Street	Oklahoma City	80015	11/22/2015	10/4/2020	description	13820	6910	974	562
+692	321 Viking Drive	Englewood	32746	11/23/2015	10/7/2020	description	13840	6920	164	556
+693	1221 Southside Lane	Danville	11743	11/24/2015	10/10/2020	description	13860	6930	852	959
+694	4934 Del Dew Drive	Hollywood	33132	11/25/2015	10/13/2020	description	13880	6940	60	159
+695	2814 Rosewood Court	Portland	48607	11/26/2015	10/16/2020	description	13900	6950	845	107
+696	3842 Stuart Street	Maryland Heights	96782	11/27/2015	10/19/2020	description	13920	6960	711	122
+697	4510 Maple Avenue	Kansas City	93535	11/28/2015	10/22/2020	description	13940	6970	288	735
+698	1083 Neville Street	Pensacola	21742	11/29/2015	10/25/2020	description	13960	6980	147	698
+699	3619 Norma Lane	Damariscotta	98168	11/30/2015	10/28/2020	description	13980	6990	317	573
+700	4444 Garrett Street	Wilmington	7094	12/1/2015	10/31/2020	description	14000	7000	446	831
+701	2506 Parrill Court	Dallas	56560	12/2/2015	11/3/2020	description	14020	7010	286	55
+702	1306 Mercer Street	Boise	72901	12/3/2015	11/6/2020	description	14040	7020	840	842
+703	3471 Thunder Road	Wheeling	25962	12/4/2015	11/9/2020	description	14060	7030	149	347
+704	4819 Bottom Lane	Houston	10007	12/5/2015	11/12/2020	description	14080	7040	692	918
+705	3898 Masonic Drive	Wheaton	89109	12/6/2015	11/15/2020	description	14100	7050	115	994
+706	3963 Jones Avenue	Altamonte Springs	54401	12/7/2015	11/18/2020	description	14120	7060	791	924
+707	1898 Francis Mine	Chapel Hill	68784	12/8/2015	11/21/2020	description	14140	7070	783	5
+708	3977 Oakridge Farm Lane	Augusta	10940	12/9/2015	11/24/2020	description	14160	7080	871	64
+709	3519 Cottrill Lane	Tulsa	73077	12/10/2015	11/27/2020	description	14180	7090	285	478
+710	4889 McDowell Street	Parkersburg	64110	12/11/2015	11/30/2020	description	14200	7100	991	626
+711	4203 Angie Drive	Belfast	43085	12/12/2015	12/3/2020	description	14220	7110	384	198
+712	950 Fairfield Road	Strasburg	55931	12/13/2015	12/6/2020	description	14240	7120	628	833
+713	78 Cherry Ridge Drive	Johnson City	80111	12/14/2015	12/9/2020	description	14260	7130	895	535
+714	4883 Gateway Road	Flint	68310	12/15/2015	12/12/2020	description	14280	7140	505	9
+715	3770 Whiteman Street	Chicago	44846	12/16/2015	12/15/2020	description	14300	7150	743	786
+716	4359 Rosemont Avenue	Shelton	7643	12/17/2015	12/18/2020	description	14320	7160	311	67
+717	1223 Union Street	Peekskill	32446	12/18/2015	12/21/2020	description	14340	7170	543	622
+718	1174 Deer Haven Drive	Irvine	11743	12/19/2015	12/24/2020	description	14360	7180	560	143
+719	305 Pheasant Ridge Road	Southfield	32901	12/20/2015	12/27/2020	description	14380	7190	296	164
+720	4872 Cooks Mine Road	Norwalk	49855	12/21/2015	12/30/2020	description	14400	7200	84	448
+721	639 Michigan Avenue	Fort Lauderdale	85348	12/22/2015	1/2/2021	description	14420	7210	282	588
+722	2136 Hillside Drive	Mannford	46055	12/23/2015	1/5/2021	description	14440	7220	946	203
+723	4619 Settlers Lane	Indianapolis	48335	12/24/2015	1/8/2021	description	14460	7230	464	210
+724	4738 Blair Court	Richmond	48734	12/25/2015	1/11/2021	description	14480	7240	100	108
+725	4497 Vesta Drive	Atlanta	48028	12/26/2015	1/14/2021	description	14500	7250	644	611
+726	2206 Boone Crockett Lane	Los Angeles	23219	12/27/2015	1/17/2021	description	14520	7260	269	492
+727	4205 Old Dear Lane	Burgess	15219	12/28/2015	1/20/2021	description	14540	7270	77	894
+728	4261 Oakwood Circle	South Boston	30606	12/29/2015	1/23/2021	description	14560	7280	765	635
+729	478 Bombardier Way	Houston	84604	12/30/2015	1/26/2021	description	14580	7290	89	636
+730	3323 Bedford Street	Jermyn	90017	12/31/2015	1/29/2021	description	14600	7300	435	596
+731	2817 Foley Street	New London	78205	1/1/2016	2/1/2021	description	14620	7310	150	737
+732	3332 Hornor Avenue	Cheyenne	45044	1/2/2016	2/4/2021	description	14640	7320	597	459
+733	329 Crestview Manor	Suitland	72211	1/3/2016	2/7/2021	description	14660	7330	925	261
+734	4618 Coulter Lane	Denver	91731	1/4/2016	2/10/2021	description	14680	7340	361	841
+735	1129 Stroop Hill Road	Albany	20005	1/5/2016	2/13/2021	description	14700	7350	318	83
+736	951 Locust Court	Beaver Creek	43950	1/6/2016	2/16/2021	description	14720	7360	276	744
+737	4928 Poe Road	Fullerton	90046	1/7/2016	2/19/2021	description	14740	7370	232	313
+738	452 Pearlman Avenue	Agoura	20031	1/8/2016	2/22/2021	description	14760	7380	916	817
+739	4102 Werninger Street	Philadelphia	55057	1/9/2016	2/25/2021	description	14780	7390	552	976
+740	377 Conference Center Way	Burbank	97205	1/10/2016	2/28/2021	description	14800	7400	74	830
+741	3151 Lochmere Lane	Harrisburg	83330	1/11/2016	3/3/2021	description	14820	7410	264	707
+742	1767 Thorn Street	Oklahoma City	47591	1/12/2016	3/6/2021	description	14840	7420	209	728
+743	1439 Bluff Street	Englewood	71201	1/13/2016	3/9/2021	description	14860	7430	250	822
+744	2070 Logan Lane	Danville	49503	1/14/2016	3/12/2021	description	14880	7440	406	91
+745	2803 Oak Drive	Hollywood	46383	1/15/2016	3/15/2021	description	14900	7450	405	253
+746	3690 New Street	Portland	54801	1/16/2016	3/18/2021	description	14920	7460	371	458
+747	1762 Denver Avenue	Maryland Heights	95134	1/17/2016	3/21/2021	description	14940	7470	183	320
+748	4300 Quiet Valley Lane	Kansas City	14736	1/18/2016	3/24/2021	description	14960	7480	2	963
+749	511 Wakefield Street	Pensacola	59230	1/19/2016	3/27/2021	description	14980	7490	642	923
+750	4897 Locust Court	Damariscotta	27444	1/20/2016	3/30/2021	description	15000	7500	806	381
+751	565 Aaron Smith Drive	Wilmington	95926	1/21/2016	4/2/2021	description	15020	7510	702	838
+752	1175 Cody Ridge Road	Dallas	53151	1/22/2016	4/5/2021	description	15040	7520	804	132
+753	1900 McKinley Avenue	Boise	63130	1/23/2016	4/8/2021	description	15060	7530	978	901
+754	4536 Water Street	Wheeling	37204	1/24/2016	4/11/2021	description	15080	7540	260	325
+755	3969 Sycamore Fork Road	Houston	92805	1/25/2016	4/14/2021	description	15100	7550	346	283
+756	4324 Chipmunk Lane	Wheaton	53403	1/26/2016	4/17/2021	description	15120	7560	529	130
+757	2598 Court Street	Altamonte Springs	14482	1/27/2016	4/20/2021	description	15140	7570	179	683
+758	4904 Poe Lane	Chapel Hill	97223	1/28/2016	4/23/2021	description	15160	7580	851	271
+759	3769 Star Trek Drive	Augusta	8102	1/29/2016	4/26/2021	description	15180	7590	376	279
+760	4246 Bloomfield Way	Tulsa	32801	1/30/2016	4/29/2021	description	15200	7600	683	475
+761	1709 Ray Court	Parkersburg	98107	1/31/2016	5/2/2021	description	15220	7610	726	783
+762	2597 Stoney Lane	Belfast	29379	2/1/2016	5/5/2021	description	15240	7620	26	484
+763	3296 Poplar Chase Lane	Strasburg	19107	2/2/2016	5/8/2021	description	15260	7630	797	734
+764	3573 Tavern Place	Johnson City	88339	2/3/2016	5/11/2021	description	15280	7640	411	989
+765	701 Monroe Street	Flint	15017	2/4/2016	5/14/2021	description	15300	7650	672	511
+766	414 Steele Street	Chicago	1890	2/5/2016	5/17/2021	description	15320	7660	499	857
+767	3897 McDonald Avenue	Shelton	11357	2/6/2016	5/20/2021	description	15340	7670	293	7
+768	1168 Rockford Mountain Lane	Peekskill	64093	2/7/2016	5/23/2021	description	15360	7680	309	423
+769	3429 Still Pastures Drive	Irvine	60628	2/8/2016	5/26/2021	description	15380	7690	975	118
+770	644 Bridge Street	Southfield	98584	2/9/2016	5/29/2021	description	15400	7700	30	364
+771	1256 Hall Valley Drive	Norwalk	10566	2/10/2016	6/1/2021	description	15420	7710	83	922
+772	2164 Upton Avenue	Fort Lauderdale	92614	2/11/2016	6/4/2021	description	15440	7720	822	27
+773	4999 White Oak Drive	Mannford	48075	2/12/2016	6/7/2021	description	15460	7730	900	146
+774	2033 Corbin Branch Road	Indianapolis	6851	2/13/2016	6/10/2021	description	15480	7740	132	416
+775	2814 Tuna Street	Richmond	33308	2/14/2016	6/13/2021	description	15500	7750	169	178
+776	2207 Liberty Street	Atlanta	74044	2/15/2016	6/16/2021	description	15520	7760	335	111
+777	4387 Edington Drive	Los Angeles	46214	2/16/2016	6/19/2021	description	15540	7770	739	772
+778	2481 Collins Avenue	Burgess	23233	2/17/2016	6/22/2021	description	15560	7780	685	664
+779	2827 Summit Street	South Boston	30303	2/18/2016	6/25/2021	description	15580	7790	574	131
+780	107 Logan Lane	Houston	90017	2/19/2016	6/28/2021	description	15600	7800	31	397
+781	2753 Commerce Boulevard	Jermyn	29576	2/20/2016	7/1/2021	description	15620	7810	967	586
+782	741 Cedarstone Drive	New London	2127	2/21/2016	7/4/2021	description	15640	7820	876	379
+783	347 Goldleaf Lane	Cheyenne	77032	2/22/2016	7/7/2021	description	15660	7830	556	442
+784	4041 Woodside Circle	Suitland	18433	2/23/2016	7/10/2021	description	15680	7840	111	78
+785	1734 Grove Street	Denver	6320	2/24/2016	7/13/2021	description	15700	7850	97	513
+786	93 Stoneybrook Road	Albany	82003	2/25/2016	7/16/2021	description	15720	7860	124	302
+787	694 Wood Duck Drive	Beaver Creek	20746	2/26/2016	7/19/2021	description	15740	7870	722	692
+788	4523 Farm Meadow Drive	Fullerton	80205	2/27/2016	7/22/2021	description	15760	7880	72	801
+789	3223 Crestview Manor	Agoura	12207	2/28/2016	7/25/2021	description	15780	7890	191	867
+790	592 Eagle Drive	Philadelphia	97004	2/29/2016	7/28/2021	description	15800	7900	761	947
+791	842 Mount Street	Burbank	93632	3/1/2016	7/31/2021	description	15820	7910	32	166
+792	2066 Tuna Street	Harrisburg	91301	3/2/2016	8/3/2021	description	15840	7920	903	432
+793	3819 Fleming Way	Oklahoma City	19107	3/3/2016	8/6/2021	description	15860	7930	391	839
+794	3236 Lucky Duck Drive	Englewood	91505	3/4/2016	8/9/2021	description	15880	7940	770	580
+795	790 Riverside Drive	Danville	17101	3/5/2016	8/12/2021	description	15900	7950	491	895
+796	3276 Philadelphia Avenue	Hollywood	73105	3/6/2016	8/15/2021	description	15920	7960	924	832
+797	2965 Oakway Lane	Portland	80112	3/7/2016	8/18/2021	description	15940	7970	130	727
+798	3304 Weekley Street	Maryland Heights	94526	3/8/2016	8/21/2021	description	15960	7980	704	516
+799	3395 Ingram Street	Kansas City	33023	3/9/2016	8/24/2021	description	15980	7990	735	199
+800	4490 Dawson Drive	Pensacola	4101	3/10/2016	8/27/2021	description	16000	8000	434	405
+801	96 Middleville Road	Damariscotta	63141	3/11/2016	8/30/2021	description	16020	8010	490	380
+802	12 Perine Street	Wilmington	66101	3/12/2016	9/2/2021	description	16040	8020	136	784
+803	321 Viking Drive	Dallas	32501	3/13/2016	9/5/2021	description	16060	8030	429	127
+804	1221 Southside Lane	Boise	4543	3/14/2016	9/8/2021	description	16080	8040	482	466
+805	4934 Del Dew Drive	Wheeling	28412	3/15/2016	9/11/2021	description	16100	8050	949	619
+806	2814 Rosewood Court	Houston	75212	3/16/2016	9/14/2021	description	16120	8060	389	57
+807	3842 Stuart Street	Wheaton	83702	3/17/2016	9/17/2021	description	16140	8070	243	620
+808	4510 Maple Avenue	Altamonte Springs	26003	3/18/2016	9/20/2021	description	16160	8080	594	680
+809	1083 Neville Street	Chapel Hill	77026	3/19/2016	9/23/2021	description	16180	8090	969	59
+810	3619 Norma Lane	Augusta	60187	3/20/2016	9/26/2021	description	16200	8100	289	572
+811	4444 Garrett Street	Tulsa	32714	3/21/2016	9/29/2021	description	16220	8110	706	815
+812	2506 Parrill Court	Parkersburg	27514	3/22/2016	10/2/2021	description	16240	8120	934	213
+813	1306 Mercer Street	Belfast	30901	3/23/2016	10/5/2021	description	16260	8130	816	361
+814	3471 Thunder Road	Strasburg	74120	3/24/2016	10/8/2021	description	16280	8140	360	785
+815	4819 Bottom Lane	Johnson City	26101	3/25/2016	10/11/2021	description	16300	8150	879	192
+816	3898 Masonic Drive	Flint	4915	3/26/2016	10/14/2021	description	16320	8160	204	348
+817	3963 Jones Avenue	Chicago	64090	3/27/2016	10/17/2021	description	16340	8170	937	689
+818	1898 Francis Mine	Shelton	37601	3/28/2016	10/20/2021	description	16360	8180	78	874
+819	3977 Oakridge Farm Lane	Peekskill	48502	3/29/2016	10/23/2021	description	16380	8190	546	818
+820	3519 Cottrill Lane	Irvine	75090	3/30/2016	10/26/2021	description	16400	8200	553	489
+821	4889 McDowell Street	Southfield	30071	3/31/2016	10/29/2021	description	16420	8210	558	546
+822	4203 Angie Drive	Norwalk	21740	4/1/2016	11/1/2021	description	16440	8220	10	673
+823	950 Fairfield Road	Fort Lauderdale	48723	4/2/2016	11/4/2021	description	16460	8230	854	890
+824	78 Cherry Ridge Drive	Mannford	72212	4/3/2016	11/7/2021	description	16480	8240	622	356
+825	4883 Gateway Road	Indianapolis	27406	4/4/2016	11/10/2021	description	16500	8250	217	756
+826	3770 Whiteman Street	Richmond	60527	4/5/2016	11/13/2021	description	16520	8260	496	579
+827	4359 Rosemont Avenue	Atlanta	8854	4/6/2016	11/16/2021	description	16540	8270	131	585
+828	1223 Union Street	Los Angeles	89506	4/7/2016	11/19/2021	description	16560	8280	363	238
+829	1174 Deer Haven Drive	Burgess	90013	4/8/2016	11/22/2021	description	16580	8290	415	981
+830	305 Pheasant Ridge Road	South Boston	12345	4/9/2016	11/25/2021	description	16600	8300	528	80
+831	4872 Cooks Mine Road	Houston	98856	4/10/2016	11/28/2021	description	16620	8310	254	470
+832	639 Michigan Avenue	Jermyn	14609	4/11/2016	12/1/2021	description	16640	8320	373	267
+833	2136 Hillside Drive	New London	31707	4/12/2016	12/4/2021	description	16660	8330	850	350
+834	4619 Settlers Lane	Cheyenne	99205	4/13/2016	12/7/2021	description	16680	8340	565	961
+835	4738 Blair Court	Suitland	77340	4/14/2016	12/10/2021	description	16700	8350	981	284
+836	4497 Vesta Drive	Denver	96813	4/15/2016	12/13/2021	description	16720	8360	738	563
+837	2206 Boone Crockett Lane	Albany	13021	4/16/2016	12/16/2021	description	16740	8370	766	41
+838	4205 Old Dear Lane	Beaver Creek	45701	4/17/2016	12/19/2021	description	16760	8380	388	177
+839	4261 Oakwood Circle	Fullerton	75201	4/18/2016	12/22/2021	description	16780	8390	661	445
+840	478 Bombardier Way	Agoura	60633	4/19/2016	12/25/2021	description	16800	8400	601	139
+841	3323 Bedford Street	Philadelphia	3782	4/20/2016	12/28/2021	description	16820	8410	731	225
+842	2817 Foley Street	Burbank	44286	4/21/2016	12/31/2021	description	16840	8420	899	391
+843	3332 Hornor Avenue	Harrisburg	17101	4/22/2016	1/3/2022	description	16860	8430	623	960
+844	329 Crestview Manor	Oklahoma City	94612	4/23/2016	1/6/2022	description	16880	8440	693	742
+845	4618 Coulter Lane	Englewood	49508	4/24/2016	1/9/2022	description	16900	8450	948	31
+846	1129 Stroop Hill Road	Danville	2142	4/25/2016	1/12/2022	description	16920	8460	703	860
+847	951 Locust Court	Hollywood	6103	4/26/2016	1/15/2022	description	16940	8470	21	47
+848	4928 Poe Road	Portland	1012	4/27/2016	1/18/2022	description	16960	8480	430	157
+849	452 Pearlman Avenue	Maryland Heights	29115	4/28/2016	1/21/2022	description	16980	8490	787	847
+850	4102 Werninger Street	Kansas City	66061	4/29/2016	1/24/2022	description	17000	8500	481	602
+851	377 Conference Center Way	Pensacola	15206	4/30/2016	1/27/2022	description	17020	8510	889	151
+852	3151 Lochmere Lane	Damariscotta	24382	5/1/2016	1/30/2022	description	17040	8520	193	222
+853	1767 Thorn Street	Wilmington	32401	5/2/2016	2/2/2022	description	17060	8530	610	272
+854	1439 Bluff Street	Dallas	19034	5/3/2016	2/5/2022	description	17080	8540	534	883
+855	2070 Logan Lane	Boise	45890	5/4/2016	2/8/2022	description	17100	8550	708	42
+856	2803 Oak Drive	Wheeling	98501	5/5/2016	2/11/2022	description	17120	8560	588	713
+857	3690 New Street	Houston	13323	5/6/2016	2/14/2022	description	17140	8570	996	850
+858	1762 Denver Avenue	Wheaton	60601	5/7/2016	2/17/2022	description	17160	8580	640	684
+859	4300 Quiet Valley Lane	Altamonte Springs	75067	5/8/2016	2/20/2022	description	17180	8590	666	220
+860	511 Wakefield Street	Chapel Hill	66215	5/9/2016	2/23/2022	description	17200	8600	240	420
+861	4897 Locust Court	Augusta	32205	5/10/2016	2/26/2022	description	17220	8610	412	223
+862	565 Aaron Smith Drive	Tulsa	17011	5/11/2016	3/1/2022	description	17240	8620	625	733
+863	1175 Cody Ridge Road	Parkersburg	84047	5/12/2016	3/4/2022	description	17260	8630	225	450
+864	1900 McKinley Avenue	Belfast	98122	5/13/2016	3/7/2022	description	17280	8640	452	476
+865	4536 Water Street	Strasburg	93721	5/14/2016	3/10/2022	description	17300	8650	886	589
+866	3969 Sycamore Fork Road	Johnson City	53562	5/15/2016	3/13/2022	description	17320	8660	342	574
+867	4324 Chipmunk Lane	Flint	52001	5/16/2016	3/16/2022	description	17340	8670	883	335
+868	2598 Court Street	Chicago	36703	5/17/2016	3/19/2022	description	17360	8680	284	346
+869	4904 Poe Lane	Shelton	30328	5/18/2016	3/22/2022	description	17380	8690	842	21
+870	3769 Star Trek Drive	Peekskill	89014	5/19/2016	3/25/2022	description	17400	8700	992	741
+871	4246 Bloomfield Way	Irvine	34994	5/20/2016	3/28/2022	description	17420	8710	684	671
+872	1709 Ray Court	Southfield	30318	5/21/2016	3/31/2022	description	17440	8720	120	92
+873	2597 Stoney Lane	Norwalk	95204	5/22/2016	4/3/2022	description	17460	8730	246	262
+874	3296 Poplar Chase Lane	Fort Lauderdale	40391	5/23/2016	4/6/2022	description	17480	8740	331	158
+875	3573 Tavern Place	Mannford	94108	5/24/2016	4/9/2022	description	17500	8750	767	73
+876	701 Monroe Street	Indianapolis	63101	5/25/2016	4/12/2022	description	17520	8760	954	281
+877	414 Steele Street	Richmond	5403	5/26/2016	4/15/2022	description	17540	8770	586	757
+878	3897 McDonald Avenue	Atlanta	18706	5/27/2016	4/18/2022	description	17560	8780	174	939
+879	1168 Rockford Mountain Lane	Los Angeles	25701	5/28/2016	4/21/2022	description	17580	8790	385	724
+880	3429 Still Pastures Drive	Burgess	75051	5/29/2016	4/24/2022	description	17600	8800	598	512
+881	644 Bridge Street	South Boston	92065	5/30/2016	4/27/2022	description	17620	8810	42	587
+882	1256 Hall Valley Drive	Houston	97041	5/31/2016	4/30/2022	description	17640	8820	485	593
+883	2164 Upton Avenue	Jermyn	7041	6/1/2016	5/3/2022	description	17660	8830	941	627
+884	4999 White Oak Drive	New London	35215	6/2/2016	5/6/2022	description	17680	8840	486	252
+885	2033 Corbin Branch Road	Cheyenne	23224	6/3/2016	5/9/2022	description	17700	8850	911	646
+886	2814 Tuna Street	Suitland	11101	6/4/2016	5/12/2022	description	17720	8860	576	612
+887	2207 Liberty Street	Denver	53151	6/5/2016	5/15/2022	description	17740	8870	654	926
+888	4387 Edington Drive	Albany	15146	6/6/2016	5/18/2022	description	17760	8880	79	60
+889	2481 Collins Avenue	Beaver Creek	2154	6/7/2016	5/21/2022	description	17780	8890	123	840
+890	2827 Summit Street	Fullerton	96130	6/8/2016	5/24/2022	description	17800	8900	35	176
+891	107 Logan Lane	Agoura	92801	6/9/2016	5/27/2022	description	17820	8910	679	552
+892	2753 Commerce Boulevard	Philadelphia	45402	6/10/2016	5/30/2022	description	17840	8920	109	803
+893	741 Cedarstone Drive	Burbank	27526	6/11/2016	6/2/2022	description	17860	8930	615	688
+894	347 Goldleaf Lane	Harrisburg	11354	6/12/2016	6/5/2022	description	17880	8940	718	119
+895	4041 Woodside Circle	Oklahoma City	60607	6/13/2016	6/8/2022	description	17900	8950	915	465
+896	1734 Grove Street	Englewood	15132	6/14/2016	6/11/2022	description	17920	8960	231	871
+897	93 Stoneybrook Road	Danville	37074	6/15/2016	6/14/2022	description	17940	8970	154	412
+898	694 Wood Duck Drive	Hollywood	80015	6/16/2016	6/17/2022	description	17960	8980	555	13
+899	4523 Farm Meadow Drive	Portland	32746	6/17/2016	6/20/2022	description	17980	8990	214	725
+900	3223 Crestview Manor	Maryland Heights	11743	6/18/2016	6/23/2022	description	18000	9000	469	988
+901	592 Eagle Drive	Kansas City	33132	6/19/2016	6/26/2022	description	18020	9010	727	471
+902	842 Mount Street	Pensacola	48607	6/20/2016	6/29/2022	description	18040	9020	265	181
+903	2066 Tuna Street	Damariscotta	96782	6/21/2016	7/2/2022	description	18060	9030	870	112
+904	3819 Fleming Way	Wilmington	93535	6/22/2016	7/5/2022	description	18080	9040	976	690
+905	3236 Lucky Duck Drive	Dallas	21742	6/23/2016	7/8/2022	description	18100	9050	350	945
+906	790 Riverside Drive	Boise	98168	6/24/2016	7/11/2022	description	18120	9060	779	79
+907	3276 Philadelphia Avenue	Wheeling	7094	6/25/2016	7/14/2022	description	18140	9070	251	995
+908	2965 Oakway Lane	Houston	56560	6/26/2016	7/17/2022	description	18160	9080	957	486
+909	3304 Weekley Street	Wheaton	72901	6/27/2016	7/20/2022	description	18180	9090	432	882
+910	3395 Ingram Street	Altamonte Springs	25962	6/28/2016	7/23/2022	description	18200	9100	220	909
+911	4490 Dawson Drive	Chapel Hill	10007	6/29/2016	7/26/2022	description	18220	9110	602	766
+912	96 Middleville Road	Augusta	89109	6/30/2016	7/29/2022	description	18240	9120	891	974
+913	12 Perine Street	Tulsa	54401	7/1/2016	8/1/2022	description	18260	9130	962	34
+914	321 Viking Drive	Parkersburg	68784	7/2/2016	8/4/2022	description	18280	9140	888	865
+915	1221 Southside Lane	Belfast	10940	7/3/2016	8/7/2022	description	18300	9150	467	18
+916	4934 Del Dew Drive	Strasburg	73077	7/4/2016	8/10/2022	description	18320	9160	470	990
+917	2814 Rosewood Court	Johnson City	64110	7/5/2016	8/13/2022	description	18340	9170	890	624
+918	3842 Stuart Street	Flint	43085	7/6/2016	8/16/2022	description	18360	9180	649	235
+919	4510 Maple Avenue	Chicago	55931	7/7/2016	8/19/2022	description	18380	9190	462	204
+920	1083 Neville Street	Shelton	80111	7/8/2016	8/22/2022	description	18400	9200	757	955
+921	3619 Norma Lane	Peekskill	68310	7/9/2016	8/25/2022	description	18420	9210	330	383
+922	4444 Garrett Street	Irvine	44846	7/10/2016	8/28/2022	description	18440	9220	456	655
+923	2506 Parrill Court	Southfield	7643	7/11/2016	8/31/2022	description	18460	9230	255	931
+924	1306 Mercer Street	Norwalk	32446	7/12/2016	9/3/2022	description	18480	9240	160	943
+925	3471 Thunder Road	Fort Lauderdale	11743	7/13/2016	9/6/2022	description	18500	9250	749	745
+926	4819 Bottom Lane	Mannford	32901	7/14/2016	9/9/2022	description	18520	9260	343	162
+927	3898 Masonic Drive	Indianapolis	49855	7/15/2016	9/12/2022	description	18540	9270	950	557
+928	3963 Jones Avenue	Richmond	85348	7/16/2016	9/15/2022	description	18560	9280	590	414
+929	1898 Francis Mine	Atlanta	46055	7/17/2016	9/18/2022	description	18580	9290	87	880
+930	3977 Oakridge Farm Lane	Los Angeles	48335	7/18/2016	9/21/2022	description	18600	9300	815	514
+931	3519 Cottrill Lane	Burgess	48734	7/19/2016	9/24/2022	description	18620	9310	563	240
+932	4889 McDowell Street	South Boston	48028	7/20/2016	9/27/2022	description	18640	9320	618	211
+933	4203 Angie Drive	Houston	23219	7/21/2016	9/30/2022	description	18660	9330	257	952
+934	950 Fairfield Road	Jermyn	15219	7/22/2016	10/3/2022	description	18680	9340	699	46
+935	78 Cherry Ridge Drive	New London	30606	7/23/2016	10/6/2022	description	18700	9350	374	322
+936	4883 Gateway Road	Cheyenne	84604	7/24/2016	10/9/2022	description	18720	9360	858	769
+937	3770 Whiteman Street	Suitland	90017	7/25/2016	10/12/2022	description	18740	9370	126	632
+938	4359 Rosemont Avenue	Denver	78205	7/26/2016	10/15/2022	description	18760	9380	825	592
+939	1223 Union Street	Albany	45044	7/27/2016	10/18/2022	description	18780	9390	814	878
+940	1174 Deer Haven Drive	Beaver Creek	72211	7/28/2016	10/21/2022	description	18800	9400	55	529
+941	305 Pheasant Ridge Road	Fullerton	91731	7/29/2016	10/24/2022	description	18820	9410	682	310
+942	4872 Cooks Mine Road	Agoura	20005	7/30/2016	10/27/2022	description	18840	9420	940	144
+943	639 Michigan Avenue	Philadelphia	43950	7/31/2016	10/30/2022	description	18860	9430	419	515
+944	2136 Hillside Drive	Burbank	90046	8/1/2016	11/2/2022	description	18880	9440	340	408
+945	4619 Settlers Lane	Harrisburg	20031	8/2/2016	11/5/2022	description	18900	9450	3	165
+946	4738 Blair Court	Oklahoma City	55057	8/3/2016	11/8/2022	description	18920	9460	36	338
+947	4497 Vesta Drive	Englewood	97205	8/4/2016	11/11/2022	description	18940	9470	473	173
+948	2206 Boone Crockett Lane	Danville	83330	8/5/2016	11/14/2022	description	18960	9480	409	360
+949	4205 Old Dear Lane	Hollywood	47591	8/6/2016	11/17/2022	description	18980	9490	747	502
+950	4261 Oakwood Circle	Portland	71201	8/7/2016	11/20/2022	description	19000	9500	964	795
+951	478 Bombardier Way	Maryland Heights	49503	8/8/2016	11/23/2022	description	19020	9510	961	693
+952	3323 Bedford Street	Kansas City	46383	8/9/2016	11/26/2022	description	19040	9520	817	501
+953	2817 Foley Street	Pensacola	54801	8/10/2016	11/29/2022	description	19060	9530	873	308
+954	3332 Hornor Avenue	Damariscotta	95134	8/11/2016	12/2/2022	description	19080	9540	752	558
+955	329 Crestview Manor	Wilmington	14736	8/12/2016	12/5/2022	description	19100	9550	655	498
+956	4618 Coulter Lane	Dallas	59230	8/13/2016	12/8/2022	description	19120	9560	165	875
+957	1129 Stroop Hill Road	Boise	27444	8/14/2016	12/11/2022	description	19140	9570	82	668
+958	951 Locust Court	Wheeling	95926	8/15/2016	12/14/2022	description	19160	9580	748	3
+959	4928 Poe Road	Houston	53151	8/16/2016	12/17/2022	description	19180	9590	279	884
+960	452 Pearlman Avenue	Wheaton	63130	8/17/2016	12/20/2022	description	19200	9600	107	716
+961	4102 Werninger Street	Altamonte Springs	37204	8/18/2016	12/23/2022	description	19220	9610	516	868
+962	377 Conference Center Way	Chapel Hill	92805	8/19/2016	12/26/2022	description	19240	9620	152	844
+963	3151 Lochmere Lane	Augusta	53403	8/20/2016	12/29/2022	description	19260	9630	479	992
+964	1767 Thorn Street	Tulsa	14482	8/21/2016	1/1/2023	description	19280	9640	461	907
+965	1439 Bluff Street	Parkersburg	97223	8/22/2016	1/4/2023	description	19300	9650	798	155
+966	2070 Logan Lane	Belfast	8102	8/23/2016	1/7/2023	description	19320	9660	442	103
+967	2803 Oak Drive	Strasburg	32801	8/24/2016	1/10/2023	description	19340	9670	258	853
+968	3690 New Street	Johnson City	98107	8/25/2016	1/13/2023	description	19360	9680	207	434
+969	1762 Denver Avenue	Flint	29379	8/26/2016	1/16/2023	description	19380	9690	531	782
+970	4300 Quiet Valley Lane	Chicago	19107	8/27/2016	1/19/2023	description	19400	9700	417	95
+971	511 Wakefield Street	Shelton	88339	8/28/2016	1/22/2023	description	19420	9710	495	808
+972	4897 Locust Court	Peekskill	15017	8/29/2016	1/25/2023	description	19440	9720	155	929
+973	565 Aaron Smith Drive	Irvine	1890	8/30/2016	1/28/2023	description	19460	9730	398	717
+974	1175 Cody Ridge Road	Southfield	11357	8/31/2016	1/31/2023	description	19480	9740	775	657
+975	1900 McKinley Avenue	Norwalk	64093	9/1/2016	2/3/2023	description	19500	9750	98	600
+976	4536 Water Street	Fort Lauderdale	60628	9/2/2016	2/6/2023	description	19520	9760	463	148
+977	3969 Sycamore Fork Road	Mannford	98584	9/3/2016	2/9/2023	description	19540	9770	352	401
+978	4324 Chipmunk Lane	Indianapolis	10566	9/4/2016	2/12/2023	description	19560	9780	832	768
+979	2598 Court Street	Richmond	92614	9/5/2016	2/15/2023	description	19580	9790	947	226
+980	4904 Poe Lane	Atlanta	48075	9/6/2016	2/18/2023	description	19600	9800	166	708
+981	3769 Star Trek Drive	Los Angeles	6851	9/7/2016	2/21/2023	description	19620	9810	514	738
+982	4246 Bloomfield Way	Burgess	33308	9/8/2016	2/24/2023	description	19640	9820	773	428
+983	1709 Ray Court	South Boston	74044	9/9/2016	2/27/2023	description	19660	9830	408	649
+984	2597 Stoney Lane	Houston	46214	9/10/2016	3/2/2023	description	19680	9840	554	851
+985	3296 Poplar Chase Lane	Jermyn	23233	9/11/2016	3/5/2023	description	19700	9850	742	544
+986	3573 Tavern Place	New London	30303	9/12/2016	3/8/2023	description	19720	9860	736	304
+987	701 Monroe Street	Cheyenne	90017	9/13/2016	3/11/2023	description	19740	9870	46	330
+988	414 Steele Street	Suitland	29576	9/14/2016	3/14/2023	description	19760	9880	677	750
+989	3897 McDonald Avenue	Denver	2127	9/15/2016	3/17/2023	description	19780	9890	140	987
+990	1168 Rockford Mountain Lane	Albany	77032	9/16/2016	3/20/2023	description	19800	9900	660	398
+991	3429 Still Pastures Drive	Beaver Creek	18433	9/17/2016	3/23/2023	description	19820	9910	90	248
+992	644 Bridge Street	Fullerton	6320	9/18/2016	3/26/2023	description	19840	9920	27	609
+993	1256 Hall Valley Drive	Agoura	82003	9/19/2016	3/29/2023	description	19860	9930	5	541
+994	2164 Upton Avenue	Philadelphia	20746	9/20/2016	4/1/2023	description	19880	9940	539	852
+995	4999 White Oak Drive	Burbank	80205	9/21/2016	4/4/2023	description	19900	9950	108	537
+996	2033 Corbin Branch Road	Harrisburg	12207	9/22/2016	4/7/2023	description	19920	9960	105	980
+997	2814 Tuna Street	Oklahoma City	97004	9/23/2016	4/10/2023	description	19940	9970	723	424
+998	2207 Liberty Street	Englewood	93632	9/24/2016	4/13/2023	description	19960	9980	281	20
+999	4387 Edington Drive	Danville	91301	9/25/2016	4/16/2023	description	19980	9990	210	170
+1000	2164 Upton Avenue	Hollywood	19107	9/26/2016	4/19/2023	description	20000	10000	673	625
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
