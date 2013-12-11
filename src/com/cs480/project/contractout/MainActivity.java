@@ -87,10 +87,11 @@ public class MainActivity extends Activity {
    private void verifyLogIn(EditText user, EditText pass){
       String userInfo;
       try {
-         userInfo = DatabaseInteractor.logIn(user.getText().toString(), pass.getText().toString());
+         DatabaseInteractor db = new DatabaseInteractor();
+         userInfo = db.logIn(user.getText().toString(), pass.getText().toString());
       } catch (IOException e1) {
          e1.printStackTrace();
-         System.exit(1);
+//         System.exit(1);
          return;
       }
       
