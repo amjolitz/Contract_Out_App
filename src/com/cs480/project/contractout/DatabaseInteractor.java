@@ -1,19 +1,32 @@
 package com.cs480.project.contractout;
 
 import android.app.Activity;
-import android.database.Cursor;
-import android.database.sqlite.*;
+import android.content.res.*;
+import android.content.*;
+//import android.database.Cursor;
+//import android.database.sqlite.*;
 
-public class DatabaseInteractor extends Activity{
+public class DatabaseInteractor extends Activity {
    
    // Globals
-   static SQLiteDatabase db;
+   static String PATH;
+   AssetManager assetMan;
+//   AssetFileDescriptor file;
+//   SQLiteDatabase db;
 	
    /*
     * Checks username and password against the database to ensure that there is a matching 
     * entry.
     */
    public static String logIn(String username, String password) {
+	  String fileName = "TSV_Users.txt";
+	  String[][] data = readFile(fileName);
+	  // Dump file into array (see Alex?)
+	  // Search array for matching username and password
+	  // return "False" or string in Alex's format with <>'s
+   }
+   
+   public static String[][] getData(String args) {
 //      String whereClause = "username='" + username + "' and password='" + password + "'";
 //      Cursor curs = db.query ("Users", null, whereClause, null, null, null, null, null);
 //      return "False";
@@ -36,17 +49,39 @@ public class DatabaseInteractor extends Activity{
       return temp;
    }
    
-   public static int insertData(String args){
+   public static int insertData(String args) {
       return 0;
    }
    
-   public static int updateData(String args){
+   public static int updateData(String args) {
       return 0;
    }
 
    public static boolean initializer(String filepath) {
-      String fileName = filepath + "user_data.db";
-      db = SQLiteDatabase.openOrCreateDatabase(fileName, null);
+      PATH = filepath;
+      Context context = new Context();
+      assetMan = context.getAssets();
+//      String fileName = "user_data.db";
+//      file = assetMan.openFd(fileName); 
+//      db = SQLiteDatabase.openOrCreateDatabase(file, null);
+      // @todo Check AssetManager.list() for all expected file names and creat all missing ones
       return true;
+   }
+   
+   
+/***************************            HELPERS           *****************************/
+   
+   /*
+    * Searches the asset manager for fileName, opens it, reads its contents, and converts 
+    * them into a 2-d array of Strings.
+    */
+   private String[][] readFile(String fileName) {
+	  AssetFileDescriptor file = assetMan.openFd(fileName); 
+	  AutoCloseInputStream input = new AssetFileDescriptor.AutoCloseInputStream(file);
+	  byte[] buffer = new byte[];
+	  input.read(buffer);
+	  String fileData = new String(bytes, "UTF-8");
+	  String[][] data = fileData.split("\r\n").split("\t");
+	  return data;
    }
 }
