@@ -91,8 +91,8 @@ public class RegisterActivity extends Activity {
    
    protected void createNewAccount(String username, String password, String address, String address2, String city, 
                                    String state, String zip, String phone) {
-      DatabaseInteractor.insertData("User;username=<" + username + ">;password=<" + password + ">;billing_address=<" + address + ">;billing_city=<" + 
-                                    city + ">;billing_state=<" + state + ">;billing_zip=<" + zip + ">;user_phone=<" + phone + ">");
+      DatabaseInteractor.insertData("User;username=" + username + ";password=" + password + ";billing_address=" + address + ";billing_city=" + 
+                                    city + ";billing_state=" + state + ";billing_zip=" + zip + ";user_phone=" + phone + "");
       
    }
 

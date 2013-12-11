@@ -111,7 +111,7 @@ public class ChangePasswordActivity extends Activity {
       }catch(IOException e){
          e.printStackTrace();
       }
-      DatabaseInteractor.updateData("User;id=<" + userInfo[0] + ">;password=<" + userInfo[2] + ">");
+      DatabaseInteractor.updateData("User;id=" + userInfo[0] + ";password=" + userInfo[2] + "");
 
    }
 

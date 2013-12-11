@@ -2,6 +2,7 @@ package com.cs480.project.contractout;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.NotificationManager;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,8 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 public class InspectContractorActivity extends Activity {
+   
+   Bundle extras;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +24,15 @@ public class InspectContractorActivity extends Activity {
       final RatingBar friendliness = (RatingBar) findViewById(R.id.inspectFriendlinessRating);
       final RatingBar quality = (RatingBar) findViewById(R.id.inspectQualityRating);
       final RatingBar timeliness = (RatingBar) findViewById(R.id.InspectTimelinessRating);
-      Bundle extras = getIntent().getExtras();
+      extras = getIntent().getExtras();
       
       contractorName.setText(extras.getString("Contractor Name"));
       finishDate.setText(extras.getString("Price"));
+      
+      String[][] contractorRatings = DatabaseInteractor.getData("Contractor_Avg_Ratings;contractor_id=" + extras.getString("id"));
+      friendliness.setRating(Float.parseFloat(contractorRatings[0][1]));
+      quality.setRating(Float.parseFloat(contractorRatings[0][2]));
+      timeliness.setRating(Float.parseFloat(contractorRatings[0][3]));
       
    // Logic for when the Return button is pressed
       backButton.setOnClickListener(new View.OnClickListener() {
@@ -65,9 +73,10 @@ public class InspectContractorActivity extends Activity {
       }); 
    }
    
-   protected void confirmJob() {
-      // TODO Auto-generated method stub
-      
+   protected void confirmJob() { 
+      DatabaseInteractor.insertData("Job;job_id=" + extras.getString("key") + ";selected_contractor=" + extras.getString("id"));
+      NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+      nm.cancel(Integer.parseInt(extras.getString("key")));
    }
 
    @Override
