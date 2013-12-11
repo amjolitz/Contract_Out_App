@@ -1,6 +1,7 @@
 package com.cs480.project.contractout;
 
 import android.app.Activity;
+import android.database.Cursor;
 import android.database.sqlite.*;
 
 public class DatabaseInteractor extends Activity{
@@ -13,10 +14,15 @@ public class DatabaseInteractor extends Activity{
     * entry.
     */
    public static String logIn(String username, String password) {
-	  String whereClause = "username='" + username + "' and password='" + password + "'";
-	  curs = query ("Users", null, whereClause, [], null, null, null, null);
+//      String whereClause = "username='" + username + "' and password='" + password + "'";
+//      Cursor curs = db.query ("Users", null, whereClause, null, null, null, null, null);
+//      return "False";
+      if(username.equals("danialr@gmail.com") && password.equals("adzq"))
+         return "<123456>, <danialr@gmail.com>, <adzq>, <Danial Racker>, <1234 Fake St>, <Springfield>, <Illinois>, <12334>, <9515551234>";
+      else
+         return "False";
    }
-   
+
    public static String[][] getData(String args){
       String[][] temp = new String[3][];
       if(args.equals("Jobs;creator=<123456>;end_date=")){

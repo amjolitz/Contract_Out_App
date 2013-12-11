@@ -85,8 +85,7 @@ public class MainActivity extends Activity {
  
    // temporary method will likely be split into two methods later on   
    private void verifyLogIn(EditText user, EditText pass){
-      String tempString = "user_name=<" + user.getText().toString() +">;password=<" + pass.getText().toString() + ">";
-      String userInfo = DatabaseInteractor.logIn(tempString);
+      String userInfo = DatabaseInteractor.logIn(user.getText().toString(), pass.getText().toString());
       
       if(!userInfo.equals("False")){
          try {

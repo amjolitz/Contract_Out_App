@@ -69,8 +69,8 @@ public class RateContractorActivity extends Activity {
       String key = extras.getString("key");
       String key2 = extras.getString("jobKey");
       
-      DatabaseInteractor.updateData("Contractor_Ratings;contractor=<" + key + ">;job=<" + key2 + ">;rating_friendliness=<" + 
-                                     friendliness + ">;rating_quality=<" + quality + ">;rating_timeliness=<" + timeliness + ">");      
+      DatabaseInteractor.updateData("Contractor_Ratings;contractor=" + key + ";job=" + key2 + ";rating_friendliness=" + 
+                                     friendliness + ";rating_quality=" + quality + ";rating_timeliness=" + timeliness + "");      
    }
 
    @Override

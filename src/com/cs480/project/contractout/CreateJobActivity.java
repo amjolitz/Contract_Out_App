@@ -30,6 +30,7 @@ public class CreateJobActivity extends Activity {
    NotificationManager nm;
    Boolean destroyFlag;
    String[] userInfo = new String[9];
+   String priceId;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -179,18 +180,19 @@ public class CreateJobActivity extends Activity {
          return 0;
       }
       
-      String jobType = DatabaseInteractor.getData("Job_Types;job_type_name=<" + type + ">")[0][0];
-      String priceRange = DatabaseInteractor.getData("Price_Ranges;price_range_text=<" + price + ">")[0][0];   
+      String jobType = DatabaseInteractor.getData("Job_Types;job_type_name=" + type + "")[0][0];
+      String priceRange = DatabaseInteractor.getData("Price_Ranges;price_range_text=" + price + "")[0][0];   
       
-      DatabaseInteractor.insertData("Jobs;job_address=<" + add + ">;job_city=<" + city + ">;job_zip=<" + zip + 
-                                    ">;job_start_date=<" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
-                                    ">;job_description=<" + desc + ">;job_zip=<" + zip + ">;creator=<" + userId + 
-                                    ">;job_type=<" + jobType + ">;price_range=<" + priceRange + ">");
+      DatabaseInteractor.insertData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
+                                    ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+                                    ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
+                                    ";job_type=" + jobType + ";price_range=" + priceRange + "");
       
-      String temp = DatabaseInteractor.getData("Jobs;job_address=<" + add + ">;job_city=<" + city + ">;job_zip=<" + zip + 
-            ">;job_start_date=<" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
-            ">;job_description=<" + desc + ">;job_zip=<" + zip + ">;creator=<" + userId + 
-            ">;job_type=<" + jobType + ">;price_range=<" + priceRange + ">")[0][0];
+      String temp = DatabaseInteractor.getData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
+            ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+            ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
+            ";job_type=" + jobType + ";price_range=" + priceRange + "")[0][0];
+      priceId = priceRange;
 
       int tempInt = Integer.parseInt(temp);
       return tempInt;
@@ -200,6 +202,7 @@ public class CreateJobActivity extends Activity {
    {
       Intent intent = new Intent(this, ContractOffersActivity.class);
       intent.putExtra("Job ID", uniqueId);
+      intent.putExtra("Price", priceId);
       PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
       String body = "This is a notification of pending contract offers";
       String title = "Contract Out Notification";

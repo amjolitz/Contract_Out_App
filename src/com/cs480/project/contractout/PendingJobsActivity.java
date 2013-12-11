@@ -34,7 +34,7 @@ public class PendingJobsActivity extends Activity {
          return;
       }
       
-      String[][] jobList = DatabaseInteractor.getData("Jobs;creator=<" + userId + ">;end_date=");
+      String[][] jobList = DatabaseInteractor.getData("Jobs;creator=" + userId + ";end_date=");
    
 //  Prints list of incomplete jobs (ones which have not reached its end date)
 //  Format: JobID  JobStartDate   SelectedContractor

@@ -131,8 +131,8 @@ public class AccountInfoActivity extends Activity {
       }catch(IOException e){
          e.printStackTrace();
       }
-      DatabaseInteractor.updateData("User;user_id=<" + userInfo[0] + ">;billing_address=<" + userInfo[4] + ">;billing_city=<" + userInfo[5] + 
-                                    ">;billing_state=<" + userInfo[6] + ">;billing_zip=<" + userInfo[7] + ">;user_phone=<" + userInfo[8] + ">");
+      DatabaseInteractor.updateData("User;user_id=" + userInfo[0] + ";billing_address=" + userInfo[4] + ";billing_city=" + userInfo[5] + 
+                                    ";billing_state=" + userInfo[6] + ";billing_zip=" + userInfo[7] + ";user_phone=" + userInfo[8]);
       
       Thread timer = new Thread(){
          public void run(){

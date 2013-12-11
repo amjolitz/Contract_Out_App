@@ -47,7 +47,7 @@ public class CompletedJobsActivity extends Activity {
          return;
       }
       
-      jobsList = DatabaseInteractor.getData("UnratedJobs;user_id=<" + userInfo + ">");
+      jobsList = DatabaseInteractor.getData("UnratedJobs;user_id=" + userInfo + "");
       listLength = jobsList.length;
       index = 1;
       
@@ -55,21 +55,21 @@ public class CompletedJobsActivity extends Activity {
          endDate1 = jobsList[index][5];
          key1 = jobsList[index][10];
          jobKey1 = jobsList[index][0];
-         String temp = DatabaseInteractor.getData("Contractors;contractor_id=<" + key1 + ">")[0][4];
+         String temp = DatabaseInteractor.getData("Contractors;contractor_id=" + key1 + "")[0][4];
          job1.setText(temp);
       }
       if(listLength > index+1){
          endDate2 = jobsList[index+1][5];
          key2 = jobsList[index+1][10];
          jobKey2 = jobsList[index+1][0];
-         String temp = DatabaseInteractor.getData("Contractors;contractor_id=<" + key2 + ">")[0][4];
+         String temp = DatabaseInteractor.getData("Contractors;contractor_id=" + key2 + "")[0][4];
          job2.setText(temp);
       }
       if(listLength > index+2){
          endDate3 = jobsList[index+2][5];
          key3 = jobsList[index+2][10];
          jobKey3 = jobsList[index+2][0];
-         String temp = DatabaseInteractor.getData("Contractors;contractor_id=<" + key3 + ">")[0][4];
+         String temp = DatabaseInteractor.getData("Contractors;contractor_id=" + key3 + "")[0][4];
          job3.setText(temp);
       }
       
