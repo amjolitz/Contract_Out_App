@@ -1,41 +1,19 @@
 package com.cs480.project.contractout;
 
 import android.app.Activity;
-<<<<<<< HEAD
-import android.content.res.*;
-import android.content.*;
-=======
->>>>>>> 0a006ad7fd7d07cbbda33ff19119dd1b83ca1344
 import android.database.Cursor;
 import android.database.sqlite.*;
 
-public class DatabaseInteractor extends Activity {
+public class DatabaseInteractor extends Activity{
    
    // Globals
-   static String PATH;
-   AssetManager assetMan;
-   AssetFileDescriptor file;
-   SQLiteDatabase db;
+   static SQLiteDatabase db;
 	
    /*
     * Checks username and password against the database to ensure that there is a matching 
     * entry.
     */
    public static String logIn(String username, String password) {
-	   String whereClause = "username='" + username + "' and password='" + password + "'";
-       Cursor curs = db.query ("Users", null, whereClause, null, null, null, null, null);
-	   
-//	  String fileName = "TSV_Users.txt";
-//	  AssetFileDescriptor file = assetMan.openFd(fileName); 
-//	  AutoCloseInputStream input = new AssetFileDescriptor.AutoCloseInputStream(file);
-//	  byte[] buffer = new byte[];
-//	  input.read(buffer);
-	  // Dump file into array (see Alex?)
-	  // Search array for matching username and password
-	  // return "False" or string in Alex's format with <>'s
-   }
-   
-   public static String[][] getData(String args) {
 //      String whereClause = "username='" + username + "' and password='" + password + "'";
 //      Cursor curs = db.query ("Users", null, whereClause, null, null, null, null, null);
 //      return "False";
@@ -58,22 +36,17 @@ public class DatabaseInteractor extends Activity {
       return temp;
    }
    
-   public static int insertData(String args) {
+   public static int insertData(String args){
       return 0;
    }
    
-   public static int updateData(String args) {
+   public static int updateData(String args){
       return 0;
    }
 
    public static boolean initializer(String filepath) {
-      PATH = filepath;
-      Context context = new Context();
-      assetMan = context.getAssets();
-      String fileName = "user_data.db";
-      file = assetMan.openFd(fileName); 
-      db = SQLiteDatabase.openOrCreateDatabase(file, null);
-      // @todo Check AssetManager.list() for all expected file names and creat all missing ones
+      String fileName = filepath + "user_data.db";
+      db = SQLiteDatabase.openOrCreateDatabase(fileName, null);
       return true;
    }
 }
