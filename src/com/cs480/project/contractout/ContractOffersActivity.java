@@ -67,18 +67,18 @@ public class ContractOffersActivity extends Activity {
       inspect1Button.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            if(!contractor1.getText().toString().equals("N/A")){
+ //           if(!contractor1.getText().toString().equals("N/A")){
                Thread timer = new Thread(){
                   public void run(){
                      try{
                         sleep(100);
                         Intent openAccountInfoActivity = new Intent("android.intent.action.INSPECTCONTRACTOR");
                         openAccountInfoActivity.putExtra("Contractor Name", contractor1.getText());
-                        String priceString = DatabaseInteractor.getData("Price Ranges;price_range_id=" + extras.getString("price"))[1][1];
+                        String priceString = "$50";//DatabaseInteractor.getData("Price Ranges;price_range_id=" + extras.getString("price"))[1][1];
                         // Placeholder Code will require Revision
                         openAccountInfoActivity.putExtra("Price", priceString);
                         openAccountInfoActivity.putExtra("key", extras.getString("Job ID"));
-                        openAccountInfoActivity.putExtra("id", key1);
+//                        openAccountInfoActivity.putExtra("id", key1);
                         // End Placholder Code
                         startActivityForResult(openAccountInfoActivity, REQUEST_EXIT);
                      }catch(Exception e){
@@ -88,7 +88,7 @@ public class ContractOffersActivity extends Activity {
                };
                timer.start(); 
             }
-         }
+//         }
       });  
 
       inspect2Button.setOnClickListener(new View.OnClickListener() {

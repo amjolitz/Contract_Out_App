@@ -47,7 +47,7 @@ public class RateContractorActivity extends Activity {
       confirmButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            uploadRating(friendliness.getRating(), quality.getRating(), timeliness.getRating());
+ //           uploadRating(friendliness.getRating(), quality.getRating(), timeliness.getRating());
             Thread timer = new Thread(){
                public void run(){
                   try{

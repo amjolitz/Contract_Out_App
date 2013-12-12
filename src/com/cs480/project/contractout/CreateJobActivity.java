@@ -2,9 +2,11 @@ package com.cs480.project.contractout;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Random;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -183,20 +185,17 @@ public class CreateJobActivity extends Activity {
       String jobType = DatabaseInteractor.getData("Job_Types;job_type_name=" + type + "")[0][0];
       String priceRange = DatabaseInteractor.getData("Price_Ranges;price_range_text=" + price + "")[0][0];   
       
-      int jobId = DatabaseInteractor.insertData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
-                                    ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
-                                    ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
-                                    ";job_type=" + jobType + ";price_range=" + priceRange + "");
-      
-      String temp = DatabaseInteractor.getData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
-            ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
-            ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
-            ";job_type=" + jobType + ";price_range=" + priceRange + "")[0][0];
+//      int jobId = DatabaseInteractor.insertData("Jobs;job_address=" + add + ";job_city=" + city + ";job_zip=" + zip + 
+//                                    ";job_start_date=" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+//                                    ";job_description=" + desc + ";job_zip=" + zip + ";creator=" + userId + 
+//                                    ";job_type=" + jobType + ";price_range=" + priceRange + "");
+      int jobId = insertJob("<" + add + "> <" + city + "> <" + zip + 
+          "> <" +  startMonth + "/" + startDay + "/" + Calendar.getInstance().get(Calendar.YEAR) + 
+          "> <> <" + desc + "> <> <> <" + userId + "> <>\n");
 
       priceId = priceRange;
 
-      int tempInt = Integer.parseInt(temp);
-      return tempInt;
+      return jobId;
    }
 
    private void notifyUser(int uniqueId)
@@ -211,6 +210,18 @@ public class CreateJobActivity extends Activity {
       n.setLatestEventInfo(this, title, body, pi);
       n.defaults = Notification.DEFAULT_ALL;
       nm.notify(uniqueId, n);
+   }
+   
+   public int insertJob(String input){
+      Random rand = new Random();
+      try{
+      FileOutputStream outputStream = openFileOutput("jobTable.txt", MODE_APPEND);
+      outputStream.write(("<" + rand + ">" + input).getBytes());
+      outputStream.close();
+      }catch(IOException e){
+         e.printStackTrace();
+      }
+      return rand.nextInt(10000);
    }
 
    @Override

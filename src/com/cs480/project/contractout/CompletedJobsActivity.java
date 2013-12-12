@@ -147,7 +147,7 @@ public class CompletedJobsActivity extends Activity {
       job1RateButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            if(!(job1.getText().toString().equals("N/A"))){
+//            if(!(job1.getText().toString().equals("N/A"))){
                Thread timer = new Thread(){
                   public void run(){
                      try{
@@ -166,7 +166,7 @@ public class CompletedJobsActivity extends Activity {
                   }
                };
                timer.start();
-            }
+//            }
          }
       });  
       // Logic for when the Rate Job2 button is pressed

@@ -29,10 +29,10 @@ public class InspectContractorActivity extends Activity {
       contractorName.setText(extras.getString("Contractor Name"));
       finishDate.setText(extras.getString("Price"));
       
-      String[][] contractorRatings = DatabaseInteractor.getData("Contractor_Avg_Ratings;contractor_id=" + extras.getString("id"));
-      friendliness.setRating(Float.parseFloat(contractorRatings[0][1]));
-      quality.setRating(Float.parseFloat(contractorRatings[0][2]));
-      timeliness.setRating(Float.parseFloat(contractorRatings[0][3]));
+//      String[][] contractorRatings = DatabaseInteractor.getData("Contractor_Avg_Ratings;contractor_id=" + extras.getString("id"));
+//      friendliness.setRating(Float.parseFloat(contractorRatings[0][1]));
+//      quality.setRating(Float.parseFloat(contractorRatings[0][2]));
+//      timeliness.setRating(Float.parseFloat(contractorRatings[0][3]));
       
    // Logic for when the Return button is pressed
       backButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,7 @@ public class InspectContractorActivity extends Activity {
       confirmButton.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            confirmJob();
+ //           confirmJob();
             Thread timer = new Thread(){
                public void run(){
                   try{

@@ -24,10 +24,10 @@ public class Splash extends Activity {
          outputStream.write("<111111>, <tester@hotmail.com>, <123>, <Tester Man>, <3625 Weekley Street>, <San Antonio>, <California>, <78258>, <5555551234>\n".getBytes());
          outputStream.close();
          outputStream = openFileOutput("jobTable.txt", 0);
-         outputStream.write("<1><123 Sesame St><Los Angeles><9001><12/1/2013><12/1/2013><My kitchen sink won't drain.><20><10><123456><305>\n".getBytes());
+         outputStream.write("<1><123 Sesame St><Los Angeles><9001><12/1/2013><12/1/2013><My kitchen sink won't drain.><20><10><123456><>\n".getBytes());
          outputStream.write("<2><2827 Summit Street><Shelton><12345><1/2/2014><2/6/2015><description><40><20><123456><630>\n".getBytes());
          outputStream.write("<6><347 Goldleaf Lane><Norwalk><99205><1/6/2014><2/18/2015><description><120><60><111111><208>\n".getBytes());
-         outputStream.write("<10><694 Wood Duck Drive><Richmond><45701><1/10/2014><3/2/2015><description><200><100><111111><106>\n".getBytes());
+         outputStream.write("<10><694 Wood Duck Drive><Richmond><45701><1/10/2014><3/2/2015><description><200><100><111111><>\n".getBytes());
          outputStream.close();
          outputStream = openFileOutput("contractorTable.txt", 0);
          outputStream.write("<1> <awesomeCo> <pa$$w0rd> <Davis George>   <Awesome Construction Company>  <3105551230>  <We provide services for electrical and plumbing.>\n".getBytes());
@@ -36,14 +36,14 @@ public class Splash extends Activity {
          outputStream.write("<4>   <Duerse65> <ro5ohhaeGae> <Ronald>   <Crandall's Fine Furniture>  <7188645174>  <Statistical assistant>\n".getBytes());
          outputStream.close();
          outputStream = openFileOutput("averageRatingTable.txt", 0);
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
-         outputStream.write("".getBytes());
+         outputStream.write("<1> <123> <4> <5> <4>".getBytes());
+         outputStream.write("<1> <321> <3> <5> <4>".getBytes());
+         outputStream.write("<2> <456> <4.5> <3.5> <5>".getBytes());
+         outputStream.write("<2> <555> <5> <3.5> <5>".getBytes());
+         outputStream.write("<3> <687> <4.5> <2> <4>".getBytes());
+         outputStream.write("<3> <789> <5> <2> <5>".getBytes());
+         outputStream.write("<4> <999> <3> <1> <3>".getBytes());
+         outputStream.write("<4> <786> <2> <1> <2>".getBytes());
          outputStream.close();
       } catch (IOException e) {
          e.printStackTrace();
