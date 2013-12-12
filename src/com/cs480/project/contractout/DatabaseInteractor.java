@@ -22,10 +22,6 @@ public class DatabaseInteractor extends Activity {
     * entry.
     */
    public static String logIn(String username, String password) throws IOException {
-/*	  String[][] users = readFile("TSV_Users.txt");
-	  String[][] contractors = readFile("TSV_Contractors.txt");
-	  String[][] jobs = readFile("TSV_Jobs.txt");
-	  String[][] Zips = readFile("TSV_Zips.txt");*/	 
     //Get the text file
       File file = new File(MyApplication.getAppContext().getFilesDir(), "userTable.txt");
 
@@ -48,13 +44,7 @@ public class DatabaseInteractor extends Activity {
             }
          }
       }catch(IOException e){}
-/*
-      catch (IOException e) {}
-      if(username.equals("danialr@gmail.com") && password.equals("adzq"))
-         return "<123456>, <danialr@gmail.com>, <adzq>, <Danial Racker>, <1234 Fake St>, <Springfield>, <Illinois>, <12334>, <9515551234>";
-      else if(username.equals("tester@hotmail.com") && password.equals("123"))
-         return "<111111>, <tester@hotmail.com>, <123>, <Tester Man>, <3625 Weekley Street>, <San Antonio>, <California>, <78258>, <5555551234>";
-*/      
+	  
       return "False";
 
 	  // Dump file into array (see Alex?)
@@ -71,8 +61,7 @@ public class DatabaseInteractor extends Activity {
          temp[1] = ("6;347 Goldleaf Lane;Norwalk;99205;1/6/2014;2/18/2015;description;120;60;111111;208").split(";");
          temp[2] = ("10;694 Wood Duck Drive;Richmond;45701;1/10/2014;3/2/2015;description;200;100;111111;106").split(";");
       }else{
-         temp = new String[1][1];
-         temp[0][0] = "9999";
+         return readFile("contractorTable.txt");
       }
       
       return temp;
@@ -103,19 +92,27 @@ public class DatabaseInteractor extends Activity {
     * Searches the asset manager for fileName, opens it, reads its contents, and converts 
     * them into a 2-d array of Strings.
     */
-   /*
-   private static String[][] readFile(String fileName) throws IOException{
-//	  AssetFileDescriptor file = assetMan.openFd(fileName); 
-//	  AutoCloseInputStream input = new AssetFileDescriptor.AutoCloseInputStream(file);
-	  InputStream input = MyApplication.getAppContext().getResources().openRawResource(R.raw.tsv_users); 
-	  byte[] buffer = new byte[100000];
-	  input.read(buffer);
-	  String fileData = new String(buffer, "UTF-8");
-	  String[] data_1d = fileData.split("\r\n");
-	  String[][] data = new String[data_1d.length][15];
-	  for (int i=0; i<data_1d.length; i++)
-	     data[i] = data_1d[i].split("\t");
-
-	  return data;
-   }*/
+   private static String[][] readFile(String fileName, int rowSize) {
+      File file = new File(MyApplication.getAppContext().getFilesDir(), fileName);
+	  ArrayList<String[]> table = new ArrayList<String[]>();
+      try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         String line;
+         while ((line = br.readLine()) != null) {
+            String[] row = new String[rowSize];
+            Pattern pat = Pattern.compile("\\<(.*?)\\>");
+            Matcher match = pat.matcher(line);
+            int element = 0;
+            // Fill a row
+			while(match.find()) {
+                row[element] = match.group(1);
+                element++;
+            }
+            // Add a row to the virtual table
+			table.add(row);
+         }
+      } catch(IOException e){}
+	  String[][] data = new String[table.size()][rowSize];
+	  return table.toArray(data);
+   }
 }
